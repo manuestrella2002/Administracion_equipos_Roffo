@@ -136,5 +136,10 @@ namespace Administracion_equipos_Roffo
 
             }
         }
+
+        private void button_volver_dashboard_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
