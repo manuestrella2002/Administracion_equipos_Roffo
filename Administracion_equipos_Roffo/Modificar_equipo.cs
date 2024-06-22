@@ -171,11 +171,11 @@ namespace Administracion_equipos_Roffo
                         // Insertar el nuevo equipo
 
 
-                        string insertar_equipo_Query = "UPDATE equipo SET Nombre_equipo = @nombre_equipo, " +
-                        "Modelo_equipo = @modelo_equipo, Marca_equipo = @marca_equipo, " +
+                        string insertar_equipo_Query = "UPDATE equipo SET Id_equipo =@id_equipo, Nombre_equipo = @nombre_equipo," +
+                        "Modelo_equipo = @modelo_equipo, Marca_equipo = @marca_equipo," +
                         "Nro_serie_equipo = @nro_serie_equipo, Fecha_fabricacion_equipo = @Fecha_fabricacion_equipo, " +
                         "Fecha_adquisicion_equipo = @Fecha_adquisicion_equipo, Ubicacion_equipo = @Ubicacion_equipo, " +
-                        "Status_equipo = @Status_equipo WHERE Id_equipo =@id_equipo";
+                        "Status_equipo = @Status_equipo WHERE Id_equipo ="+ID.ToString();
                         using (MySqlCommand insertar_equipo_Command = new MySqlCommand(insertar_equipo_Query, connection))
                         {
                             insertar_equipo_Command.Parameters.AddWithValue("@nombre_equipo", nombre_equipo);
@@ -244,7 +244,7 @@ namespace Administracion_equipos_Roffo
                             insertar_equipo_Command.ExecuteNonQuery();
                         }
 
-                        MessageBox.Show("Equipo guardado exitosamente.", "Mensaje", MessageBoxButtons.OK);
+                        MessageBox.Show("Equipo modificado exitosamente.", "Mensaje", MessageBoxButtons.OK);
                         this.Close();
 
 
