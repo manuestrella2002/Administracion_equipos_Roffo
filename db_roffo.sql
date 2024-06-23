@@ -130,7 +130,7 @@ CREATE TABLE `inventario` (
   PRIMARY KEY (`Id_parte`),
   KEY `fk_inventario_proveedor1_idx` (`proveedor_Id_proveedor`),
   CONSTRAINT `fk_inventario_proveedor1` FOREIGN KEY (`proveedor_Id_proveedor`) REFERENCES `proveedor` (`Id_proveedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -139,7 +139,7 @@ CREATE TABLE `inventario` (
 
 LOCK TABLES `inventario` WRITE;
 /*!40000 ALTER TABLE `inventario` DISABLE KEYS */;
-INSERT INTO `inventario` VALUES (1,'Resistor 2k2','Texas Instruments',5,NULL,21),(2,'Capacitor 30uF','Intel',1,NULL,21),(3,'Transistor PNP','Analog Devices',8,NULL,21),(4,'Diodo 1N4007','Microchip',6,NULL,21),(5,'LED azul','STMicroelectronics',9,NULL,21),(6,'Inductor','NXP',5,NULL,21),(7,'Transformador 9v220v','Infineon',10,NULL,21),(8,'Circuito integrado','Toshiba',4,NULL,21),(9,'Potenciometro 330k','ON Semiconductor',4,NULL,21),(10,'Rele 6 contactos','Vishay',6,NULL,21),(11,'Fusible 3A','Maxim Integrated',3,NULL,21),(12,'Interruptor','Renesas',8,NULL,21),(13,'Conector','Fairchild',7,NULL,21),(14,'Batería','Samsung',5,NULL,21),(15,'Antena','Panasonic',6,NULL,21),(16,'Cristal oscilador 30 MHz','Sony',4,NULL,21),(17,'Microcontrolador PIC16F84','Philips',3,NULL,21),(18,'Display de 7 segmentos','Broadcom',1,NULL,21),(19,'Sensor agua','Xilinx',7,NULL,21),(20,'Memoria EEPROM','Rohm',5,NULL,21),(21,'tuerca',NULL,2,NULL,NULL),(22,'perno',NULL,1,NULL,NULL),(23,'perno2',NULL,1,NULL,NULL),(24,'prueba',NULL,2,NULL,NULL);
+INSERT INTO `inventario` VALUES (1,'Resistor 2k2','Texas Instruments',5,NULL,21),(2,'Capacitor 30uF','Intel',1,NULL,21),(3,'Transistor PNP','Analog Devices',8,NULL,21),(4,'Diodo 1N4007','Microchip',6,NULL,21),(5,'LED azul','STMicroelectronics',9,NULL,21),(6,'Inductor','NXP',5,NULL,21),(7,'Transformador 9v220v','Infineon',10,NULL,21),(8,'Circuito integrado','Toshiba',4,NULL,21),(9,'Potenciometro 330k','ON Semiconductor',4,NULL,21),(10,'Rele 6 contactos','Vishay',6,NULL,21),(11,'Fusible 3A','Maxim Integrated',3,NULL,21),(12,'Interruptor','Renesas',8,NULL,21),(13,'Conector','Fairchild',7,NULL,21),(14,'Batería','Samsung',5,NULL,21),(15,'Antena','Panasonic',6,NULL,21),(16,'Cristal oscilador 30 MHz','Sony',4,NULL,21),(17,'Microcontrolador PIC16F84','Philips',3,NULL,21),(18,'Display de 7 segmentos','Broadcom',1,NULL,21),(19,'Sensor agua','Xilinx',7,NULL,21),(20,'Memoria EEPROM','Rohm',5,NULL,21),(21,'tuerca',NULL,2,NULL,NULL),(22,'perno',NULL,1,NULL,NULL),(23,'perno2vc',NULL,2,NULL,NULL);
 /*!40000 ALTER TABLE `inventario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -160,7 +160,7 @@ CREATE TABLE `orden_de_trabajo` (
   PRIMARY KEY (`Id_orden`),
   KEY `fk_orden_de_trabajo_equipo1_idx` (`equipo_Id_equipo`),
   CONSTRAINT `fk_orden_de_trabajo_equipo1` FOREIGN KEY (`equipo_Id_equipo`) REFERENCES `equipo` (`Id_equipo`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -169,7 +169,7 @@ CREATE TABLE `orden_de_trabajo` (
 
 LOCK TABLES `orden_de_trabajo` WRITE;
 /*!40000 ALTER TABLE `orden_de_trabajo` DISABLE KEYS */;
-INSERT INTO `orden_de_trabajo` VALUES (1,'Evaluacion de estado en tomografo computarizado (CT)','2024-04-03 15:09:11',NULL,NULL,'Bioterio'),(2,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-05-20 17:26:23',NULL,NULL,'Imagenes'),(3,'Diagnostico y reparacion de problema en lampara quirurgica','2024-04-03 22:41:52',NULL,8,'Quirofano'),(4,'Sincronizacion y ajuste en equipo de terapia laser','2023-12-30 09:17:09',NULL,NULL,'UTI'),(5,'Instalacion de nuevo sensor Doppler vascular','2024-05-03 15:04:50',NULL,NULL,'UTI'),(6,'Sustitucion de baterias en desfibrilador externo','2024-03-12 19:38:50',NULL,NULL,'UTI'),(7,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-01-05 03:19:01',NULL,NULL,'UTI'),(8,'Revision y mantenimiento preventivo de electrocardiografo','2024-02-12 19:16:22',NULL,NULL,'UTI'),(9,'Reparacion de falla en ecografo abdominal','2023-12-22 23:25:34',NULL,NULL,'Imagenes'),(10,'Recambio de piezas en bomba de infusion','2024-04-26 08:16:15',NULL,NULL,'UTI'),(11,'Inspeccion de sistema de iluminacion en quirofano','2023-11-03 22:34:15',NULL,NULL,'Bioterio'),(12,'Ajuste de frecuencia en electroencefalografo (EEG)','2023-12-17 05:44:57','2024-06-22 16:13:08',NULL,'Imagenes'),(13,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2023-10-23 20:22:27','2024-06-22 16:13:04',NULL,'UTI'),(14,'Diagnostico y reparacion de problema en lampara quirurgica','2023-11-10 00:07:15',NULL,NULL,'Quirofano'),(15,'Inspeccion y limpieza profunda de endoscopio flexible','2024-01-21 20:55:32',NULL,NULL,'UTI'),(16,'Calibracion y prueba de funcionamiento en camara hiperbarica','2024-03-03 09:01:45',NULL,13,'Quirofano'),(17,'Inspeccion y limpieza profunda de endoscopio flexible','2023-10-24 18:49:00','2024-06-22 16:03:07',NULL,'Quirofano'),(18,'Actualizacion de firmware en maquina de anestesia','2024-01-28 21:47:54',NULL,NULL,'Quirofano'),(19,'Sincronizacion y ajuste en equipo de terapia laser','2024-01-16 22:51:26',NULL,NULL,'UTI'),(20,'Diagnostico y reparacion de problema en lampara quirurgica','2024-06-02 21:51:44',NULL,NULL,'Medicina nuclear'),(21,'Baño tapado del dr pepe','2024-06-22 16:51:37',NULL,NULL,'Investigaciones'),(22,'Centrifuga no funciona nose','2024-06-22 16:54:09',NULL,10,'Quirofano'),(23,'No me anda el tensiometro','2024-06-22 18:31:45','2024-06-22 18:33:51',31,'UTI');
+INSERT INTO `orden_de_trabajo` VALUES (1,'Evaluacion de estado en tomografo computarizado (CT)','2024-04-03 15:09:11',NULL,NULL,'Bioterio'),(2,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-05-20 17:26:23',NULL,NULL,'Imagenes'),(3,'Diagnostico y reparacion de problema en lampara quirurgica','2024-04-03 22:41:52',NULL,8,'Quirofano'),(4,'Sincronizacion y ajuste en equipo de terapia laser','2023-12-30 09:17:09',NULL,NULL,'UTI'),(5,'Instalacion de nuevo sensor Doppler vascular','2024-05-03 15:04:50',NULL,NULL,'UTI'),(6,'Sustitucion de baterias en desfibrilador externo','2024-03-12 19:38:50',NULL,NULL,'UTI'),(7,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-01-05 03:19:01',NULL,NULL,'UTI'),(8,'Revision y mantenimiento preventivo de electrocardiografo','2024-02-12 19:16:22',NULL,NULL,'UTI'),(9,'Reparacion de falla en ecografo abdominal','2023-12-22 23:25:34',NULL,NULL,'Imagenes'),(10,'Recambio de piezas en bomba de infusion','2024-04-26 08:16:15',NULL,NULL,'UTI'),(11,'Inspeccion de sistema de iluminacion en quirofano','2023-11-03 22:34:15',NULL,NULL,'Bioterio'),(12,'Ajuste de frecuencia en electroencefalografo (EEG)','2023-12-17 05:44:57','2024-06-22 16:13:08',NULL,'Imagenes'),(13,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2023-10-23 20:22:27','2024-06-22 16:13:04',NULL,'UTI'),(14,'Diagnostico y reparacion de problema en lampara quirurgica','2023-11-10 00:07:15',NULL,NULL,'Quirofano'),(15,'Inspeccion y limpieza profunda de endoscopio flexible','2024-01-21 20:55:32',NULL,NULL,'UTI'),(16,'Calibracion y prueba de funcionamiento en camara hiperbarica','2024-03-03 09:01:45',NULL,13,'Quirofano'),(17,'Inspeccion y limpieza profunda de endoscopio flexible','2023-10-24 18:49:00','2024-06-22 16:03:07',NULL,'Quirofano'),(18,'Actualizacion de firmware en maquina de anestesia','2024-01-28 21:47:54',NULL,NULL,'Quirofano'),(19,'Sincronizacion y ajuste en equipo de terapia laser','2024-01-16 22:51:26',NULL,NULL,'UTI'),(20,'Diagnostico y reparacion de problema en lampara quirurgica','2024-06-02 21:51:44',NULL,NULL,'Medicina nuclear'),(21,'Baño tapado del dr pepe','2024-06-22 16:51:37',NULL,NULL,'Investigaciones'),(22,'Centrifuga no funciona nose','2024-06-22 16:54:09',NULL,10,'Quirofano'),(23,'No me anda el tensiometro','2024-06-22 18:31:45','2024-06-22 18:33:51',31,'UTI'),(24,'No funcionan las calderas en 2do piso costa','2024-06-23 08:52:55','2024-06-23 08:53:09',NULL,'2do Costa'),(25,'Caldera no funciona','2024-06-23 09:03:46','2024-06-23 09:03:58',NULL,'2do Costa');
 /*!40000 ALTER TABLE `orden_de_trabajo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -342,8 +342,30 @@ DROP TABLE IF EXISTS `reporte_grupo_electrogeno`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `reporte_grupo_electrogeno` (
   `Id_reporte_grupo` int NOT NULL AUTO_INCREMENT,
-  `Fecha` datetime DEFAULT NULL,
+  `Fecha` datetime NOT NULL,
   `Observaciones_grupo` varchar(2000) DEFAULT NULL,
+  `Refrigerante` tinyint NOT NULL,
+  `Nivel Aceite` tinyint NOT NULL,
+  `Nivel Agua Bateria` tinyint DEFAULT NULL,
+  `Nivel Combustible` int NOT NULL,
+  `Voltaje Bateria Reposo` decimal(2,0) NOT NULL,
+  `Voltaje Bateria Carga` decimal(2,0) DEFAULT NULL,
+  `Frecuencia` decimal(2,0) NOT NULL,
+  `RPM` int DEFAULT NULL,
+  `Temperatura` decimal(2,0) DEFAULT NULL,
+  `Presion Aceite` decimal(2,0) DEFAULT NULL,
+  `HorasUso` time DEFAULT NULL,
+  `Numero Arranques` int unsigned DEFAULT NULL,
+  `V_Generador_R` int unsigned NOT NULL,
+  `V_Generador_S` int unsigned NOT NULL,
+  `V_Generador_T` int unsigned NOT NULL,
+  `V_Linea_R` int unsigned NOT NULL,
+  `V_Linea_S` int unsigned NOT NULL,
+  `V_Linea_T` int unsigned NOT NULL,
+  `A_Generador_R` int unsigned DEFAULT NULL,
+  `A_Generador` int unsigned DEFAULT NULL,
+  `A_Generador_T` int unsigned DEFAULT NULL,
+  `Estado` varchar(45) NOT NULL,
   `grupo_electrogeno_Id_grupo` int NOT NULL,
   PRIMARY KEY (`Id_reporte_grupo`),
   KEY `fk_Report_grupo_electrogeno_grupo_electrogeno1_idx` (`grupo_electrogeno_Id_grupo`),
@@ -377,4 +399,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-23  0:44:32
+-- Dump completed on 2024-06-23 13:59:54
