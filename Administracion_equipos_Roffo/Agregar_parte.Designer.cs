@@ -34,11 +34,12 @@
             this.label_Descripcion = new System.Windows.Forms.Label();
             this.label_proveedor = new System.Windows.Forms.Label();
             this.textBox_nombre_parte = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.comboBox_marca = new System.Windows.Forms.ComboBox();
+            this.contador_cantidad = new System.Windows.Forms.NumericUpDown();
+            this.textBox_descripcion = new System.Windows.Forms.TextBox();
+            this.comboBox_proveedor = new System.Windows.Forms.ComboBox();
+            this.button_guardar_parte = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.contador_cantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // label_nombre_parte
@@ -94,49 +95,60 @@
             this.textBox_nombre_parte.Size = new System.Drawing.Size(207, 20);
             this.textBox_nombre_parte.TabIndex = 5;
             // 
-            // comboBox1
+            // comboBox_marca
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(81, 56);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 21);
-            this.comboBox1.TabIndex = 6;
+            this.comboBox_marca.FormattingEnabled = true;
+            this.comboBox_marca.Location = new System.Drawing.Point(81, 56);
+            this.comboBox_marca.Name = "comboBox_marca";
+            this.comboBox_marca.Size = new System.Drawing.Size(160, 21);
+            this.comboBox_marca.TabIndex = 6;
             // 
-            // numericUpDown1
+            // contador_cantidad
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(136, 92);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(62, 20);
-            this.numericUpDown1.TabIndex = 7;
+            this.contador_cantidad.Location = new System.Drawing.Point(136, 92);
+            this.contador_cantidad.Name = "contador_cantidad";
+            this.contador_cantidad.Size = new System.Drawing.Size(62, 20);
+            this.contador_cantidad.TabIndex = 7;
             // 
-            // textBox1
+            // textBox_descripcion
             // 
-            this.textBox1.AcceptsReturn = true;
-            this.textBox1.AcceptsTab = true;
-            this.textBox1.AllowDrop = true;
-            this.textBox1.Location = new System.Drawing.Point(100, 137);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 36);
-            this.textBox1.TabIndex = 8;
+            this.textBox_descripcion.AcceptsReturn = true;
+            this.textBox_descripcion.AcceptsTab = true;
+            this.textBox_descripcion.AllowDrop = true;
+            this.textBox_descripcion.Location = new System.Drawing.Point(100, 137);
+            this.textBox_descripcion.Multiline = true;
+            this.textBox_descripcion.Name = "textBox_descripcion";
+            this.textBox_descripcion.Size = new System.Drawing.Size(205, 36);
+            this.textBox_descripcion.TabIndex = 8;
             // 
-            // comboBox2
+            // comboBox_proveedor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(93, 191);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(148, 21);
-            this.comboBox2.TabIndex = 9;
+            this.comboBox_proveedor.FormattingEnabled = true;
+            this.comboBox_proveedor.Location = new System.Drawing.Point(93, 191);
+            this.comboBox_proveedor.Name = "comboBox_proveedor";
+            this.comboBox_proveedor.Size = new System.Drawing.Size(148, 21);
+            this.comboBox_proveedor.TabIndex = 9;
+            // 
+            // button_guardar_parte
+            // 
+            this.button_guardar_parte.Location = new System.Drawing.Point(361, 247);
+            this.button_guardar_parte.Name = "button_guardar_parte";
+            this.button_guardar_parte.Size = new System.Drawing.Size(84, 38);
+            this.button_guardar_parte.TabIndex = 10;
+            this.button_guardar_parte.Text = "Guardar parte";
+            this.button_guardar_parte.UseVisualStyleBackColor = true;
+            this.button_guardar_parte.Click += new System.EventHandler(this.button_guardar_parte_Click);
             // 
             // Agregar_parte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 247);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(468, 297);
+            this.Controls.Add(this.button_guardar_parte);
+            this.Controls.Add(this.comboBox_proveedor);
+            this.Controls.Add(this.textBox_descripcion);
+            this.Controls.Add(this.contador_cantidad);
+            this.Controls.Add(this.comboBox_marca);
             this.Controls.Add(this.textBox_nombre_parte);
             this.Controls.Add(this.label_proveedor);
             this.Controls.Add(this.label_Descripcion);
@@ -144,8 +156,8 @@
             this.Controls.Add(this.label_marca_parte);
             this.Controls.Add(this.label_nombre_parte);
             this.Name = "Agregar_parte";
-            this.Text = "Agregar_parte";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.Text = "Agregar parte";
+            ((System.ComponentModel.ISupportInitialize)(this.contador_cantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,9 +171,10 @@
         private System.Windows.Forms.Label label_Descripcion;
         private System.Windows.Forms.Label label_proveedor;
         private System.Windows.Forms.TextBox textBox_nombre_parte;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox_marca;
+        private System.Windows.Forms.NumericUpDown contador_cantidad;
+        private System.Windows.Forms.TextBox textBox_descripcion;
+        private System.Windows.Forms.ComboBox comboBox_proveedor;
+        private System.Windows.Forms.Button button_guardar_parte;
     }
 }

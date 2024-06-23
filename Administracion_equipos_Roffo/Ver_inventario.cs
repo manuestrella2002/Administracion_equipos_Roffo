@@ -76,7 +76,11 @@ namespace Administracion_equipos_Roffo
 
         private void button_agregar_parte_Click(object sender, EventArgs e)
         {
-
+            Agregar_parte agregar_Parte = new Agregar_parte();
+            this.Hide();
+            agregar_Parte.ShowDialog();
+            LoadDataGridView();
+            this.Show();
         }
 
         private void button_modificar_parte_Click(object sender, EventArgs e)
