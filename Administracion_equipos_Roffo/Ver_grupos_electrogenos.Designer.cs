@@ -38,6 +38,9 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 22);
             this.dataGridView1.MultiSelect = false;
@@ -48,6 +51,7 @@
             // 
             // button_volver_dashboard
             // 
+            this.button_volver_dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_volver_dashboard.Location = new System.Drawing.Point(376, 241);
             this.button_volver_dashboard.Name = "button_volver_dashboard";
             this.button_volver_dashboard.Size = new System.Drawing.Size(94, 35);
@@ -58,6 +62,7 @@
             // 
             // button_modificar_grupo
             // 
+            this.button_modificar_grupo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_modificar_grupo.Location = new System.Drawing.Point(12, 241);
             this.button_modificar_grupo.Name = "button_modificar_grupo";
             this.button_modificar_grupo.Size = new System.Drawing.Size(94, 35);
@@ -77,6 +82,7 @@
             this.Name = "Ver_grupos_electrogenos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grupos Electrogenos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -73,8 +73,7 @@ namespace Administracion_equipos_Roffo
            
                 dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
                 dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-               dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-
+               dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
 
@@ -204,7 +203,11 @@ namespace Administracion_equipos_Roffo
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Ver_proveedores ver_Proveedores = new Ver_proveedores();
+            this.Hide();
+            ver_Proveedores.ShowDialog();
+            LoadDataGridView();
+            this.Show();
         }
 
         private void button_reporte_grupo_Click(object sender, EventArgs e)

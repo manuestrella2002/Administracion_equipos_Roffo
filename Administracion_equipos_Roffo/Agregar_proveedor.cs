@@ -20,6 +20,13 @@ namespace Administracion_equipos_Roffo
             textBox_nombre_prov.Text = nombre_prov;
 
         }
+        public Agregar_proveedor()
+        {
+            InitializeComponent();
+            LoadComboBoxData();
+           
+
+        }
 
         private void LoadComboBoxData()
         {
@@ -152,6 +159,16 @@ namespace Administracion_equipos_Roffo
                 }
 
 
+            }
+        }
+
+        private void button_cancelar_Click_1(object sender, EventArgs e)
+        {
+            DialogResult Resultado;
+            Resultado = MessageBox.Show("¿Esta seguro que quiere cancelar ?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (Resultado == DialogResult.Yes)
+            {
+                this.Close();
             }
         }
     }

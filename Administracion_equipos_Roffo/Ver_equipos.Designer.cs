@@ -33,6 +33,7 @@
             this.button_modificar_equipo = new System.Windows.Forms.Button();
             this.button_eliminar_equipo = new System.Windows.Forms.Button();
             this.button_volver_dashboard = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,16 +41,20 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 27);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(948, 318);
+            this.dataGridView1.Size = new System.Drawing.Size(948, 303);
             this.dataGridView1.TabIndex = 0;
             // 
             // button_agregar_equipo
             // 
+            this.button_agregar_equipo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_agregar_equipo.Location = new System.Drawing.Point(12, 336);
             this.button_agregar_equipo.Name = "button_agregar_equipo";
             this.button_agregar_equipo.Size = new System.Drawing.Size(107, 37);
@@ -60,6 +65,7 @@
             // 
             // button_modificar_equipo
             // 
+            this.button_modificar_equipo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_modificar_equipo.Location = new System.Drawing.Point(140, 336);
             this.button_modificar_equipo.Name = "button_modificar_equipo";
             this.button_modificar_equipo.Size = new System.Drawing.Size(104, 37);
@@ -70,6 +76,7 @@
             // 
             // button_eliminar_equipo
             // 
+            this.button_eliminar_equipo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_eliminar_equipo.Location = new System.Drawing.Point(271, 336);
             this.button_eliminar_equipo.Name = "button_eliminar_equipo";
             this.button_eliminar_equipo.Size = new System.Drawing.Size(104, 37);
@@ -80,6 +87,7 @@
             // 
             // button_volver_dashboard
             // 
+            this.button_volver_dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_volver_dashboard.Location = new System.Drawing.Point(856, 336);
             this.button_volver_dashboard.Name = "button_volver_dashboard";
             this.button_volver_dashboard.Size = new System.Drawing.Size(104, 37);
@@ -88,11 +96,22 @@
             this.button_volver_dashboard.UseVisualStyleBackColor = true;
             this.button_volver_dashboard.Click += new System.EventHandler(this.button_volver_dashboard_Click);
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(444, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Lista de equipos";
+            // 
             // Ver_equipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(977, 400);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button_volver_dashboard);
             this.Controls.Add(this.button_eliminar_equipo);
             this.Controls.Add(this.button_modificar_equipo);
@@ -101,8 +120,10 @@
             this.Name = "Ver_equipos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Equipos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -113,5 +134,6 @@
         private System.Windows.Forms.Button button_modificar_equipo;
         private System.Windows.Forms.Button button_eliminar_equipo;
         private System.Windows.Forms.Button button_volver_dashboard;
+        private System.Windows.Forms.Label label1;
     }
 }

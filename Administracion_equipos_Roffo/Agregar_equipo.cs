@@ -91,6 +91,8 @@ namespace Administracion_equipos_Roffo
             comboBox_ubicacion.DropDownStyle = ComboBoxStyle.DropDown;
             comboBox_ubicacion.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             comboBox_ubicacion.AutoCompleteSource = AutoCompleteSource.ListItems;
+
+            comboBox_estado.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void button_guardar_equipo_Click(object sender, EventArgs e)

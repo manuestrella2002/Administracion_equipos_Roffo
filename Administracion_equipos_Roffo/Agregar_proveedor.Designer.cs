@@ -41,10 +41,13 @@
             this.label_telefono = new System.Windows.Forms.Label();
             this.maskedTextBox_telefono = new System.Windows.Forms.MaskedTextBox();
             this.button_guardar = new System.Windows.Forms.Button();
+            this.button_cancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_nombre_prov
             // 
+            this.label_nombre_prov.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label_nombre_prov.AutoSize = true;
             this.label_nombre_prov.Location = new System.Drawing.Point(23, 33);
             this.label_nombre_prov.Name = "label_nombre_prov";
@@ -54,6 +57,8 @@
             // 
             // textBox_nombre_prov
             // 
+            this.textBox_nombre_prov.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.textBox_nombre_prov.Location = new System.Drawing.Point(76, 30);
             this.textBox_nombre_prov.Name = "textBox_nombre_prov";
             this.textBox_nombre_prov.Size = new System.Drawing.Size(194, 20);
@@ -61,6 +66,8 @@
             // 
             // label_calle
             // 
+            this.label_calle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label_calle.AutoSize = true;
             this.label_calle.Location = new System.Drawing.Point(23, 81);
             this.label_calle.Name = "label_calle";
@@ -70,6 +77,8 @@
             // 
             // textBox_calle
             // 
+            this.textBox_calle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.textBox_calle.Location = new System.Drawing.Point(76, 78);
             this.textBox_calle.Name = "textBox_calle";
             this.textBox_calle.Size = new System.Drawing.Size(194, 20);
@@ -77,6 +86,8 @@
             // 
             // label_nro
             // 
+            this.label_nro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label_nro.AutoSize = true;
             this.label_nro.Location = new System.Drawing.Point(23, 121);
             this.label_nro.Name = "label_nro";
@@ -86,6 +97,8 @@
             // 
             // maskedTextBox_nro
             // 
+            this.maskedTextBox_nro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.maskedTextBox_nro.Location = new System.Drawing.Point(76, 118);
             this.maskedTextBox_nro.Mask = "99999";
             this.maskedTextBox_nro.Name = "maskedTextBox_nro";
@@ -95,6 +108,8 @@
             // 
             // label_Localidad
             // 
+            this.label_Localidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label_Localidad.AutoSize = true;
             this.label_Localidad.Location = new System.Drawing.Point(23, 158);
             this.label_Localidad.Name = "label_Localidad";
@@ -104,6 +119,8 @@
             // 
             // comboBox_localidad
             // 
+            this.comboBox_localidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBox_localidad.FormattingEnabled = true;
             this.comboBox_localidad.Location = new System.Drawing.Point(85, 155);
             this.comboBox_localidad.Name = "comboBox_localidad";
@@ -112,6 +129,8 @@
             // 
             // label_mail
             // 
+            this.label_mail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label_mail.AutoSize = true;
             this.label_mail.Location = new System.Drawing.Point(23, 203);
             this.label_mail.Name = "label_mail";
@@ -121,6 +140,8 @@
             // 
             // textBox_mail
             // 
+            this.textBox_mail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.textBox_mail.Location = new System.Drawing.Point(76, 200);
             this.textBox_mail.Name = "textBox_mail";
             this.textBox_mail.Size = new System.Drawing.Size(194, 20);
@@ -128,6 +149,8 @@
             // 
             // label_telefono
             // 
+            this.label_telefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label_telefono.AutoSize = true;
             this.label_telefono.Location = new System.Drawing.Point(23, 246);
             this.label_telefono.Name = "label_telefono";
@@ -137,6 +160,8 @@
             // 
             // maskedTextBox_telefono
             // 
+            this.maskedTextBox_telefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.maskedTextBox_telefono.Location = new System.Drawing.Point(76, 243);
             this.maskedTextBox_telefono.Mask = "0000000000";
             this.maskedTextBox_telefono.Name = "maskedTextBox_telefono";
@@ -145,6 +170,7 @@
             // 
             // button_guardar
             // 
+            this.button_guardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_guardar.Location = new System.Drawing.Point(354, 246);
             this.button_guardar.Name = "button_guardar";
             this.button_guardar.Size = new System.Drawing.Size(89, 43);
@@ -153,11 +179,23 @@
             this.button_guardar.UseVisualStyleBackColor = true;
             this.button_guardar.Click += new System.EventHandler(this.button_guardar_Click);
             // 
+            // button_cancelar
+            // 
+            this.button_cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_cancelar.Location = new System.Drawing.Point(247, 246);
+            this.button_cancelar.Name = "button_cancelar";
+            this.button_cancelar.Size = new System.Drawing.Size(89, 43);
+            this.button_cancelar.TabIndex = 13;
+            this.button_cancelar.Text = "Cancelar";
+            this.button_cancelar.UseVisualStyleBackColor = true;
+            this.button_cancelar.Click += new System.EventHandler(this.button_cancelar_Click_1);
+            // 
             // Agregar_proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(455, 301);
+            this.Controls.Add(this.button_cancelar);
             this.Controls.Add(this.button_guardar);
             this.Controls.Add(this.maskedTextBox_telefono);
             this.Controls.Add(this.label_telefono);
@@ -174,6 +212,7 @@
             this.Name = "Agregar_proveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar nuevo proveedor";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +233,6 @@
         private System.Windows.Forms.Label label_telefono;
         private System.Windows.Forms.MaskedTextBox maskedTextBox_telefono;
         private System.Windows.Forms.Button button_guardar;
+        private System.Windows.Forms.Button button_cancelar;
     }
 }

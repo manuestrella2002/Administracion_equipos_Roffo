@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Administracion_equipos_Roffo
 {
-    public partial class Ver_reportes_grupos : Form
+    public partial class Ver_proveedores : Form
     {
-        public Ver_reportes_grupos()
+        public Ver_proveedores()
         {
             InitializeComponent();
             LoadDataGridView();
@@ -26,10 +26,10 @@ namespace Administracion_equipos_Roffo
             string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
 
             // Define tu consulta SQL
-            string query = "SELECT Id_reporte_grupo as Id_reporte,Fecha,Observaciones_grupo as Observaciones FROM reporte_grupo_electrogeno ORDER BY Fecha DESC";
+            string query = "SELECT * FROM proveedor ORDER BY Nombre_proveedor";
 
             // Crea un DataTable para contener los datos
-            DataTable tabla_equipos = new DataTable();
+            DataTable tabla_inventario = new DataTable();
 
             // Conéctate a la base de datos y ejecuta la consulta
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -41,7 +41,7 @@ namespace Administracion_equipos_Roffo
                     {
                         using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                         {
-                            adapter.Fill(tabla_equipos);
+                            adapter.Fill(tabla_inventario);
                         }
                     }
                 }
@@ -54,50 +54,42 @@ namespace Administracion_equipos_Roffo
 
 
             // Asignar el DataTable como origen de datos del DataGridView
-            dataGridView1.DataSource = tabla_equipos;
+            dataGridView1.DataSource = tabla_inventario;
 
             // Configurar la selección de filas completas
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false; // Permitir solo la selección de una fila a la vez
+
+
             dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-        }
-
-        private void button_ver_reporte_completo_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void button_eliminar_reporte_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button_modificar_reporte_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button_crear_reporte_Click(object sender, EventArgs e)
-        {
-            Agregar_reporte_grupo agregar_Reporte_Grupo = new Agregar_reporte_grupo();
-            this.Hide();
-            agregar_Reporte_Grupo.ShowDialog();
-            LoadDataGridView();
-            this.Show();
-
-        }
-
-        private void button_tendencias_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button_volver_dashboard_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button_modificar_prov_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_eliminar_prov_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_agregar_prov_Click(object sender, EventArgs e)
+        {
+            Agregar_proveedor agregar_Proveedor = new Agregar_proveedor();
+            this.Hide();
+            agregar_Proveedor.ShowDialog();
+            LoadDataGridView();
+            this.Show();
         }
     }
 }

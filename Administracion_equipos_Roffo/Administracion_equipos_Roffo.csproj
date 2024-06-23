@@ -189,6 +189,12 @@
     <Compile Include="Ver_ordenes_inactivas.Designer.cs">
       <DependentUpon>Ver_ordenes_inactivas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ver_proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_proveedores.Designer.cs">
+      <DependentUpon>Ver_proveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver_reportes_grupos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_ordenes_inactivas.resx">
       <DependentUpon>Ver_ordenes_inactivas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_proveedores.resx">
+      <DependentUpon>Ver_proveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_reportes_grupos.resx">
       <DependentUpon>Ver_reportes_grupos.cs</DependentUpon>

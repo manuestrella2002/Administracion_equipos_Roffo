@@ -40,6 +40,9 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 24);
             this.dataGridView1.MultiSelect = false;
@@ -50,6 +53,7 @@
             // 
             // button_volver_dashboard
             // 
+            this.button_volver_dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_volver_dashboard.Location = new System.Drawing.Point(504, 348);
             this.button_volver_dashboard.Name = "button_volver_dashboard";
             this.button_volver_dashboard.Size = new System.Drawing.Size(86, 36);
@@ -60,6 +64,7 @@
             // 
             // button_agregar_parte
             // 
+            this.button_agregar_parte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_agregar_parte.Location = new System.Drawing.Point(12, 348);
             this.button_agregar_parte.Name = "button_agregar_parte";
             this.button_agregar_parte.Size = new System.Drawing.Size(86, 36);
@@ -70,6 +75,7 @@
             // 
             // button_modificar_parte
             // 
+            this.button_modificar_parte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_modificar_parte.Location = new System.Drawing.Point(104, 348);
             this.button_modificar_parte.Name = "button_modificar_parte";
             this.button_modificar_parte.Size = new System.Drawing.Size(86, 36);
@@ -80,6 +86,7 @@
             // 
             // button_eliminar_parte
             // 
+            this.button_eliminar_parte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_eliminar_parte.Location = new System.Drawing.Point(196, 348);
             this.button_eliminar_parte.Name = "button_eliminar_parte";
             this.button_eliminar_parte.Size = new System.Drawing.Size(86, 36);
@@ -101,6 +108,7 @@
             this.Name = "Ver_inventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventario";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -39,6 +39,7 @@
             // 
             // label_nueva_orden
             // 
+            this.label_nueva_orden.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_nueva_orden.AutoSize = true;
             this.label_nueva_orden.Location = new System.Drawing.Point(229, 9);
             this.label_nueva_orden.Name = "label_nueva_orden";
@@ -60,16 +61,18 @@
             this.textBox_descripcion_orden.AcceptsReturn = true;
             this.textBox_descripcion_orden.AcceptsTab = true;
             this.textBox_descripcion_orden.AllowDrop = true;
+            this.textBox_descripcion_orden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_descripcion_orden.Location = new System.Drawing.Point(97, 73);
             this.textBox_descripcion_orden.Multiline = true;
             this.textBox_descripcion_orden.Name = "textBox_descripcion_orden";
-            this.textBox_descripcion_orden.Size = new System.Drawing.Size(372, 108);
+            this.textBox_descripcion_orden.Size = new System.Drawing.Size(372, 80);
             this.textBox_descripcion_orden.TabIndex = 2;
             // 
             // label_lugar
             // 
             this.label_lugar.AutoSize = true;
-            this.label_lugar.Location = new System.Drawing.Point(38, 206);
+            this.label_lugar.Location = new System.Drawing.Point(39, 184);
             this.label_lugar.Name = "label_lugar";
             this.label_lugar.Size = new System.Drawing.Size(37, 13);
             this.label_lugar.TabIndex = 3;
@@ -78,13 +81,14 @@
             // comboBox_lugar_orden
             // 
             this.comboBox_lugar_orden.FormattingEnabled = true;
-            this.comboBox_lugar_orden.Location = new System.Drawing.Point(96, 203);
+            this.comboBox_lugar_orden.Location = new System.Drawing.Point(97, 181);
             this.comboBox_lugar_orden.Name = "comboBox_lugar_orden";
-            this.comboBox_lugar_orden.Size = new System.Drawing.Size(165, 21);
+            this.comboBox_lugar_orden.Size = new System.Drawing.Size(113, 21);
             this.comboBox_lugar_orden.TabIndex = 4;
             // 
             // button_crear_orden
             // 
+            this.button_crear_orden.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_crear_orden.Location = new System.Drawing.Point(380, 242);
             this.button_crear_orden.Name = "button_crear_orden";
             this.button_crear_orden.Size = new System.Drawing.Size(89, 40);
@@ -95,6 +99,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(269, 242);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 40);
@@ -118,6 +123,7 @@
             this.Name = "Agregar_orden";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar_orden";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

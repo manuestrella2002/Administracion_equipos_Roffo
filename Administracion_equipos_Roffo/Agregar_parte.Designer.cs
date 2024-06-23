@@ -108,11 +108,12 @@
             this.textBox_descripcion.Location = new System.Drawing.Point(100, 137);
             this.textBox_descripcion.Multiline = true;
             this.textBox_descripcion.Name = "textBox_descripcion";
-            this.textBox_descripcion.Size = new System.Drawing.Size(205, 36);
+            this.textBox_descripcion.Size = new System.Drawing.Size(292, 36);
             this.textBox_descripcion.TabIndex = 8;
             // 
             // button_guardar_parte
             // 
+            this.button_guardar_parte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_guardar_parte.Location = new System.Drawing.Point(372, 196);
             this.button_guardar_parte.Name = "button_guardar_parte";
             this.button_guardar_parte.Size = new System.Drawing.Size(84, 38);
@@ -123,6 +124,7 @@
             // 
             // button_cancelar
             // 
+            this.button_cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_cancelar.Location = new System.Drawing.Point(271, 196);
             this.button_cancelar.Name = "button_cancelar";
             this.button_cancelar.Size = new System.Drawing.Size(84, 38);
@@ -149,6 +151,7 @@
             this.Name = "Agregar_parte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar parte";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.contador_cantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

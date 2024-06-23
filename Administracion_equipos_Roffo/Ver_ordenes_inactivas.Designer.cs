@@ -39,6 +39,9 @@
             this.dataGridView1.AllowDrop = true;
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -51,6 +54,7 @@
             // 
             // button_reabrir_orden
             // 
+            this.button_reabrir_orden.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_reabrir_orden.Location = new System.Drawing.Point(22, 355);
             this.button_reabrir_orden.Name = "button_reabrir_orden";
             this.button_reabrir_orden.Size = new System.Drawing.Size(102, 46);
@@ -61,6 +65,7 @@
             // 
             // button_volver_Dashboard
             // 
+            this.button_volver_Dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_volver_Dashboard.Location = new System.Drawing.Point(693, 356);
             this.button_volver_Dashboard.Name = "button_volver_Dashboard";
             this.button_volver_Dashboard.Size = new System.Drawing.Size(102, 46);
@@ -80,6 +85,7 @@
             this.Name = "Ver_ordenes_inactivas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ordenes inactivas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

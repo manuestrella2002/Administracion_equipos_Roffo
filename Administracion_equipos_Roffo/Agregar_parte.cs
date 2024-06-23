@@ -139,7 +139,12 @@ namespace Administracion_equipos_Roffo
 
         private void button_cancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult Resultado;
+            Resultado = MessageBox.Show("¿Esta seguro que quiere cancelar?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (Resultado == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
     

@@ -47,6 +47,7 @@
             // 
             // button_ver_equipos
             // 
+            this.button_ver_equipos.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button_ver_equipos.Location = new System.Drawing.Point(23, 115);
             this.button_ver_equipos.Name = "button_ver_equipos";
             this.button_ver_equipos.Size = new System.Drawing.Size(124, 71);
@@ -60,6 +61,9 @@
             this.dataGridView1.AllowDrop = true;
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -72,6 +76,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(405, 22);
             this.label1.Name = "label1";
@@ -81,6 +86,7 @@
             // 
             // button_ver_ordenes_inactivas
             // 
+            this.button_ver_ordenes_inactivas.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button_ver_ordenes_inactivas.Location = new System.Drawing.Point(23, 38);
             this.button_ver_ordenes_inactivas.Name = "button_ver_ordenes_inactivas";
             this.button_ver_ordenes_inactivas.Size = new System.Drawing.Size(124, 71);
@@ -91,9 +97,10 @@
             // 
             // button_cerrar_orden
             // 
-            this.button_cerrar_orden.Location = new System.Drawing.Point(763, 346);
+            this.button_cerrar_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button_cerrar_orden.Location = new System.Drawing.Point(731, 351);
             this.button_cerrar_orden.Name = "button_cerrar_orden";
-            this.button_cerrar_orden.Size = new System.Drawing.Size(93, 44);
+            this.button_cerrar_orden.Size = new System.Drawing.Size(124, 71);
             this.button_cerrar_orden.TabIndex = 4;
             this.button_cerrar_orden.Text = "Cerrar orden";
             this.button_cerrar_orden.UseVisualStyleBackColor = true;
@@ -101,9 +108,10 @@
             // 
             // button_nueva_orden
             // 
-            this.button_nueva_orden.Location = new System.Drawing.Point(250, 346);
+            this.button_nueva_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button_nueva_orden.Location = new System.Drawing.Point(165, 351);
             this.button_nueva_orden.Name = "button_nueva_orden";
-            this.button_nueva_orden.Size = new System.Drawing.Size(93, 44);
+            this.button_nueva_orden.Size = new System.Drawing.Size(124, 71);
             this.button_nueva_orden.TabIndex = 5;
             this.button_nueva_orden.Text = "Nueva Orden";
             this.button_nueva_orden.UseVisualStyleBackColor = true;
@@ -111,9 +119,10 @@
             // 
             // button_modificar_orden
             // 
-            this.button_modificar_orden.Location = new System.Drawing.Point(349, 346);
+            this.button_modificar_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button_modificar_orden.Location = new System.Drawing.Point(295, 351);
             this.button_modificar_orden.Name = "button_modificar_orden";
-            this.button_modificar_orden.Size = new System.Drawing.Size(93, 44);
+            this.button_modificar_orden.Size = new System.Drawing.Size(124, 71);
             this.button_modificar_orden.TabIndex = 6;
             this.button_modificar_orden.Text = "Modificar orden";
             this.button_modificar_orden.UseVisualStyleBackColor = true;
@@ -121,9 +130,10 @@
             // 
             // button_asociar_equipo
             // 
-            this.button_asociar_equipo.Location = new System.Drawing.Point(571, 346);
+            this.button_asociar_equipo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button_asociar_equipo.Location = new System.Drawing.Point(538, 351);
             this.button_asociar_equipo.Name = "button_asociar_equipo";
-            this.button_asociar_equipo.Size = new System.Drawing.Size(93, 44);
+            this.button_asociar_equipo.Size = new System.Drawing.Size(124, 71);
             this.button_asociar_equipo.TabIndex = 7;
             this.button_asociar_equipo.Text = "Asociar equipo";
             this.button_asociar_equipo.UseVisualStyleBackColor = true;
@@ -131,7 +141,8 @@
             // 
             // button_ver_grupos
             // 
-            this.button_ver_grupos.Location = new System.Drawing.Point(879, 192);
+            this.button_ver_grupos.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button_ver_grupos.Location = new System.Drawing.Point(874, 192);
             this.button_ver_grupos.Name = "button_ver_grupos";
             this.button_ver_grupos.Size = new System.Drawing.Size(124, 71);
             this.button_ver_grupos.TabIndex = 8;
@@ -141,7 +152,8 @@
             // 
             // button_inventario
             // 
-            this.button_inventario.Location = new System.Drawing.Point(879, 38);
+            this.button_inventario.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button_inventario.Location = new System.Drawing.Point(874, 38);
             this.button_inventario.Name = "button_inventario";
             this.button_inventario.Size = new System.Drawing.Size(124, 71);
             this.button_inventario.TabIndex = 9;
@@ -151,7 +163,8 @@
             // 
             // button_proveedores
             // 
-            this.button_proveedores.Location = new System.Drawing.Point(879, 115);
+            this.button_proveedores.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button_proveedores.Location = new System.Drawing.Point(874, 115);
             this.button_proveedores.Name = "button_proveedores";
             this.button_proveedores.Size = new System.Drawing.Size(124, 71);
             this.button_proveedores.TabIndex = 10;
@@ -161,7 +174,8 @@
             // 
             // button_reporte_grupo
             // 
-            this.button_reporte_grupo.Location = new System.Drawing.Point(879, 269);
+            this.button_reporte_grupo.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button_reporte_grupo.Location = new System.Drawing.Point(874, 269);
             this.button_reporte_grupo.Name = "button_reporte_grupo";
             this.button_reporte_grupo.Size = new System.Drawing.Size(124, 71);
             this.button_reporte_grupo.TabIndex = 11;
@@ -171,6 +185,7 @@
             // 
             // button_reparacion_externa
             // 
+            this.button_reparacion_externa.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button_reparacion_externa.Location = new System.Drawing.Point(23, 269);
             this.button_reparacion_externa.Name = "button_reparacion_externa";
             this.button_reparacion_externa.Size = new System.Drawing.Size(124, 71);
@@ -181,6 +196,7 @@
             // 
             // button_reporte_equipo
             // 
+            this.button_reporte_equipo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button_reporte_equipo.Location = new System.Drawing.Point(23, 192);
             this.button_reporte_equipo.Name = "button_reporte_equipo";
             this.button_reporte_equipo.Size = new System.Drawing.Size(124, 71);
@@ -193,7 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 396);
+            this.ClientSize = new System.Drawing.Size(1022, 428);
             this.Controls.Add(this.button_reporte_equipo);
             this.Controls.Add(this.button_reparacion_externa);
             this.Controls.Add(this.button_reporte_grupo);
@@ -211,6 +227,7 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

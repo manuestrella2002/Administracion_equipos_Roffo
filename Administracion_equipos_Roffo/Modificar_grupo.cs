@@ -53,7 +53,12 @@ namespace Administracion_equipos_Roffo
                 {
                     MessageBox.Show("Error al obtener los datos del equipo: " + ex.Message);
                 }
+
+
             }
+
+            comboBox_combustible.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox_estado.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void button_guardar_cambios_Click(object sender, EventArgs e)

@@ -40,6 +40,8 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(43, 55);
             this.label1.Name = "label1";
@@ -49,6 +51,8 @@
             // 
             // textBox_nombre_grupo
             // 
+            this.textBox_nombre_grupo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_nombre_grupo.Location = new System.Drawing.Point(185, 52);
             this.textBox_nombre_grupo.Name = "textBox_nombre_grupo";
             this.textBox_nombre_grupo.ReadOnly = true;
@@ -57,6 +61,8 @@
             // 
             // label_combustible
             // 
+            this.label_combustible.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_combustible.AutoSize = true;
             this.label_combustible.Location = new System.Drawing.Point(43, 101);
             this.label_combustible.Name = "label_combustible";
@@ -66,6 +72,8 @@
             // 
             // label_estado
             // 
+            this.label_estado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_estado.AutoSize = true;
             this.label_estado.Location = new System.Drawing.Point(43, 147);
             this.label_estado.Name = "label_estado";
@@ -75,6 +83,8 @@
             // 
             // comboBox_combustible
             // 
+            this.comboBox_combustible.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox_combustible.FormattingEnabled = true;
             this.comboBox_combustible.Items.AddRange(new object[] {
             "Gasoil Premium",
@@ -86,6 +96,8 @@
             // 
             // comboBox_estado
             // 
+            this.comboBox_estado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox_estado.FormattingEnabled = true;
             this.comboBox_estado.Items.AddRange(new object[] {
             "Fuera de servicio",
@@ -97,6 +109,7 @@
             // 
             // button_guardar_cambios
             // 
+            this.button_guardar_cambios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_guardar_cambios.Location = new System.Drawing.Point(302, 193);
             this.button_guardar_cambios.Name = "button_guardar_cambios";
             this.button_guardar_cambios.Size = new System.Drawing.Size(104, 39);
@@ -107,6 +120,7 @@
             // 
             // button_cancelar
             // 
+            this.button_cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_cancelar.Location = new System.Drawing.Point(185, 193);
             this.button_cancelar.Name = "button_cancelar";
             this.button_cancelar.Size = new System.Drawing.Size(104, 39);
@@ -131,6 +145,7 @@
             this.Name = "Modificar_grupo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar grupo electrogeno";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

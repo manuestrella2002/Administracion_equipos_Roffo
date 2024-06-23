@@ -61,6 +61,9 @@ namespace Administracion_equipos_Roffo
             // Configurar la selección de filas completas
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false; // Permitir solo la selección de una fila a la vez
+            dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
         private void button_asociar_Click(object sender, EventArgs e)
@@ -116,6 +119,11 @@ namespace Administracion_equipos_Roffo
                 LoadDataGridView();
                 this.Show();
             }
+        }
+
+        private void button_volver_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

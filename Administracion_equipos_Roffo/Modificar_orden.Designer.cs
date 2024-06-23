@@ -50,6 +50,8 @@
             this.textBox_descripcion_orden.AcceptsReturn = true;
             this.textBox_descripcion_orden.AcceptsTab = true;
             this.textBox_descripcion_orden.AllowDrop = true;
+            this.textBox_descripcion_orden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_descripcion_orden.Location = new System.Drawing.Point(111, 55);
             this.textBox_descripcion_orden.Multiline = true;
             this.textBox_descripcion_orden.Name = "textBox_descripcion_orden";
@@ -75,6 +77,7 @@
             // 
             // button_guardar_cambios
             // 
+            this.button_guardar_cambios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_guardar_cambios.Location = new System.Drawing.Point(435, 281);
             this.button_guardar_cambios.Name = "button_guardar_cambios";
             this.button_guardar_cambios.Size = new System.Drawing.Size(95, 42);
@@ -85,6 +88,7 @@
             // 
             // button_cancelar
             // 
+            this.button_cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_cancelar.Location = new System.Drawing.Point(317, 281);
             this.button_cancelar.Name = "button_cancelar";
             this.button_cancelar.Size = new System.Drawing.Size(95, 42);
@@ -106,6 +110,7 @@
             this.Controls.Add(this.label_descripcion);
             this.Name = "Modificar_orden";
             this.Text = "Modificar_orden";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

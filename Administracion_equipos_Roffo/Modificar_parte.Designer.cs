@@ -43,6 +43,7 @@
             // 
             // button_cancelar
             // 
+            this.button_cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_cancelar.Location = new System.Drawing.Point(205, 194);
             this.button_cancelar.Name = "button_cancelar";
             this.button_cancelar.Size = new System.Drawing.Size(84, 38);
@@ -53,6 +54,7 @@
             // 
             // button_modificar_parte
             // 
+            this.button_modificar_parte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_modificar_parte.Location = new System.Drawing.Point(306, 194);
             this.button_modificar_parte.Name = "button_modificar_parte";
             this.button_modificar_parte.Size = new System.Drawing.Size(84, 38);
@@ -66,7 +68,7 @@
             this.textBox_descripcion.AcceptsReturn = true;
             this.textBox_descripcion.AcceptsTab = true;
             this.textBox_descripcion.AllowDrop = true;
-            this.textBox_descripcion.Location = new System.Drawing.Point(84, 136);
+            this.textBox_descripcion.Location = new System.Drawing.Point(107, 138);
             this.textBox_descripcion.Multiline = true;
             this.textBox_descripcion.Name = "textBox_descripcion";
             this.textBox_descripcion.Size = new System.Drawing.Size(205, 36);
@@ -74,7 +76,7 @@
             // 
             // contador_cantidad
             // 
-            this.contador_cantidad.Location = new System.Drawing.Point(120, 91);
+            this.contador_cantidad.Location = new System.Drawing.Point(143, 93);
             this.contador_cantidad.Name = "contador_cantidad";
             this.contador_cantidad.Size = new System.Drawing.Size(62, 20);
             this.contador_cantidad.TabIndex = 18;
@@ -82,14 +84,14 @@
             // comboBox_marca
             // 
             this.comboBox_marca.FormattingEnabled = true;
-            this.comboBox_marca.Location = new System.Drawing.Point(65, 55);
+            this.comboBox_marca.Location = new System.Drawing.Point(88, 57);
             this.comboBox_marca.Name = "comboBox_marca";
             this.comboBox_marca.Size = new System.Drawing.Size(160, 21);
             this.comboBox_marca.TabIndex = 17;
             // 
             // textBox_nombre_parte
             // 
-            this.textBox_nombre_parte.Location = new System.Drawing.Point(65, 26);
+            this.textBox_nombre_parte.Location = new System.Drawing.Point(88, 28);
             this.textBox_nombre_parte.Name = "textBox_nombre_parte";
             this.textBox_nombre_parte.Size = new System.Drawing.Size(207, 20);
             this.textBox_nombre_parte.TabIndex = 16;
@@ -97,7 +99,7 @@
             // label_Descripcion
             // 
             this.label_Descripcion.AutoSize = true;
-            this.label_Descripcion.Location = new System.Drawing.Point(12, 136);
+            this.label_Descripcion.Location = new System.Drawing.Point(35, 138);
             this.label_Descripcion.Name = "label_Descripcion";
             this.label_Descripcion.Size = new System.Drawing.Size(66, 13);
             this.label_Descripcion.TabIndex = 15;
@@ -106,7 +108,7 @@
             // label_cantidad
             // 
             this.label_cantidad.AutoSize = true;
-            this.label_cantidad.Location = new System.Drawing.Point(12, 93);
+            this.label_cantidad.Location = new System.Drawing.Point(35, 95);
             this.label_cantidad.Name = "label_cantidad";
             this.label_cantidad.Size = new System.Drawing.Size(102, 13);
             this.label_cantidad.TabIndex = 14;
@@ -115,7 +117,7 @@
             // label_marca_parte
             // 
             this.label_marca_parte.AutoSize = true;
-            this.label_marca_parte.Location = new System.Drawing.Point(12, 58);
+            this.label_marca_parte.Location = new System.Drawing.Point(35, 60);
             this.label_marca_parte.Name = "label_marca_parte";
             this.label_marca_parte.Size = new System.Drawing.Size(40, 13);
             this.label_marca_parte.TabIndex = 13;
@@ -124,7 +126,7 @@
             // label_nombre_parte
             // 
             this.label_nombre_parte.AutoSize = true;
-            this.label_nombre_parte.Location = new System.Drawing.Point(12, 29);
+            this.label_nombre_parte.Location = new System.Drawing.Point(35, 31);
             this.label_nombre_parte.Name = "label_nombre_parte";
             this.label_nombre_parte.Size = new System.Drawing.Size(47, 13);
             this.label_nombre_parte.TabIndex = 12;
@@ -147,7 +149,8 @@
             this.Controls.Add(this.label_nombre_parte);
             this.Name = "Modificar_parte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Modificar_parte";
+            this.Text = "Modificar parte";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.contador_cantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
