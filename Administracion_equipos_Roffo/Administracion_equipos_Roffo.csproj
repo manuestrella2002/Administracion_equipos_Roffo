@@ -116,6 +116,12 @@
     <Compile Include="Agregar_parte.Designer.cs">
       <DependentUpon>Agregar_parte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Agregar_proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_proveedor.Designer.cs">
+      <DependentUpon>Agregar_proveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Asociar_equipo_orden.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,12 @@
     </Compile>
     <Compile Include="Modificar_orden.Designer.cs">
       <DependentUpon>Modificar_orden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_parte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_parte.Designer.cs">
+      <DependentUpon>Modificar_parte.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Ver_equipos.cs">
@@ -180,6 +192,9 @@
     <EmbeddedResource Include="Agregar_parte.resx">
       <DependentUpon>Agregar_parte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_proveedor.resx">
+      <DependentUpon>Agregar_proveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Asociar_equipo_orden.resx">
       <DependentUpon>Asociar_equipo_orden.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modificar_orden.resx">
       <DependentUpon>Modificar_orden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_parte.resx">
+      <DependentUpon>Modificar_parte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_equipos.resx">
       <DependentUpon>Ver_equipos.cs</DependentUpon>

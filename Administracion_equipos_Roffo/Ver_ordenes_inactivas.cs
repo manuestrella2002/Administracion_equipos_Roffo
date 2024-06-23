@@ -26,7 +26,7 @@ namespace Administracion_equipos_Roffo
             string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
 
             // Define tu consulta SQL
-            string query = "SELECT ot.Id_orden, ot.Descripcion,ot.Fecha_creacion_orden, e.Nombre_equipo as Equipo_asociado, ot.Lugar_orden FROM orden_de_trabajo as ot LEFT OUTER JOIN equipo as e on ot.equipo_Id_equipo=e.Id_equipo WHERE ot.Fecha_fin_orden IS NULL  ORDER BY ot.Fecha_creacion_orden DESC";
+            string query = "SELECT ot.Id_orden, ot.Descripcion,ot.Fecha_creacion_orden,ot.Fecha_fin_orden,ot.Lugar_orden,e.Nombre_equipo as Equipo_asociado FROM orden_de_trabajo as ot LEFT OUTER JOIN equipo as e on ot.equipo_Id_equipo=e.Id_equipo WHERE ot.Fecha_fin_orden IS NOT NULL  ORDER BY ot.Fecha_creacion_orden DESC";
 
             // Crea un DataTable para contener los datos
             DataTable tabla_equipos = new DataTable();

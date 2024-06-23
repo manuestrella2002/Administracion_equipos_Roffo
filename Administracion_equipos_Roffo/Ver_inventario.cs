@@ -27,7 +27,7 @@ namespace Administracion_equipos_Roffo
             string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
 
             // Define tu consulta SQL
-            string query = "SELECT inv.Id_parte, inv.Nombre_parte, inv.Marca_parte,inv.Cantidad_disponible,inv.Descripcion,p.Nombre_proveedor as Proveedor_parte FROM inventario as inv LEFT OUTER JOIN proveedor as p on inv.proveedor_Id_proveedor = p.Id_proveedor ORDER BY inv.Nombre_parte";
+            string query = "SELECT inv.Id_parte, inv.Nombre_parte, inv.Marca_parte,inv.Cantidad_disponible,inv.Descripcion FROM inventario as inv  ORDER BY inv.Nombre_parte";
 
             // Crea un DataTable para contener los datos
             DataTable tabla_inventario = new DataTable();
@@ -85,12 +85,53 @@ namespace Administracion_equipos_Roffo
 
         private void button_modificar_parte_Click(object sender, EventArgs e)
         {
-
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                int Id_parte = int.Parse(selectedRow.Cells["Id_parte"].Value.ToString());
+                this.Hide();
+                Modificar_parte modificar_parte = new Modificar_parte(Id_parte);
+                modificar_parte.ShowDialog();
+                LoadDataGridView();
+                this.Show();
+            }
         }
 
         private void button_eliminar_parte_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DialogResult Resultado;
+                Resultado = MessageBox.Show("¿Esta seguro que quiere eliminar la parte?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (Resultado == DialogResult.Yes)
+                {
 
+
+                        DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                    int Id_parte = int.Parse(selectedRow.Cells["Id_parte"].Value.ToString());
+                    string query = "DELETE FROM inventario WHERE Id_parte = " + Id_parte.ToString();
+                    string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+
+                    using (MySqlConnection connection = new MySqlConnection(connectionString))
+                    {
+                        connection.Open();
+                        try
+                        {
+                            using (MySqlCommand command = new MySqlCommand(query, connection))
+                            {
+                                command.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error al eliminar parte de inventario: " + ex.Message);
+                            return;
+                        }
+                    }
+
+                    LoadDataGridView();
+                }
+            }
         }
     }
 }

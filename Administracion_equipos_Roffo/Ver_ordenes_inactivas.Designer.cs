@@ -46,7 +46,7 @@
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(682, 326);
+            this.dataGridView1.Size = new System.Drawing.Size(773, 326);
             this.dataGridView1.TabIndex = 2;
             // 
             // button_reabrir_orden
@@ -61,7 +61,7 @@
             // 
             // button_volver_Dashboard
             // 
-            this.button_volver_Dashboard.Location = new System.Drawing.Point(602, 356);
+            this.button_volver_Dashboard.Location = new System.Drawing.Point(693, 356);
             this.button_volver_Dashboard.Name = "button_volver_Dashboard";
             this.button_volver_Dashboard.Size = new System.Drawing.Size(102, 46);
             this.button_volver_Dashboard.TabIndex = 4;
@@ -73,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 414);
+            this.ClientSize = new System.Drawing.Size(815, 414);
             this.Controls.Add(this.button_volver_Dashboard);
             this.Controls.Add(this.button_reabrir_orden);
             this.Controls.Add(this.dataGridView1);

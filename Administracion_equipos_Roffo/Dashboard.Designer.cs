@@ -38,12 +38,16 @@
             this.button_asociar_equipo = new System.Windows.Forms.Button();
             this.button_ver_grupos = new System.Windows.Forms.Button();
             this.button_inventario = new System.Windows.Forms.Button();
+            this.button_proveedores = new System.Windows.Forms.Button();
+            this.button_reporte_grupo = new System.Windows.Forms.Button();
+            this.button_reparacion_externa = new System.Windows.Forms.Button();
+            this.button_reporte_equipo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button_ver_equipos
             // 
-            this.button_ver_equipos.Location = new System.Drawing.Point(13, 192);
+            this.button_ver_equipos.Location = new System.Drawing.Point(23, 115);
             this.button_ver_equipos.Name = "button_ver_equipos";
             this.button_ver_equipos.Size = new System.Drawing.Size(124, 71);
             this.button_ver_equipos.TabIndex = 0;
@@ -59,17 +63,17 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(175, 38);
+            this.dataGridView1.Location = new System.Drawing.Point(165, 38);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(690, 422);
+            this.dataGridView1.Size = new System.Drawing.Size(690, 302);
             this.dataGridView1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(421, 22);
+            this.label1.Location = new System.Drawing.Point(405, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 13);
             this.label1.TabIndex = 2;
@@ -77,7 +81,7 @@
             // 
             // button_ver_ordenes_inactivas
             // 
-            this.button_ver_ordenes_inactivas.Location = new System.Drawing.Point(12, 115);
+            this.button_ver_ordenes_inactivas.Location = new System.Drawing.Point(23, 38);
             this.button_ver_ordenes_inactivas.Name = "button_ver_ordenes_inactivas";
             this.button_ver_ordenes_inactivas.Size = new System.Drawing.Size(124, 71);
             this.button_ver_ordenes_inactivas.TabIndex = 3;
@@ -87,7 +91,7 @@
             // 
             // button_cerrar_orden
             // 
-            this.button_cerrar_orden.Location = new System.Drawing.Point(774, 476);
+            this.button_cerrar_orden.Location = new System.Drawing.Point(763, 346);
             this.button_cerrar_orden.Name = "button_cerrar_orden";
             this.button_cerrar_orden.Size = new System.Drawing.Size(93, 44);
             this.button_cerrar_orden.TabIndex = 4;
@@ -97,9 +101,9 @@
             // 
             // button_nueva_orden
             // 
-            this.button_nueva_orden.Location = new System.Drawing.Point(13, 38);
+            this.button_nueva_orden.Location = new System.Drawing.Point(250, 346);
             this.button_nueva_orden.Name = "button_nueva_orden";
-            this.button_nueva_orden.Size = new System.Drawing.Size(124, 71);
+            this.button_nueva_orden.Size = new System.Drawing.Size(93, 44);
             this.button_nueva_orden.TabIndex = 5;
             this.button_nueva_orden.Text = "Nueva Orden";
             this.button_nueva_orden.UseVisualStyleBackColor = true;
@@ -107,7 +111,7 @@
             // 
             // button_modificar_orden
             // 
-            this.button_modificar_orden.Location = new System.Drawing.Point(655, 476);
+            this.button_modificar_orden.Location = new System.Drawing.Point(349, 346);
             this.button_modificar_orden.Name = "button_modificar_orden";
             this.button_modificar_orden.Size = new System.Drawing.Size(93, 44);
             this.button_modificar_orden.TabIndex = 6;
@@ -117,7 +121,7 @@
             // 
             // button_asociar_equipo
             // 
-            this.button_asociar_equipo.Location = new System.Drawing.Point(531, 476);
+            this.button_asociar_equipo.Location = new System.Drawing.Point(571, 346);
             this.button_asociar_equipo.Name = "button_asociar_equipo";
             this.button_asociar_equipo.Size = new System.Drawing.Size(93, 44);
             this.button_asociar_equipo.TabIndex = 7;
@@ -127,7 +131,7 @@
             // 
             // button_ver_grupos
             // 
-            this.button_ver_grupos.Location = new System.Drawing.Point(13, 346);
+            this.button_ver_grupos.Location = new System.Drawing.Point(879, 192);
             this.button_ver_grupos.Name = "button_ver_grupos";
             this.button_ver_grupos.Size = new System.Drawing.Size(124, 71);
             this.button_ver_grupos.TabIndex = 8;
@@ -137,19 +141,63 @@
             // 
             // button_inventario
             // 
-            this.button_inventario.Location = new System.Drawing.Point(13, 269);
+            this.button_inventario.Location = new System.Drawing.Point(879, 38);
             this.button_inventario.Name = "button_inventario";
             this.button_inventario.Size = new System.Drawing.Size(124, 71);
             this.button_inventario.TabIndex = 9;
-            this.button_inventario.Text = "Ver inventario partes";
+            this.button_inventario.Text = "Inventario";
             this.button_inventario.UseVisualStyleBackColor = true;
             this.button_inventario.Click += new System.EventHandler(this.button_inventario_Click);
+            // 
+            // button_proveedores
+            // 
+            this.button_proveedores.Location = new System.Drawing.Point(879, 115);
+            this.button_proveedores.Name = "button_proveedores";
+            this.button_proveedores.Size = new System.Drawing.Size(124, 71);
+            this.button_proveedores.TabIndex = 10;
+            this.button_proveedores.Text = "Proveedores";
+            this.button_proveedores.UseVisualStyleBackColor = true;
+            this.button_proveedores.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button_reporte_grupo
+            // 
+            this.button_reporte_grupo.Location = new System.Drawing.Point(879, 269);
+            this.button_reporte_grupo.Name = "button_reporte_grupo";
+            this.button_reporte_grupo.Size = new System.Drawing.Size(124, 71);
+            this.button_reporte_grupo.TabIndex = 11;
+            this.button_reporte_grupo.Text = "Reportes grupos electrogenos";
+            this.button_reporte_grupo.UseVisualStyleBackColor = true;
+            this.button_reporte_grupo.Click += new System.EventHandler(this.button_reporte_grupo_Click);
+            // 
+            // button_reparacion_externa
+            // 
+            this.button_reparacion_externa.Location = new System.Drawing.Point(23, 269);
+            this.button_reparacion_externa.Name = "button_reparacion_externa";
+            this.button_reparacion_externa.Size = new System.Drawing.Size(124, 71);
+            this.button_reparacion_externa.TabIndex = 12;
+            this.button_reparacion_externa.Text = "Reparación externa";
+            this.button_reparacion_externa.UseVisualStyleBackColor = true;
+            this.button_reparacion_externa.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button_reporte_equipo
+            // 
+            this.button_reporte_equipo.Location = new System.Drawing.Point(23, 192);
+            this.button_reporte_equipo.Name = "button_reporte_equipo";
+            this.button_reporte_equipo.Size = new System.Drawing.Size(124, 71);
+            this.button_reporte_equipo.TabIndex = 13;
+            this.button_reporte_equipo.Text = "Reportes equipos";
+            this.button_reporte_equipo.UseVisualStyleBackColor = true;
+            this.button_reporte_equipo.Click += new System.EventHandler(this.button_reporte_equipo_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 532);
+            this.ClientSize = new System.Drawing.Size(1022, 396);
+            this.Controls.Add(this.button_reporte_equipo);
+            this.Controls.Add(this.button_reparacion_externa);
+            this.Controls.Add(this.button_reporte_grupo);
+            this.Controls.Add(this.button_proveedores);
             this.Controls.Add(this.button_inventario);
             this.Controls.Add(this.button_ver_grupos);
             this.Controls.Add(this.button_asociar_equipo);
@@ -180,5 +228,9 @@
         private System.Windows.Forms.Button button_asociar_equipo;
         private System.Windows.Forms.Button button_ver_grupos;
         private System.Windows.Forms.Button button_inventario;
+        private System.Windows.Forms.Button button_proveedores;
+        private System.Windows.Forms.Button button_reporte_grupo;
+        private System.Windows.Forms.Button button_reparacion_externa;
+        private System.Windows.Forms.Button button_reporte_equipo;
     }
 }
