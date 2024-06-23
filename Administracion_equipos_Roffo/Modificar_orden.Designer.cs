@@ -33,6 +33,7 @@
             this.comboBox_lugar_orden = new System.Windows.Forms.ComboBox();
             this.label_lugar = new System.Windows.Forms.Label();
             this.button_guardar_cambios = new System.Windows.Forms.Button();
+            this.button_cancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_descripcion
@@ -82,11 +83,22 @@
             this.button_guardar_cambios.UseVisualStyleBackColor = true;
             this.button_guardar_cambios.Click += new System.EventHandler(this.button_guardar_cambios_Click);
             // 
+            // button_cancelar
+            // 
+            this.button_cancelar.Location = new System.Drawing.Point(317, 281);
+            this.button_cancelar.Name = "button_cancelar";
+            this.button_cancelar.Size = new System.Drawing.Size(95, 42);
+            this.button_cancelar.TabIndex = 8;
+            this.button_cancelar.Text = "Cancelar";
+            this.button_cancelar.UseVisualStyleBackColor = true;
+            this.button_cancelar.Click += new System.EventHandler(this.button_cancelar_Click);
+            // 
             // Modificar_orden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 335);
+            this.Controls.Add(this.button_cancelar);
             this.Controls.Add(this.button_guardar_cambios);
             this.Controls.Add(this.comboBox_lugar_orden);
             this.Controls.Add(this.label_lugar);
@@ -106,5 +118,6 @@
         private System.Windows.Forms.ComboBox comboBox_lugar_orden;
         private System.Windows.Forms.Label label_lugar;
         private System.Windows.Forms.Button button_guardar_cambios;
+        private System.Windows.Forms.Button button_cancelar;
     }
 }

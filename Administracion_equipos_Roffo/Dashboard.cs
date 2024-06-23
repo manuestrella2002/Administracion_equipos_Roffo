@@ -209,7 +209,11 @@ namespace Administracion_equipos_Roffo
 
         private void button_reporte_grupo_Click(object sender, EventArgs e)
         {
-
+            Ver_reportes_grupos ver_Reportes_Grupos = new Ver_reportes_grupos();
+            this.Hide();
+            ver_Reportes_Grupos.ShowDialog();
+            LoadDataGridView();
+            this.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

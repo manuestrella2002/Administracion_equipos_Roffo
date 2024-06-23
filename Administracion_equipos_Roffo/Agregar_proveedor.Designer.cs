@@ -172,6 +172,7 @@
             this.Controls.Add(this.textBox_nombre_prov);
             this.Controls.Add(this.label_nombre_prov);
             this.Name = "Agregar_proveedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar nuevo proveedor";
             this.ResumeLayout(false);
             this.PerformLayout();

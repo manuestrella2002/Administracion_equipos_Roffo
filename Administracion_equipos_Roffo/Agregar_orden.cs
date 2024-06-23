@@ -104,5 +104,15 @@ namespace Administracion_equipos_Roffo
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult Resultado;
+            Resultado = MessageBox.Show("¿Esta seguro que quiere cancelar la orden?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (Resultado == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

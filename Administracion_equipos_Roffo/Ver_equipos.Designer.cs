@@ -99,6 +99,7 @@
             this.Controls.Add(this.button_agregar_equipo);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Ver_equipos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Equipos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

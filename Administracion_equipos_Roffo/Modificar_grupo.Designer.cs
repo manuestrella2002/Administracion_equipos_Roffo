@@ -35,6 +35,7 @@
             this.comboBox_combustible = new System.Windows.Forms.ComboBox();
             this.comboBox_estado = new System.Windows.Forms.ComboBox();
             this.button_guardar_cambios = new System.Windows.Forms.Button();
+            this.button_cancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -104,11 +105,22 @@
             this.button_guardar_cambios.UseVisualStyleBackColor = true;
             this.button_guardar_cambios.Click += new System.EventHandler(this.button_guardar_cambios_Click);
             // 
+            // button_cancelar
+            // 
+            this.button_cancelar.Location = new System.Drawing.Point(185, 193);
+            this.button_cancelar.Name = "button_cancelar";
+            this.button_cancelar.Size = new System.Drawing.Size(104, 39);
+            this.button_cancelar.TabIndex = 7;
+            this.button_cancelar.Text = "Cancelar";
+            this.button_cancelar.UseVisualStyleBackColor = true;
+            this.button_cancelar.Click += new System.EventHandler(this.button_cancelar_Click);
+            // 
             // Modificar_grupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(418, 244);
+            this.Controls.Add(this.button_cancelar);
             this.Controls.Add(this.button_guardar_cambios);
             this.Controls.Add(this.comboBox_estado);
             this.Controls.Add(this.comboBox_combustible);
@@ -117,6 +129,7 @@
             this.Controls.Add(this.textBox_nombre_grupo);
             this.Controls.Add(this.label1);
             this.Name = "Modificar_grupo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar grupo electrogeno";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -132,5 +145,6 @@
         private System.Windows.Forms.ComboBox comboBox_combustible;
         private System.Windows.Forms.ComboBox comboBox_estado;
         private System.Windows.Forms.Button button_guardar_cambios;
+        private System.Windows.Forms.Button button_cancelar;
     }
 }

@@ -77,13 +77,19 @@ namespace Administracion_equipos_Roffo
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-                int Id_Equipo = int.Parse(selectedRow.Cells["Id_equipo"].Value.ToString());
-                this.Hide();
-                Modificar_equipo modificar_Equipo = new Modificar_equipo(Id_Equipo);
-                modificar_Equipo.ShowDialog();
-                LoadDataGridView();
-                this.Show();
+                DialogResult Resultado;
+                Resultado = MessageBox.Show("¿Esta seguro que quiere modificar este equipo?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (Resultado == DialogResult.Yes)
+                {
+                    DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                    int Id_Equipo = int.Parse(selectedRow.Cells["Id_equipo"].Value.ToString());
+                    this.Hide();
+                    Modificar_equipo modificar_Equipo = new Modificar_equipo(Id_Equipo);
+                    modificar_Equipo.ShowDialog();
+                    LoadDataGridView();
+                    this.Show();
+                }
+             
             }
         }
 

@@ -209,6 +209,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button_ver_equipos);
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

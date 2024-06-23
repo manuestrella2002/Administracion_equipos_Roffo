@@ -75,6 +75,7 @@
             this.Controls.Add(this.button_asociar);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Asociar_equipo_orden";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asociar_equipo_orden";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

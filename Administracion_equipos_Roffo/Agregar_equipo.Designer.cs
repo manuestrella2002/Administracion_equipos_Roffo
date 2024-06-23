@@ -45,6 +45,7 @@
             this.button_guardar_equipo = new System.Windows.Forms.Button();
             this.dateTime_fecha_fab = new System.Windows.Forms.DateTimePicker();
             this.dateTime_fecha_adq = new System.Windows.Forms.DateTimePicker();
+            this.button_cancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_nombre_equipo
@@ -170,9 +171,9 @@
             // 
             // button_guardar_equipo
             // 
-            this.button_guardar_equipo.Location = new System.Drawing.Point(374, 296);
+            this.button_guardar_equipo.Location = new System.Drawing.Point(374, 282);
             this.button_guardar_equipo.Name = "button_guardar_equipo";
-            this.button_guardar_equipo.Size = new System.Drawing.Size(100, 23);
+            this.button_guardar_equipo.Size = new System.Drawing.Size(100, 37);
             this.button_guardar_equipo.TabIndex = 16;
             this.button_guardar_equipo.Text = "Guardar equipo";
             this.button_guardar_equipo.UseVisualStyleBackColor = true;
@@ -198,11 +199,22 @@
             this.dateTime_fecha_adq.Size = new System.Drawing.Size(138, 20);
             this.dateTime_fecha_adq.TabIndex = 18;
             // 
+            // button_cancelar
+            // 
+            this.button_cancelar.Location = new System.Drawing.Point(259, 282);
+            this.button_cancelar.Name = "button_cancelar";
+            this.button_cancelar.Size = new System.Drawing.Size(100, 37);
+            this.button_cancelar.TabIndex = 19;
+            this.button_cancelar.Text = "Cancelar";
+            this.button_cancelar.UseVisualStyleBackColor = true;
+            this.button_cancelar.Click += new System.EventHandler(this.button_cancelar_Click);
+            // 
             // Agregar_equipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 331);
+            this.Controls.Add(this.button_cancelar);
             this.Controls.Add(this.dateTime_fecha_adq);
             this.Controls.Add(this.dateTime_fecha_fab);
             this.Controls.Add(this.button_guardar_equipo);
@@ -221,6 +233,7 @@
             this.Controls.Add(this.textBox_nombre_equipo);
             this.Controls.Add(this.label_nombre_equipo);
             this.Name = "Agregar_equipo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Equipo";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -246,5 +259,6 @@
         private System.Windows.Forms.Button button_guardar_equipo;
         private System.Windows.Forms.DateTimePicker dateTime_fecha_fab;
         private System.Windows.Forms.DateTimePicker dateTime_fecha_adq;
+        private System.Windows.Forms.Button button_cancelar;
     }
 }

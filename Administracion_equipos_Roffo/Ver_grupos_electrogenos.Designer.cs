@@ -75,6 +75,7 @@
             this.Controls.Add(this.button_volver_dashboard);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Ver_grupos_electrogenos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grupos Electrogenos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

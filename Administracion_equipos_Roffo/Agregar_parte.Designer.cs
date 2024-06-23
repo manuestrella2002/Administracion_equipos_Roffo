@@ -147,6 +147,7 @@
             this.Controls.Add(this.label_marca_parte);
             this.Controls.Add(this.label_nombre_parte);
             this.Name = "Agregar_parte";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar parte";
             ((System.ComponentModel.ISupportInitialize)(this.contador_cantidad)).EndInit();
             this.ResumeLayout(false);

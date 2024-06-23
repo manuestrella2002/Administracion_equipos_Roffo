@@ -78,6 +78,7 @@
             this.Controls.Add(this.button_reabrir_orden);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Ver_ordenes_inactivas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ordenes inactivas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

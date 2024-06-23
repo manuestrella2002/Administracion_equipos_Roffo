@@ -45,6 +45,7 @@
             this.textBox_nombre_equipo = new System.Windows.Forms.TextBox();
             this.label_nombre_equipo = new System.Windows.Forms.Label();
             this.button_Guardar_cambios = new System.Windows.Forms.Button();
+            this.button_cancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dateTime_fecha_adq
@@ -189,19 +190,30 @@
             // 
             // button_Guardar_cambios
             // 
-            this.button_Guardar_cambios.Location = new System.Drawing.Point(336, 277);
+            this.button_Guardar_cambios.Location = new System.Drawing.Point(336, 290);
             this.button_Guardar_cambios.Name = "button_Guardar_cambios";
-            this.button_Guardar_cambios.Size = new System.Drawing.Size(104, 23);
+            this.button_Guardar_cambios.Size = new System.Drawing.Size(104, 42);
             this.button_Guardar_cambios.TabIndex = 35;
             this.button_Guardar_cambios.Text = "Guardar cambios";
             this.button_Guardar_cambios.UseVisualStyleBackColor = true;
             this.button_Guardar_cambios.Click += new System.EventHandler(this.button_Guardar_cambios_Click);
             // 
+            // button_cancelar
+            // 
+            this.button_cancelar.Location = new System.Drawing.Point(212, 292);
+            this.button_cancelar.Name = "button_cancelar";
+            this.button_cancelar.Size = new System.Drawing.Size(104, 42);
+            this.button_cancelar.TabIndex = 36;
+            this.button_cancelar.Text = "Cancelar";
+            this.button_cancelar.UseVisualStyleBackColor = true;
+            this.button_cancelar.Click += new System.EventHandler(this.button_cancelar_Click);
+            // 
             // Modificar_equipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 312);
+            this.ClientSize = new System.Drawing.Size(452, 346);
+            this.Controls.Add(this.button_cancelar);
             this.Controls.Add(this.button_Guardar_cambios);
             this.Controls.Add(this.dateTime_fecha_adq);
             this.Controls.Add(this.dateTime_fecha_fab);
@@ -220,6 +232,7 @@
             this.Controls.Add(this.textBox_nombre_equipo);
             this.Controls.Add(this.label_nombre_equipo);
             this.Name = "Modificar_equipo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar_equipo";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -245,5 +258,6 @@
         private System.Windows.Forms.TextBox textBox_nombre_equipo;
         private System.Windows.Forms.Label label_nombre_equipo;
         private System.Windows.Forms.Button button_Guardar_cambios;
+        private System.Windows.Forms.Button button_cancelar;
     }
 }
