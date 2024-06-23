@@ -121,16 +121,16 @@ DROP TABLE IF EXISTS `inventario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `inventario` (
-  `Id_parte` int NOT NULL,
+  `Id_parte` int NOT NULL AUTO_INCREMENT,
   `Nombre_parte` varchar(45) NOT NULL,
   `Marca_parte` varchar(45) DEFAULT NULL,
   `Cantidad_disponible` int NOT NULL,
   `Descripcion` varchar(2000) DEFAULT NULL,
-  `proveedor_Id_proveedor` int NOT NULL,
+  `proveedor_Id_proveedor` int DEFAULT NULL,
   PRIMARY KEY (`Id_parte`),
   KEY `fk_inventario_proveedor1_idx` (`proveedor_Id_proveedor`),
   CONSTRAINT `fk_inventario_proveedor1` FOREIGN KEY (`proveedor_Id_proveedor`) REFERENCES `proveedor` (`Id_proveedor`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -139,7 +139,7 @@ CREATE TABLE `inventario` (
 
 LOCK TABLES `inventario` WRITE;
 /*!40000 ALTER TABLE `inventario` DISABLE KEYS */;
-INSERT INTO `inventario` VALUES (1,'Resistor 2k2','Texas Instruments',5,NULL,21),(2,'Capacitor 30uF','Intel',1,NULL,21),(3,'Transistor PNP','Analog Devices',8,NULL,21),(4,'Diodo 1N4007','Microchip',6,NULL,21),(5,'LED azul','STMicroelectronics',9,NULL,21),(6,'Inductor','NXP',5,NULL,21),(7,'Transformador 9v220v','Infineon',10,NULL,21),(8,'Circuito integrado','Toshiba',4,NULL,21),(9,'Potenciometro 330k','ON Semiconductor',4,NULL,21),(10,'Rele 6 contactos','Vishay',6,NULL,21),(11,'Fusible 3A','Maxim Integrated',3,NULL,21),(12,'Interruptor','Renesas',8,NULL,21),(13,'Conector','Fairchild',7,NULL,21),(14,'Batería','Samsung',5,NULL,21),(15,'Antena','Panasonic',6,NULL,21),(16,'Cristal oscilador 30 MHz','Sony',4,NULL,21),(17,'Microcontrolador PIC16F84','Philips',3,NULL,21),(18,'Display de 7 segmentos','Broadcom',1,NULL,21),(19,'Sensor agua','Xilinx',7,NULL,21),(20,'Memoria EEPROM','Rohm',5,NULL,21);
+INSERT INTO `inventario` VALUES (1,'Resistor 2k2','Texas Instruments',5,NULL,21),(2,'Capacitor 30uF','Intel',1,NULL,21),(3,'Transistor PNP','Analog Devices',8,NULL,21),(4,'Diodo 1N4007','Microchip',6,NULL,21),(5,'LED azul','STMicroelectronics',9,NULL,21),(6,'Inductor','NXP',5,NULL,21),(7,'Transformador 9v220v','Infineon',10,NULL,21),(8,'Circuito integrado','Toshiba',4,NULL,21),(9,'Potenciometro 330k','ON Semiconductor',4,NULL,21),(10,'Rele 6 contactos','Vishay',6,NULL,21),(11,'Fusible 3A','Maxim Integrated',3,NULL,21),(12,'Interruptor','Renesas',8,NULL,21),(13,'Conector','Fairchild',7,NULL,21),(14,'Batería','Samsung',5,NULL,21),(15,'Antena','Panasonic',6,NULL,21),(16,'Cristal oscilador 30 MHz','Sony',4,NULL,21),(17,'Microcontrolador PIC16F84','Philips',3,NULL,21),(18,'Display de 7 segmentos','Broadcom',1,NULL,21),(19,'Sensor agua','Xilinx',7,NULL,21),(20,'Memoria EEPROM','Rohm',5,NULL,21),(21,'tuerca',NULL,2,NULL,NULL),(22,'perno',NULL,1,NULL,NULL),(23,'perno2',NULL,1,NULL,NULL),(24,'prueba',NULL,2,NULL,NULL);
 /*!40000 ALTER TABLE `inventario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -377,4 +377,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-22 23:24:09
+-- Dump completed on 2024-06-23  0:44:32
