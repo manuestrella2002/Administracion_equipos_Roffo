@@ -35,7 +35,7 @@ CREATE TABLE `equipo` (
   `Ubicacion_equipo` varchar(45) DEFAULT NULL,
   `Status_equipo` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`Id_equipo`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `equipo` (
 
 LOCK TABLES `equipo` WRITE;
 /*!40000 ALTER TABLE `equipo` DISABLE KEYS */;
-INSERT INTO `equipo` VALUES (1,'Electrocardiografo','Modelo A','Siemens','7542','2024-02-03 09:42:30','2024-01-23 18:09:24','En oficina','Fuera de servicio'),(2,'Desfibrilador','Modelo B','GE Healthcare','7854','2023-12-28 17:34:13','2024-01-17 01:08:30','Investigaciones','Fuera de servicio'),(3,'Ecografo','Modelo C','Philips','1861','2023-11-01 21:33:22','2024-01-16 18:24:28','En oficina','Fuera de servicio'),(4,'Respirador','Modelo D','Toshiba Medical Systems','7994','2024-05-16 23:08:39','2024-01-16 21:45:16','Investigaciones','Operativo'),(5,'Monitor multiparametrico','Modelo E','Hitachi Medical Systems','3480','2024-01-13 14:47:25','2024-01-20 05:26:52','En oficina','Fuera de servicio'),(6,'Bomba de infusion','Modelo F','Fujifilm Medical Systems','1262','2024-03-05 23:46:49','2024-01-07 14:36:08','Imagenes','Operativo'),(7,'Analizador de gases en sangre','Modelo G','Shimadzu Medical Systems','4852','2024-03-24 20:23:12','2024-01-04 07:27:48','En oficina','Operativo'),(8,'Electroencefalografo','Modelo H','Canon Medical Systems','8202','2024-03-17 14:18:12','2024-01-20 00:39:48','Investigaciones','Fuera de servicio'),(9,'Tubo rayos x','Modelo I','Mindray','4901','2023-09-14 02:56:05','2024-01-01 06:09:40','Quirofano','Fuera de servicio'),(10,'Bobina magnetica','Modelo J','Hologic','3509','2023-11-23 12:08:26','2024-01-15 18:36:07','En oficina','Fuera de servicio'),(11,'Endoscopio','Modelo K','Karl Storz','8704','2023-11-12 21:57:48','2024-01-07 05:52:05','Imagenes','Fuera de servicio'),(12,'Lampara quirurgica','Modelo L','Stryker','7086','2024-01-26 13:27:22','2024-01-19 02:02:59','En oficina','Fuera de servicio'),(13,'Camara hiperbarica','Modelo M','Olympus Medical','9250','2024-06-05 00:51:24','2024-01-25 14:29:12','Imagenes','Fuera de servicio'),(14,'Maquina de anestesia','Modelo N','Varian Medical Systems','9177','2023-10-05 21:51:44','2024-01-16 17:29:11','En oficina','Fuera de servicio'),(15,'Doppler vascular','Modelo O','Elekta','9178','2023-06-28 09:52:56','2024-01-23 00:56:03','En oficina','Operativo'),(16,'Oftalmoscopio','Modelo P','Zimmer Biomet','9751','2024-03-19 15:21:26','2024-01-29 04:53:00','Quirofano','Fuera de servicio'),(17,'Audiometro','Modelo Q','Boston Scientific','7992','2023-12-26 23:17:59','2024-01-16 02:24:05','Quirofano','Fuera de servicio'),(18,'Holter','Modelo R','Medtronic','7335','2024-04-16 10:41:35','2024-01-03 10:27:14','Quirofano','Fuera de servicio'),(19,'Laser quirurgico','Modelo S','Abbott Laboratories','5536','2023-11-07 22:51:02','2024-01-14 18:03:33','En oficina','Fuera de servicio'),(20,'Estimulador neuromuscular','Modelo T','Roche Diagnostics','7081','2023-07-02 10:45:32','2024-01-19 19:12:47','En oficina','Fuera de servicio'),(21,'Neuralizador','sjds','GE Healthcare','20452','2024-06-21 21:17:46','2024-06-21 21:17:46','En oficina','Operativo'),(22,'prueba2',NULL,NULL,NULL,'2024-06-21 21:34:48','2024-06-21 21:34:48',NULL,NULL),(23,'pruebads',NULL,NULL,NULL,'2024-06-21 21:36:01','2024-06-21 21:36:01',NULL,NULL),(24,'Prueba32',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(25,'Nebulizador adulto','DES','GE Healthcare','2415','2024-06-22 02:28:46','2024-06-22 02:28:46','Investigaciones','Operativo'),(26,'Miografo','cdre','Varian Medical Systems','52145','2024-06-22 01:38:18','2024-06-22 01:38:18','Investigaciones','Operativo'),(27,'Nebulizador neonatal','dre','Philips','1425','2024-06-22 01:54:45','2024-06-22 01:54:45','Investigaciones','Operativo');
+INSERT INTO `equipo` VALUES (1,'Electrocardiografo','Modelo GH','Elekta','7542','2024-02-03 09:42:30','2024-01-23 18:09:24','En oficina','Operativo'),(3,'Ecografo','Modelo C','Philips','1861','2023-11-01 21:33:22','2024-01-16 18:24:28','En oficina','Fuera de servicio'),(4,'Respirador','Modelo D','Toshiba Medical Systems','7994','2024-05-16 23:08:39','2024-01-16 21:45:16','Investigaciones','Operativo'),(5,'Monitor multiparametrico','Modelo E','Hitachi Medical Systems','3480','2024-01-13 14:47:25','2024-01-20 05:26:52','En oficina','Fuera de servicio'),(6,'Bomba de infusion','Modelo F','Fujifilm Medical Systems','1262','2024-03-05 23:46:49','2024-01-07 14:36:08','Imagenes','Operativo'),(7,'Analizador de gases en sangre','Modelo G','Shimadzu Medical Systems','4852','2024-03-24 20:23:12','2024-01-04 07:27:48','En oficina','Operativo'),(8,'Electroencefalografo','Modelo H','Canon Medical Systems','8202','2024-03-17 14:18:12','2024-01-20 00:39:48','Investigaciones','Fuera de servicio'),(9,'Tubo rayos x','Modelo I','Mindray','4901','2023-09-14 02:56:05','2024-01-01 06:09:40','Quirofano','Fuera de servicio'),(10,'Bobina magnetica','Modelo J','Hologic','3509','2023-11-23 12:08:26','2024-01-15 18:36:07','En oficina','Fuera de servicio'),(11,'Endoscopio','Modelo K','Karl Storz','8704','2023-11-12 21:57:48','2024-01-07 05:52:05','Imagenes','Fuera de servicio'),(12,'Lampara quirurgica','Modelo L','Stryker','7086','2024-01-26 13:27:22','2024-01-19 02:02:59','En oficina','Fuera de servicio'),(13,'Camara hiperbarica','Modelo M','Olympus Medical','9250','2024-06-05 00:51:24','2024-01-25 14:29:12','Imagenes','Fuera de servicio'),(14,'Maquina de anestesia','Modelo N','Varian Medical Systems','9177','2023-10-05 21:51:44','2024-01-16 17:29:11','En oficina','Fuera de servicio'),(15,'Doppler vascular','Modelo O','Elekta','9178','2023-06-28 09:52:56','2024-01-23 00:56:03','En oficina','Operativo'),(16,'Oftalmoscopio','Modelo P','Zimmer Biomet','9751','2024-03-19 15:21:26','2024-01-29 04:53:00','Quirofano','Fuera de servicio'),(17,'Audiometro','Modelo Q','Boston Scientific','7992','2023-12-26 23:17:59','2024-01-16 02:24:05','Quirofano','Fuera de servicio'),(18,'Holter','Modelo R','Medtronic','7335','2024-04-16 10:41:35','2024-01-03 10:27:14','Quirofano','Fuera de servicio'),(19,'Laser quirurgico','Modelo S','Abbott Laboratories','5536','2023-11-07 22:51:02','2024-01-14 18:03:33','En oficina','Fuera de servicio'),(20,'Estimulador neuromuscular','Modelo T','Roche Diagnostics','7081','2023-07-02 10:45:32','2024-01-19 19:12:47','En oficina','Fuera de servicio'),(29,'Camara hiperbarica','DCF','Toshiba Medical Systems','569','2024-06-22 18:14:17','2024-06-22 18:14:17','Imagenes','Operativo'),(31,'Tensiometro','20','Coronet','3568','2024-06-22 18:32:20','2024-06-22 18:32:20','En oficina','Fuera de servicio');
 /*!40000 ALTER TABLE `equipo` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -67,6 +67,25 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `equipo_BEFORE_DELETE` BEFORE DELETE ON `equipo` FOR EACH ROW BEGIN
+    UPDATE orden_de_trabajo
+    SET equipo_Id_equipo = NULL
+    WHERE equipo_Id_equipo = OLD.Id_equipo;
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Table structure for table `grupo_electrogeno`
@@ -79,6 +98,7 @@ CREATE TABLE `grupo_electrogeno` (
   `Id_grupo` int NOT NULL AUTO_INCREMENT,
   `Nombre_grupo` varchar(45) NOT NULL,
   `Status_grupo` varchar(45) NOT NULL,
+  `Combustible_grupo` varchar(45) NOT NULL,
   PRIMARY KEY (`Id_grupo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -89,7 +109,7 @@ CREATE TABLE `grupo_electrogeno` (
 
 LOCK TABLES `grupo_electrogeno` WRITE;
 /*!40000 ALTER TABLE `grupo_electrogeno` DISABLE KEYS */;
-INSERT INTO `grupo_electrogeno` VALUES (1,'Resonador','Operativo'),(2,'Ultrafreezers','Fuera de servicio'),(3,'Farmacia','Fuera de servicio'),(4,'Cirugia','Operativo'),(5,'UTI','Operativo'),(6,'Bioterio','Operativo'),(7,'Hemoterapia','Operativo');
+INSERT INTO `grupo_electrogeno` VALUES (1,'Bioterio','Operativo','Gasoil Premium'),(2,'Resonador','Operativo','Gasoil Comun'),(3,'Ultrafreezers','Fuera de Servicio','Gasoil Premium'),(4,'Patologia','Operativo','Gasoil Comun'),(5,'Hemoterapia','Operativo','Gasoil Premium'),(6,'UTI','Operativo','Gasoil Comun'),(7,'Cirugia','Fuera de Servicio','Gasoil Premium');
 /*!40000 ALTER TABLE `grupo_electrogeno` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -136,10 +156,11 @@ CREATE TABLE `orden_de_trabajo` (
   `Fecha_creacion_orden` datetime NOT NULL,
   `Fecha_fin_orden` datetime DEFAULT NULL,
   `equipo_Id_equipo` int DEFAULT NULL,
+  `Lugar_orden` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`Id_orden`),
   KEY `fk_orden_de_trabajo_equipo1_idx` (`equipo_Id_equipo`),
   CONSTRAINT `fk_orden_de_trabajo_equipo1` FOREIGN KEY (`equipo_Id_equipo`) REFERENCES `equipo` (`Id_equipo`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -148,7 +169,7 @@ CREATE TABLE `orden_de_trabajo` (
 
 LOCK TABLES `orden_de_trabajo` WRITE;
 /*!40000 ALTER TABLE `orden_de_trabajo` DISABLE KEYS */;
-INSERT INTO `orden_de_trabajo` VALUES (1,'Actualizacion de software en respirador automatico','2024-03-22 12:20:37',NULL,NULL),(2,'Revision y mantenimiento preventivo de electrocardiografo','2024-05-19 08:42:54',NULL,NULL),(3,'Actualizacion de firmware en maquina de anestesia','2024-04-30 17:54:41',NULL,NULL),(4,'Mantenimiento preventivo en resonancia magnetica (RM)','2024-01-21 22:49:30',NULL,NULL),(5,'Inspeccion y limpieza profunda de endoscopio flexible','2023-10-23 01:21:24',NULL,NULL),(6,'Mantenimiento preventivo en resonancia magnetica (RM)','2024-06-05 08:45:46',NULL,NULL),(7,'Diagnostico y reparacion de problema en lampara quirurgica','2024-02-25 05:01:01',NULL,NULL),(8,'Evaluacion de estado en tomografo computarizado (CT)','2023-12-23 06:30:55',NULL,NULL),(9,'Inspeccion de sistema de iluminacion en quirofano','2024-06-05 21:38:35',NULL,NULL),(10,'Recambio de piezas en bomba de infusion','2023-10-31 09:04:43',NULL,NULL),(11,'Reparacion de falla en ecografo abdominal','2023-11-19 20:06:12',NULL,NULL),(12,'Evaluacion de estado en tomografo computarizado (CT)','2023-10-23 07:20:58',NULL,NULL),(13,'Limpieza y desinfeccion de oftalmoscopio digital','2024-03-17 16:17:25',NULL,NULL),(14,'Instalacion de nuevo sensor Doppler vascular','2023-11-03 19:40:45',NULL,NULL),(15,'Recambio de piezas en bomba de infusion','2024-06-12 09:21:44',NULL,NULL),(16,'Reparacion de falla en ecografo abdominal','2023-12-15 17:58:49',NULL,NULL),(17,'Inspeccion y limpieza profunda de endoscopio flexible','2024-02-26 17:29:06',NULL,NULL),(18,'Actualizacion de firmware en maquina de anestesia','2023-10-30 22:15:12',NULL,NULL),(19,'Evaluacion de rendimiento en analizador de gases en sangre','2024-02-12 13:53:39',NULL,NULL),(20,'Mantenimiento preventivo en resonancia magnetica (RM)','2024-01-14 14:36:55',NULL,NULL);
+INSERT INTO `orden_de_trabajo` VALUES (1,'Evaluacion de estado en tomografo computarizado (CT)','2024-04-03 15:09:11',NULL,NULL,'Bioterio'),(2,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-05-20 17:26:23',NULL,NULL,'Imagenes'),(3,'Diagnostico y reparacion de problema en lampara quirurgica','2024-04-03 22:41:52',NULL,8,'Quirofano'),(4,'Sincronizacion y ajuste en equipo de terapia laser','2023-12-30 09:17:09',NULL,NULL,'UTI'),(5,'Instalacion de nuevo sensor Doppler vascular','2024-05-03 15:04:50',NULL,NULL,'UTI'),(6,'Sustitucion de baterias en desfibrilador externo','2024-03-12 19:38:50',NULL,NULL,'UTI'),(7,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-01-05 03:19:01',NULL,NULL,'UTI'),(8,'Revision y mantenimiento preventivo de electrocardiografo','2024-02-12 19:16:22',NULL,NULL,'UTI'),(9,'Reparacion de falla en ecografo abdominal','2023-12-22 23:25:34',NULL,NULL,'Imagenes'),(10,'Recambio de piezas en bomba de infusion','2024-04-26 08:16:15',NULL,NULL,'UTI'),(11,'Inspeccion de sistema de iluminacion en quirofano','2023-11-03 22:34:15',NULL,NULL,'Bioterio'),(12,'Ajuste de frecuencia en electroencefalografo (EEG)','2023-12-17 05:44:57','2024-06-22 16:13:08',NULL,'Imagenes'),(13,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2023-10-23 20:22:27','2024-06-22 16:13:04',NULL,'UTI'),(14,'Diagnostico y reparacion de problema en lampara quirurgica','2023-11-10 00:07:15',NULL,NULL,'Quirofano'),(15,'Inspeccion y limpieza profunda de endoscopio flexible','2024-01-21 20:55:32',NULL,NULL,'UTI'),(16,'Calibracion y prueba de funcionamiento en camara hiperbarica','2024-03-03 09:01:45',NULL,13,'Quirofano'),(17,'Inspeccion y limpieza profunda de endoscopio flexible','2023-10-24 18:49:00','2024-06-22 16:03:07',NULL,'Quirofano'),(18,'Actualizacion de firmware en maquina de anestesia','2024-01-28 21:47:54',NULL,NULL,'Quirofano'),(19,'Sincronizacion y ajuste en equipo de terapia laser','2024-01-16 22:51:26',NULL,NULL,'UTI'),(20,'Diagnostico y reparacion de problema en lampara quirurgica','2024-06-02 21:51:44',NULL,NULL,'Medicina nuclear'),(21,'Baño tapado del dr pepe','2024-06-22 16:51:37',NULL,NULL,'Investigaciones'),(22,'Centrifuga no funciona nose','2024-06-22 16:54:09',NULL,10,'Quirofano'),(23,'No me anda el tensiometro','2024-06-22 18:31:45','2024-06-22 18:33:51',31,'UTI');
 /*!40000 ALTER TABLE `orden_de_trabajo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -356,4 +377,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-22 12:54:57
+-- Dump completed on 2024-06-22 23:24:09
