@@ -29,22 +29,50 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button_volver_dashboard = new System.Windows.Forms.Button();
+            this.button_modificar_grupo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 22);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(707, 237);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(458, 213);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // button_volver_dashboard
+            // 
+            this.button_volver_dashboard.Location = new System.Drawing.Point(376, 241);
+            this.button_volver_dashboard.Name = "button_volver_dashboard";
+            this.button_volver_dashboard.Size = new System.Drawing.Size(94, 35);
+            this.button_volver_dashboard.TabIndex = 1;
+            this.button_volver_dashboard.Text = "Volver al Dashboard";
+            this.button_volver_dashboard.UseVisualStyleBackColor = true;
+            this.button_volver_dashboard.Click += new System.EventHandler(this.button_volver_dashboard_Click);
+            // 
+            // button_modificar_grupo
+            // 
+            this.button_modificar_grupo.Location = new System.Drawing.Point(12, 241);
+            this.button_modificar_grupo.Name = "button_modificar_grupo";
+            this.button_modificar_grupo.Size = new System.Drawing.Size(94, 35);
+            this.button_modificar_grupo.TabIndex = 2;
+            this.button_modificar_grupo.Text = "Modificar grupo";
+            this.button_modificar_grupo.UseVisualStyleBackColor = true;
+            this.button_modificar_grupo.Click += new System.EventHandler(this.button_modificar_grupo_Click);
             // 
             // Ver_grupos_electrogenos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 311);
+            this.ClientSize = new System.Drawing.Size(482, 288);
+            this.Controls.Add(this.button_modificar_grupo);
+            this.Controls.Add(this.button_volver_dashboard);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Ver_grupos_electrogenos";
             this.Text = "Grupos Electrogenos";
@@ -56,5 +84,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button_volver_dashboard;
+        private System.Windows.Forms.Button button_modificar_grupo;
     }
 }

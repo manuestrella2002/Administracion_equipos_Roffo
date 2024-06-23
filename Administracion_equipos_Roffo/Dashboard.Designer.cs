@@ -37,12 +37,13 @@
             this.button_modificar_orden = new System.Windows.Forms.Button();
             this.button_asociar_equipo = new System.Windows.Forms.Button();
             this.button_ver_grupos = new System.Windows.Forms.Button();
+            this.button_inventario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button_ver_equipos
             // 
-            this.button_ver_equipos.Location = new System.Drawing.Point(13, 222);
+            this.button_ver_equipos.Location = new System.Drawing.Point(13, 192);
             this.button_ver_equipos.Name = "button_ver_equipos";
             this.button_ver_equipos.Size = new System.Drawing.Size(124, 71);
             this.button_ver_equipos.TabIndex = 0;
@@ -62,13 +63,13 @@
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(690, 347);
+            this.dataGridView1.Size = new System.Drawing.Size(690, 422);
             this.dataGridView1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(434, 22);
+            this.label1.Location = new System.Drawing.Point(421, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 13);
             this.label1.TabIndex = 2;
@@ -76,7 +77,7 @@
             // 
             // button_ver_ordenes_inactivas
             // 
-            this.button_ver_ordenes_inactivas.Location = new System.Drawing.Point(13, 129);
+            this.button_ver_ordenes_inactivas.Location = new System.Drawing.Point(12, 115);
             this.button_ver_ordenes_inactivas.Name = "button_ver_ordenes_inactivas";
             this.button_ver_ordenes_inactivas.Size = new System.Drawing.Size(124, 71);
             this.button_ver_ordenes_inactivas.TabIndex = 3;
@@ -86,7 +87,7 @@
             // 
             // button_cerrar_orden
             // 
-            this.button_cerrar_orden.Location = new System.Drawing.Point(777, 396);
+            this.button_cerrar_orden.Location = new System.Drawing.Point(774, 476);
             this.button_cerrar_orden.Name = "button_cerrar_orden";
             this.button_cerrar_orden.Size = new System.Drawing.Size(93, 44);
             this.button_cerrar_orden.TabIndex = 4;
@@ -106,7 +107,7 @@
             // 
             // button_modificar_orden
             // 
-            this.button_modificar_orden.Location = new System.Drawing.Point(658, 396);
+            this.button_modificar_orden.Location = new System.Drawing.Point(655, 476);
             this.button_modificar_orden.Name = "button_modificar_orden";
             this.button_modificar_orden.Size = new System.Drawing.Size(93, 44);
             this.button_modificar_orden.TabIndex = 6;
@@ -116,7 +117,7 @@
             // 
             // button_asociar_equipo
             // 
-            this.button_asociar_equipo.Location = new System.Drawing.Point(534, 396);
+            this.button_asociar_equipo.Location = new System.Drawing.Point(531, 476);
             this.button_asociar_equipo.Name = "button_asociar_equipo";
             this.button_asociar_equipo.Size = new System.Drawing.Size(93, 44);
             this.button_asociar_equipo.TabIndex = 7;
@@ -126,7 +127,7 @@
             // 
             // button_ver_grupos
             // 
-            this.button_ver_grupos.Location = new System.Drawing.Point(13, 314);
+            this.button_ver_grupos.Location = new System.Drawing.Point(13, 346);
             this.button_ver_grupos.Name = "button_ver_grupos";
             this.button_ver_grupos.Size = new System.Drawing.Size(124, 71);
             this.button_ver_grupos.TabIndex = 8;
@@ -134,11 +135,22 @@
             this.button_ver_grupos.UseVisualStyleBackColor = true;
             this.button_ver_grupos.Click += new System.EventHandler(this.button_ver_grupos_Click);
             // 
+            // button_inventario
+            // 
+            this.button_inventario.Location = new System.Drawing.Point(13, 269);
+            this.button_inventario.Name = "button_inventario";
+            this.button_inventario.Size = new System.Drawing.Size(124, 71);
+            this.button_inventario.TabIndex = 9;
+            this.button_inventario.Text = "Ver inventario partes";
+            this.button_inventario.UseVisualStyleBackColor = true;
+            this.button_inventario.Click += new System.EventHandler(this.button_inventario_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 452);
+            this.ClientSize = new System.Drawing.Size(888, 532);
+            this.Controls.Add(this.button_inventario);
             this.Controls.Add(this.button_ver_grupos);
             this.Controls.Add(this.button_asociar_equipo);
             this.Controls.Add(this.button_modificar_orden);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.Button button_modificar_orden;
         private System.Windows.Forms.Button button_asociar_equipo;
         private System.Windows.Forms.Button button_ver_grupos;
+        private System.Windows.Forms.Button button_inventario;
     }
 }

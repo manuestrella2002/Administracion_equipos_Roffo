@@ -110,6 +110,12 @@
     <Compile Include="Agregar_orden.Designer.cs">
       <DependentUpon>Agregar_orden.cs</DependentUpon>
     </Compile>
+    <Compile Include="Agregar_parte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_parte.Designer.cs">
+      <DependentUpon>Agregar_parte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Asociar_equipo_orden.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     </Compile>
     <Compile Include="Modificar_equipo.Designer.cs">
       <DependentUpon>Modificar_equipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_grupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_grupo.Designer.cs">
+      <DependentUpon>Modificar_grupo.cs</DependentUpon>
     </Compile>
     <Compile Include="Modificar_orden.cs">
       <SubType>Form</SubType>
@@ -147,6 +159,12 @@
     <Compile Include="Ver_grupos_electrogenos.Designer.cs">
       <DependentUpon>Ver_grupos_electrogenos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ver_inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_inventario.Designer.cs">
+      <DependentUpon>Ver_inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver_ordenes_inactivas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +177,9 @@
     <EmbeddedResource Include="Agregar_orden.resx">
       <DependentUpon>Agregar_orden.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_parte.resx">
+      <DependentUpon>Agregar_parte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Asociar_equipo_orden.resx">
       <DependentUpon>Asociar_equipo_orden.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +189,9 @@
     <EmbeddedResource Include="Modificar_equipo.resx">
       <DependentUpon>Modificar_equipo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_grupo.resx">
+      <DependentUpon>Modificar_grupo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modificar_orden.resx">
       <DependentUpon>Modificar_orden.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_grupos_electrogenos.resx">
       <DependentUpon>Ver_grupos_electrogenos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_inventario.resx">
+      <DependentUpon>Ver_inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_ordenes_inactivas.resx">
       <DependentUpon>Ver_ordenes_inactivas.cs</DependentUpon>

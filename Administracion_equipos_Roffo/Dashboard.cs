@@ -185,6 +185,20 @@ namespace Administracion_equipos_Roffo
 
         private void button_ver_grupos_Click(object sender, EventArgs e)
         {
+            Ver_grupos_electrogenos ver_Grupos_Electrogenos = new Ver_grupos_electrogenos();
+            this.Hide();
+            ver_Grupos_Electrogenos.ShowDialog();
+            LoadDataGridView();
+            this.Show();
+        }
+
+        private void button_inventario_Click(object sender, EventArgs e)
+        {
+            Ver_inventario ver_inventario = new Ver_inventario();
+            this.Hide();
+            ver_inventario.ShowDialog();
+            LoadDataGridView();
+            this.Show();
 
         }
     }

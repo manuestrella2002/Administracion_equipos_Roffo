@@ -11,14 +11,15 @@ using System.Windows.Forms;
 
 namespace Administracion_equipos_Roffo
 {
-    public partial class Ver_grupos_electrogenos : Form
+    public partial class Ver_inventario : Form
     {
-        public Ver_grupos_electrogenos()
+        public Ver_inventario()
         {
             InitializeComponent();
-            LoadDataGridView();
-        }
 
+            LoadDataGridView();
+
+        }
         private void LoadDataGridView()
         {
 
@@ -26,10 +27,10 @@ namespace Administracion_equipos_Roffo
             string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
 
             // Define tu consulta SQL
-            string query = "SELECT * FROM grupo_electrogeno ORDER BY Nombre_grupo";
+            string query = "SELECT inv.Id_parte, inv.Nombre_parte, inv.Marca_parte,inv.Cantidad_disponible,inv.Descripcion,p.Nombre_proveedor as Proveedor_parte FROM inventario as inv LEFT OUTER JOIN proveedor as p on inv.proveedor_Id_proveedor = p.Id_proveedor ORDER BY inv.Nombre_parte";
 
             // Crea un DataTable para contener los datos
-            DataTable tabla_grupo = new DataTable();
+            DataTable tabla_inventario = new DataTable();
 
             // Conéctate a la base de datos y ejecuta la consulta
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -41,7 +42,7 @@ namespace Administracion_equipos_Roffo
                     {
                         using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                         {
-                            adapter.Fill(tabla_grupo);
+                            adapter.Fill(tabla_inventario);
                         }
                     }
                 }
@@ -54,38 +55,38 @@ namespace Administracion_equipos_Roffo
 
 
             // Asignar el DataTable como origen de datos del DataGridView
-            dataGridView1.DataSource = tabla_grupo;
+            dataGridView1.DataSource = tabla_inventario;
 
             // Configurar la selección de filas completas
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false; // Permitir solo la selección de una fila a la vez
 
-        }
 
-        private void button_modificar_grupo_Click(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
+            dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
-                DialogResult Resultado;
-                Resultado = MessageBox.Show("¿Esta seguro que quiere modificar el grupo electrogeno?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (Resultado == DialogResult.Yes)
-                {
-                    DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-                    int Id_grupo = int.Parse(selectedRow.Cells["Id_grupo"].Value.ToString());
-                    Modificar_grupo modificar_Grupo = new Modificar_grupo(Id_grupo);
-                    this.Hide();
-                    modificar_Grupo.ShowDialog();
-                    LoadDataGridView();
-                    this.Show();
 
-                }
-            }
         }
 
         private void button_volver_dashboard_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button_agregar_parte_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_modificar_parte_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_eliminar_parte_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
