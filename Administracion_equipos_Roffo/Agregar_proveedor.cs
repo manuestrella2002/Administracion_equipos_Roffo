@@ -85,7 +85,7 @@ namespace Administracion_equipos_Roffo
                 string calle_proveedor = textBox_calle.Text;
                 int nro_proveedor =int.Parse(maskedTextBox_nro.Text);
                 string mail_proveedor = textBox_mail.Text;
-                int telefono_proveedor = int.Parse(maskedTextBox_telefono.Text);
+                string telefono_proveedor = textBox_telefono.Text;
                 string localidad_proveedor = comboBox_localidad.Text;
 
                 string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
@@ -119,11 +119,11 @@ namespace Administracion_equipos_Roffo
                             }
                             if (localidad_proveedor.Length != 0)
                             {
-                                insertar_proveedor_command.Parameters.AddWithValue("@Calle_Direccion_proveedor", localidad_proveedor);
+                                insertar_proveedor_command.Parameters.AddWithValue("@Localidad_Direccion_proveedor", localidad_proveedor);
                             }
                             else
                             {
-                                insertar_proveedor_command.Parameters.AddWithValue("@Calle_Direccion_proveedor", DBNull.Value);
+                                insertar_proveedor_command.Parameters.AddWithValue("@Localidad_Direccion_proveedor", DBNull.Value);
 
                             }
                             if (telefono_proveedor.ToString().Length != 0)
@@ -146,6 +146,8 @@ namespace Administracion_equipos_Roffo
                             }
                             insertar_proveedor_command.ExecuteNonQuery();
                         }
+
+                        MessageBox.Show("Proveedor guardado exitosamente.", "Mensaje", MessageBoxButtons.OK);
                         this.Close();
 
                     }

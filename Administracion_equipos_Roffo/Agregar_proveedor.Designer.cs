@@ -39,9 +39,9 @@
             this.label_mail = new System.Windows.Forms.Label();
             this.textBox_mail = new System.Windows.Forms.TextBox();
             this.label_telefono = new System.Windows.Forms.Label();
-            this.maskedTextBox_telefono = new System.Windows.Forms.MaskedTextBox();
             this.button_guardar = new System.Windows.Forms.Button();
             this.button_cancelar = new System.Windows.Forms.Button();
+            this.textBox_telefono = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label_nombre_prov
@@ -104,7 +104,6 @@
             this.maskedTextBox_nro.Name = "maskedTextBox_nro";
             this.maskedTextBox_nro.Size = new System.Drawing.Size(38, 20);
             this.maskedTextBox_nro.TabIndex = 5;
-            this.maskedTextBox_nro.ValidatingType = typeof(int);
             // 
             // label_Localidad
             // 
@@ -122,7 +121,7 @@
             this.comboBox_localidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBox_localidad.FormattingEnabled = true;
-            this.comboBox_localidad.Location = new System.Drawing.Point(85, 155);
+            this.comboBox_localidad.Location = new System.Drawing.Point(76, 155);
             this.comboBox_localidad.Name = "comboBox_localidad";
             this.comboBox_localidad.Size = new System.Drawing.Size(121, 21);
             this.comboBox_localidad.TabIndex = 7;
@@ -158,16 +157,6 @@
             this.label_telefono.TabIndex = 10;
             this.label_telefono.Text = "Teléfono:";
             // 
-            // maskedTextBox_telefono
-            // 
-            this.maskedTextBox_telefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.maskedTextBox_telefono.Location = new System.Drawing.Point(76, 243);
-            this.maskedTextBox_telefono.Mask = "0000000000";
-            this.maskedTextBox_telefono.Name = "maskedTextBox_telefono";
-            this.maskedTextBox_telefono.Size = new System.Drawing.Size(73, 20);
-            this.maskedTextBox_telefono.TabIndex = 11;
-            // 
             // button_guardar
             // 
             this.button_guardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -190,14 +179,21 @@
             this.button_cancelar.UseVisualStyleBackColor = true;
             this.button_cancelar.Click += new System.EventHandler(this.button_cancelar_Click_1);
             // 
+            // textBox_telefono
+            // 
+            this.textBox_telefono.Location = new System.Drawing.Point(81, 243);
+            this.textBox_telefono.Name = "textBox_telefono";
+            this.textBox_telefono.Size = new System.Drawing.Size(100, 20);
+            this.textBox_telefono.TabIndex = 14;
+            // 
             // Agregar_proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(455, 301);
+            this.Controls.Add(this.textBox_telefono);
             this.Controls.Add(this.button_cancelar);
             this.Controls.Add(this.button_guardar);
-            this.Controls.Add(this.maskedTextBox_telefono);
             this.Controls.Add(this.label_telefono);
             this.Controls.Add(this.textBox_mail);
             this.Controls.Add(this.label_mail);
@@ -231,8 +227,8 @@
         private System.Windows.Forms.Label label_mail;
         private System.Windows.Forms.TextBox textBox_mail;
         private System.Windows.Forms.Label label_telefono;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox_telefono;
         private System.Windows.Forms.Button button_guardar;
         private System.Windows.Forms.Button button_cancelar;
+        private System.Windows.Forms.TextBox textBox_telefono;
     }
 }

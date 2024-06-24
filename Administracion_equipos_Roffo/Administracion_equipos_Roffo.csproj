@@ -164,6 +164,12 @@
     <Compile Include="Modificar_parte.Designer.cs">
       <DependentUpon>Modificar_parte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modificar_proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_proveedor.Designer.cs">
+      <DependentUpon>Modificar_proveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Ver_equipos.cs">
       <SubType>Form</SubType>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modificar_parte.resx">
       <DependentUpon>Modificar_parte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_proveedor.resx">
+      <DependentUpon>Modificar_proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_equipos.resx">
       <DependentUpon>Ver_equipos.cs</DependentUpon>

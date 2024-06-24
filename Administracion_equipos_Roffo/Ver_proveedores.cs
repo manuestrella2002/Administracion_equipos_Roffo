@@ -75,12 +75,61 @@ namespace Administracion_equipos_Roffo
 
         private void button_modificar_prov_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DialogResult Resultado;
+                Resultado = MessageBox.Show("¿Esta seguro que quiere modificar el proveedor?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (Resultado == DialogResult.Yes)
+                {
+                    DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                    int Id_proveedor = int.Parse(selectedRow.Cells["Id_proveedor"].Value.ToString());
+                    Modificar_proveedor modificar_Proveedor = new Modificar_proveedor(Id_proveedor);
+                    this.Hide();
+                    modificar_Proveedor.ShowDialog();
+                    LoadDataGridView();
+                    this.Show();
 
+                }
+            }
         }
 
         private void button_eliminar_prov_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DialogResult Resultado;
+                Resultado = MessageBox.Show("¿Esta seguro que quiere eliminar el proveedor?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (Resultado == DialogResult.Yes)
+                {
+                    DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                    int Id_proveedor = int.Parse(selectedRow.Cells["Id_proveedor"].Value.ToString());
 
+                    string query = "DELETE FROM proveedor WHERE Id_proveedor = " + Id_proveedor.ToString();
+                    string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+
+                    using (MySqlConnection connection = new MySqlConnection(connectionString))
+                    {
+                        try
+                        {
+                            connection.Open();
+                            using (MySqlCommand command = new MySqlCommand(query, connection))
+                            {
+                                command.ExecuteNonQuery();
+                            }
+                            MessageBox.Show("Proveedor eliminado exitosamente.", "Mensaje", MessageBoxButtons.OK);
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error al eliminar el proveedor: " + ex.Message);
+                        }
+
+                    }
+
+                    LoadDataGridView();
+                    
+                }
+            }
         }
 
         private void button_agregar_prov_Click(object sender, EventArgs e)
