@@ -123,7 +123,7 @@ namespace Administracion_equipos_Roffo
                 string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
 
                 // Define tu consulta SQL
-                string query = "DELETE FROM equipo WHERE Id_equipo=" + Id_Equipo.ToString();
+                string query = "DELETE FROM equipo WHERE Id_equipo = " + Id_Equipo.ToString();
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     try
