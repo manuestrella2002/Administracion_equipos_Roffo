@@ -55,34 +55,34 @@
             this.label_marcha = new System.Windows.Forms.Label();
             this.label_temperatura = new System.Windows.Forms.Label();
             this.label_presion = new System.Windows.Forms.Label();
-            this.panel_aceite_reso = new System.Windows.Forms.Panel();
-            this.radioButton_aceite_ok_reso = new System.Windows.Forms.RadioButton();
-            this.radioButton_aceite_ok_osc_reso = new System.Windows.Forms.RadioButton();
+            this.panel_aceite_resonador = new System.Windows.Forms.Panel();
             this.radioButton_aceite_mal_reso = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButton_aceite_ok_osc_reso = new System.Windows.Forms.RadioButton();
+            this.radioButton_aceite_ok_reso = new System.Windows.Forms.RadioButton();
+            this.panel_aceite_ultrafrezeers = new System.Windows.Forms.Panel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.radioButton_aceite_ok_osc_ultrafreezers = new System.Windows.Forms.RadioButton();
+            this.radioButton_aceite_ok_ultrafreezers = new System.Windows.Forms.RadioButton();
+            this.panel_aceite_patologia = new System.Windows.Forms.Panel();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.radioButton_aceite_ok_osc_patologia = new System.Windows.Forms.RadioButton();
+            this.radioButton_aceite_ok_patologia = new System.Windows.Forms.RadioButton();
+            this.panel_aceite_cirugia = new System.Windows.Forms.Panel();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.radioButton_aceite_ok_cirugia = new System.Windows.Forms.RadioButton();
+            this.panel_aceite_hemoterapia = new System.Windows.Forms.Panel();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.radioButton_aceite_ok_hemoterapia = new System.Windows.Forms.RadioButton();
+            this.panel_aceite_UTI = new System.Windows.Forms.Panel();
             this.radioButton13 = new System.Windows.Forms.RadioButton();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.radioButton_aceite_ok_uti = new System.Windows.Forms.RadioButton();
+            this.panel_aceite_bioterio = new System.Windows.Forms.Panel();
             this.radioButton16 = new System.Windows.Forms.RadioButton();
             this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
+            this.radioButton_aceite_ok_bioterio = new System.Windows.Forms.RadioButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.radioButton19 = new System.Windows.Forms.RadioButton();
             this.radioButton21 = new System.Windows.Forms.RadioButton();
@@ -258,13 +258,13 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.button_cancelar = new System.Windows.Forms.Button();
             this.button_guardar_reporte = new System.Windows.Forms.Button();
-            this.panel_aceite_reso.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.panel_aceite_resonador.SuspendLayout();
+            this.panel_aceite_ultrafrezeers.SuspendLayout();
+            this.panel_aceite_patologia.SuspendLayout();
+            this.panel_aceite_cirugia.SuspendLayout();
+            this.panel_aceite_hemoterapia.SuspendLayout();
+            this.panel_aceite_UTI.SuspendLayout();
+            this.panel_aceite_bioterio.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -679,37 +679,15 @@
             this.label_presion.TabIndex = 26;
             this.label_presion.Text = "PRESIÓN:";
             // 
-            // panel_aceite_reso
+            // panel_aceite_resonador
             // 
-            this.panel_aceite_reso.Controls.Add(this.radioButton_aceite_mal_reso);
-            this.panel_aceite_reso.Controls.Add(this.radioButton_aceite_ok_osc_reso);
-            this.panel_aceite_reso.Controls.Add(this.radioButton_aceite_ok_reso);
-            this.panel_aceite_reso.Location = new System.Drawing.Point(126, 27);
-            this.panel_aceite_reso.Name = "panel_aceite_reso";
-            this.panel_aceite_reso.Size = new System.Drawing.Size(94, 59);
-            this.panel_aceite_reso.TabIndex = 27;
-            // 
-            // radioButton_aceite_ok_reso
-            // 
-            this.radioButton_aceite_ok_reso.AutoSize = true;
-            this.radioButton_aceite_ok_reso.Location = new System.Drawing.Point(3, 3);
-            this.radioButton_aceite_ok_reso.Name = "radioButton_aceite_ok_reso";
-            this.radioButton_aceite_ok_reso.Size = new System.Drawing.Size(40, 17);
-            this.radioButton_aceite_ok_reso.TabIndex = 0;
-            this.radioButton_aceite_ok_reso.TabStop = true;
-            this.radioButton_aceite_ok_reso.Text = "OK";
-            this.radioButton_aceite_ok_reso.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_aceite_ok_osc_reso
-            // 
-            this.radioButton_aceite_ok_osc_reso.AutoSize = true;
-            this.radioButton_aceite_ok_osc_reso.Location = new System.Drawing.Point(3, 22);
-            this.radioButton_aceite_ok_osc_reso.Name = "radioButton_aceite_ok_osc_reso";
-            this.radioButton_aceite_ok_osc_reso.Size = new System.Drawing.Size(89, 17);
-            this.radioButton_aceite_ok_osc_reso.TabIndex = 1;
-            this.radioButton_aceite_ok_osc_reso.TabStop = true;
-            this.radioButton_aceite_ok_osc_reso.Text = "OK OSCURO";
-            this.radioButton_aceite_ok_osc_reso.UseVisualStyleBackColor = true;
+            this.panel_aceite_resonador.Controls.Add(this.radioButton_aceite_mal_reso);
+            this.panel_aceite_resonador.Controls.Add(this.radioButton_aceite_ok_osc_reso);
+            this.panel_aceite_resonador.Controls.Add(this.radioButton_aceite_ok_reso);
+            this.panel_aceite_resonador.Location = new System.Drawing.Point(126, 27);
+            this.panel_aceite_resonador.Name = "panel_aceite_resonador";
+            this.panel_aceite_resonador.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_resonador.TabIndex = 27;
             // 
             // radioButton_aceite_mal_reso
             // 
@@ -722,15 +700,37 @@
             this.radioButton_aceite_mal_reso.Text = "MAL";
             this.radioButton_aceite_mal_reso.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // radioButton_aceite_ok_osc_reso
             // 
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Location = new System.Drawing.Point(269, 24);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(94, 59);
-            this.panel1.TabIndex = 28;
+            this.radioButton_aceite_ok_osc_reso.AutoSize = true;
+            this.radioButton_aceite_ok_osc_reso.Location = new System.Drawing.Point(3, 22);
+            this.radioButton_aceite_ok_osc_reso.Name = "radioButton_aceite_ok_osc_reso";
+            this.radioButton_aceite_ok_osc_reso.Size = new System.Drawing.Size(89, 17);
+            this.radioButton_aceite_ok_osc_reso.TabIndex = 1;
+            this.radioButton_aceite_ok_osc_reso.TabStop = true;
+            this.radioButton_aceite_ok_osc_reso.Text = "OK OSCURO";
+            this.radioButton_aceite_ok_osc_reso.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_aceite_ok_reso
+            // 
+            this.radioButton_aceite_ok_reso.AutoSize = true;
+            this.radioButton_aceite_ok_reso.Location = new System.Drawing.Point(3, 3);
+            this.radioButton_aceite_ok_reso.Name = "radioButton_aceite_ok_reso";
+            this.radioButton_aceite_ok_reso.Size = new System.Drawing.Size(40, 17);
+            this.radioButton_aceite_ok_reso.TabIndex = 0;
+            this.radioButton_aceite_ok_reso.TabStop = true;
+            this.radioButton_aceite_ok_reso.Text = "OK";
+            this.radioButton_aceite_ok_reso.UseVisualStyleBackColor = true;
+            // 
+            // panel_aceite_ultrafrezeers
+            // 
+            this.panel_aceite_ultrafrezeers.Controls.Add(this.radioButton1);
+            this.panel_aceite_ultrafrezeers.Controls.Add(this.radioButton_aceite_ok_osc_ultrafreezers);
+            this.panel_aceite_ultrafrezeers.Controls.Add(this.radioButton_aceite_ok_ultrafreezers);
+            this.panel_aceite_ultrafrezeers.Location = new System.Drawing.Point(269, 24);
+            this.panel_aceite_ultrafrezeers.Name = "panel_aceite_ultrafrezeers";
+            this.panel_aceite_ultrafrezeers.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_ultrafrezeers.TabIndex = 28;
             // 
             // radioButton1
             // 
@@ -743,37 +743,37 @@
             this.radioButton1.Text = "MAL";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButton_aceite_ok_osc_ultrafreezers
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(3, 22);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "OK OSCURO";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton_aceite_ok_osc_ultrafreezers.AutoSize = true;
+            this.radioButton_aceite_ok_osc_ultrafreezers.Location = new System.Drawing.Point(3, 22);
+            this.radioButton_aceite_ok_osc_ultrafreezers.Name = "radioButton_aceite_ok_osc_ultrafreezers";
+            this.radioButton_aceite_ok_osc_ultrafreezers.Size = new System.Drawing.Size(89, 17);
+            this.radioButton_aceite_ok_osc_ultrafreezers.TabIndex = 1;
+            this.radioButton_aceite_ok_osc_ultrafreezers.TabStop = true;
+            this.radioButton_aceite_ok_osc_ultrafreezers.Text = "OK OSCURO";
+            this.radioButton_aceite_ok_osc_ultrafreezers.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButton_aceite_ok_ultrafreezers
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(3, 3);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(40, 17);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "OK";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton_aceite_ok_ultrafreezers.AutoSize = true;
+            this.radioButton_aceite_ok_ultrafreezers.Location = new System.Drawing.Point(3, 3);
+            this.radioButton_aceite_ok_ultrafreezers.Name = "radioButton_aceite_ok_ultrafreezers";
+            this.radioButton_aceite_ok_ultrafreezers.Size = new System.Drawing.Size(40, 17);
+            this.radioButton_aceite_ok_ultrafreezers.TabIndex = 0;
+            this.radioButton_aceite_ok_ultrafreezers.TabStop = true;
+            this.radioButton_aceite_ok_ultrafreezers.Text = "OK";
+            this.radioButton_aceite_ok_ultrafreezers.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // panel_aceite_patologia
             // 
-            this.panel2.Controls.Add(this.radioButton4);
-            this.panel2.Controls.Add(this.radioButton5);
-            this.panel2.Controls.Add(this.radioButton6);
-            this.panel2.Location = new System.Drawing.Point(411, 24);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(94, 59);
-            this.panel2.TabIndex = 29;
+            this.panel_aceite_patologia.Controls.Add(this.radioButton4);
+            this.panel_aceite_patologia.Controls.Add(this.radioButton_aceite_ok_osc_patologia);
+            this.panel_aceite_patologia.Controls.Add(this.radioButton_aceite_ok_patologia);
+            this.panel_aceite_patologia.Location = new System.Drawing.Point(411, 24);
+            this.panel_aceite_patologia.Name = "panel_aceite_patologia";
+            this.panel_aceite_patologia.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_patologia.TabIndex = 29;
             // 
             // radioButton4
             // 
@@ -786,37 +786,37 @@
             this.radioButton4.Text = "MAL";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radioButton_aceite_ok_osc_patologia
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(3, 22);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(89, 17);
-            this.radioButton5.TabIndex = 1;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "OK OSCURO";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton_aceite_ok_osc_patologia.AutoSize = true;
+            this.radioButton_aceite_ok_osc_patologia.Location = new System.Drawing.Point(3, 22);
+            this.radioButton_aceite_ok_osc_patologia.Name = "radioButton_aceite_ok_osc_patologia";
+            this.radioButton_aceite_ok_osc_patologia.Size = new System.Drawing.Size(89, 17);
+            this.radioButton_aceite_ok_osc_patologia.TabIndex = 1;
+            this.radioButton_aceite_ok_osc_patologia.TabStop = true;
+            this.radioButton_aceite_ok_osc_patologia.Text = "OK OSCURO";
+            this.radioButton_aceite_ok_osc_patologia.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // radioButton_aceite_ok_patologia
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(3, 3);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(40, 17);
-            this.radioButton6.TabIndex = 0;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "OK";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton_aceite_ok_patologia.AutoSize = true;
+            this.radioButton_aceite_ok_patologia.Location = new System.Drawing.Point(3, 3);
+            this.radioButton_aceite_ok_patologia.Name = "radioButton_aceite_ok_patologia";
+            this.radioButton_aceite_ok_patologia.Size = new System.Drawing.Size(40, 17);
+            this.radioButton_aceite_ok_patologia.TabIndex = 0;
+            this.radioButton_aceite_ok_patologia.TabStop = true;
+            this.radioButton_aceite_ok_patologia.Text = "OK";
+            this.radioButton_aceite_ok_patologia.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // panel_aceite_cirugia
             // 
-            this.panel3.Controls.Add(this.radioButton7);
-            this.panel3.Controls.Add(this.radioButton8);
-            this.panel3.Controls.Add(this.radioButton9);
-            this.panel3.Location = new System.Drawing.Point(543, 24);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(94, 59);
-            this.panel3.TabIndex = 30;
+            this.panel_aceite_cirugia.Controls.Add(this.radioButton7);
+            this.panel_aceite_cirugia.Controls.Add(this.radioButton8);
+            this.panel_aceite_cirugia.Controls.Add(this.radioButton_aceite_ok_cirugia);
+            this.panel_aceite_cirugia.Location = new System.Drawing.Point(543, 24);
+            this.panel_aceite_cirugia.Name = "panel_aceite_cirugia";
+            this.panel_aceite_cirugia.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_cirugia.TabIndex = 30;
             // 
             // radioButton7
             // 
@@ -840,26 +840,26 @@
             this.radioButton8.Text = "OK OSCURO";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // radioButton_aceite_ok_cirugia
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(3, 3);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(40, 17);
-            this.radioButton9.TabIndex = 0;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "OK";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton_aceite_ok_cirugia.AutoSize = true;
+            this.radioButton_aceite_ok_cirugia.Location = new System.Drawing.Point(3, 3);
+            this.radioButton_aceite_ok_cirugia.Name = "radioButton_aceite_ok_cirugia";
+            this.radioButton_aceite_ok_cirugia.Size = new System.Drawing.Size(40, 17);
+            this.radioButton_aceite_ok_cirugia.TabIndex = 0;
+            this.radioButton_aceite_ok_cirugia.TabStop = true;
+            this.radioButton_aceite_ok_cirugia.Text = "OK";
+            this.radioButton_aceite_ok_cirugia.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // panel_aceite_hemoterapia
             // 
-            this.panel4.Controls.Add(this.radioButton10);
-            this.panel4.Controls.Add(this.radioButton11);
-            this.panel4.Controls.Add(this.radioButton12);
-            this.panel4.Location = new System.Drawing.Point(698, 24);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(94, 59);
-            this.panel4.TabIndex = 31;
+            this.panel_aceite_hemoterapia.Controls.Add(this.radioButton10);
+            this.panel_aceite_hemoterapia.Controls.Add(this.radioButton11);
+            this.panel_aceite_hemoterapia.Controls.Add(this.radioButton_aceite_ok_hemoterapia);
+            this.panel_aceite_hemoterapia.Location = new System.Drawing.Point(698, 24);
+            this.panel_aceite_hemoterapia.Name = "panel_aceite_hemoterapia";
+            this.panel_aceite_hemoterapia.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_hemoterapia.TabIndex = 31;
             // 
             // radioButton10
             // 
@@ -883,26 +883,26 @@
             this.radioButton11.Text = "OK OSCURO";
             this.radioButton11.UseVisualStyleBackColor = true;
             // 
-            // radioButton12
+            // radioButton_aceite_ok_hemoterapia
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(3, 3);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(40, 17);
-            this.radioButton12.TabIndex = 0;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "OK";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButton_aceite_ok_hemoterapia.AutoSize = true;
+            this.radioButton_aceite_ok_hemoterapia.Location = new System.Drawing.Point(3, 3);
+            this.radioButton_aceite_ok_hemoterapia.Name = "radioButton_aceite_ok_hemoterapia";
+            this.radioButton_aceite_ok_hemoterapia.Size = new System.Drawing.Size(40, 17);
+            this.radioButton_aceite_ok_hemoterapia.TabIndex = 0;
+            this.radioButton_aceite_ok_hemoterapia.TabStop = true;
+            this.radioButton_aceite_ok_hemoterapia.Text = "OK";
+            this.radioButton_aceite_ok_hemoterapia.UseVisualStyleBackColor = true;
             // 
-            // panel5
+            // panel_aceite_UTI
             // 
-            this.panel5.Controls.Add(this.radioButton13);
-            this.panel5.Controls.Add(this.radioButton14);
-            this.panel5.Controls.Add(this.radioButton15);
-            this.panel5.Location = new System.Drawing.Point(834, 24);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(94, 59);
-            this.panel5.TabIndex = 32;
+            this.panel_aceite_UTI.Controls.Add(this.radioButton13);
+            this.panel_aceite_UTI.Controls.Add(this.radioButton14);
+            this.panel_aceite_UTI.Controls.Add(this.radioButton_aceite_ok_uti);
+            this.panel_aceite_UTI.Location = new System.Drawing.Point(834, 24);
+            this.panel_aceite_UTI.Name = "panel_aceite_UTI";
+            this.panel_aceite_UTI.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_UTI.TabIndex = 32;
             // 
             // radioButton13
             // 
@@ -926,26 +926,26 @@
             this.radioButton14.Text = "OK OSCURO";
             this.radioButton14.UseVisualStyleBackColor = true;
             // 
-            // radioButton15
+            // radioButton_aceite_ok_uti
             // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(3, 3);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(40, 17);
-            this.radioButton15.TabIndex = 0;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "OK";
-            this.radioButton15.UseVisualStyleBackColor = true;
+            this.radioButton_aceite_ok_uti.AutoSize = true;
+            this.radioButton_aceite_ok_uti.Location = new System.Drawing.Point(3, 3);
+            this.radioButton_aceite_ok_uti.Name = "radioButton_aceite_ok_uti";
+            this.radioButton_aceite_ok_uti.Size = new System.Drawing.Size(40, 17);
+            this.radioButton_aceite_ok_uti.TabIndex = 0;
+            this.radioButton_aceite_ok_uti.TabStop = true;
+            this.radioButton_aceite_ok_uti.Text = "OK";
+            this.radioButton_aceite_ok_uti.UseVisualStyleBackColor = true;
             // 
-            // panel6
+            // panel_aceite_bioterio
             // 
-            this.panel6.Controls.Add(this.radioButton16);
-            this.panel6.Controls.Add(this.radioButton17);
-            this.panel6.Controls.Add(this.radioButton18);
-            this.panel6.Location = new System.Drawing.Point(972, 24);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(94, 59);
-            this.panel6.TabIndex = 33;
+            this.panel_aceite_bioterio.Controls.Add(this.radioButton16);
+            this.panel_aceite_bioterio.Controls.Add(this.radioButton17);
+            this.panel_aceite_bioterio.Controls.Add(this.radioButton_aceite_ok_bioterio);
+            this.panel_aceite_bioterio.Location = new System.Drawing.Point(972, 24);
+            this.panel_aceite_bioterio.Name = "panel_aceite_bioterio";
+            this.panel_aceite_bioterio.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_bioterio.TabIndex = 33;
             // 
             // radioButton16
             // 
@@ -969,16 +969,16 @@
             this.radioButton17.Text = "OK OSCURO";
             this.radioButton17.UseVisualStyleBackColor = true;
             // 
-            // radioButton18
+            // radioButton_aceite_ok_bioterio
             // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Location = new System.Drawing.Point(3, 3);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(40, 17);
-            this.radioButton18.TabIndex = 0;
-            this.radioButton18.TabStop = true;
-            this.radioButton18.Text = "OK";
-            this.radioButton18.UseVisualStyleBackColor = true;
+            this.radioButton_aceite_ok_bioterio.AutoSize = true;
+            this.radioButton_aceite_ok_bioterio.Location = new System.Drawing.Point(3, 3);
+            this.radioButton_aceite_ok_bioterio.Name = "radioButton_aceite_ok_bioterio";
+            this.radioButton_aceite_ok_bioterio.Size = new System.Drawing.Size(40, 17);
+            this.radioButton_aceite_ok_bioterio.TabIndex = 0;
+            this.radioButton_aceite_ok_bioterio.TabStop = true;
+            this.radioButton_aceite_ok_bioterio.Text = "OK";
+            this.radioButton_aceite_ok_bioterio.UseVisualStyleBackColor = true;
             // 
             // panel7
             // 
@@ -3020,13 +3020,13 @@
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel_aceite_reso);
+            this.Controls.Add(this.panel_aceite_bioterio);
+            this.Controls.Add(this.panel_aceite_UTI);
+            this.Controls.Add(this.panel_aceite_hemoterapia);
+            this.Controls.Add(this.panel_aceite_cirugia);
+            this.Controls.Add(this.panel_aceite_patologia);
+            this.Controls.Add(this.panel_aceite_ultrafrezeers);
+            this.Controls.Add(this.panel_aceite_resonador);
             this.Controls.Add(this.label_presion);
             this.Controls.Add(this.label_temperatura);
             this.Controls.Add(this.label_marcha);
@@ -3057,20 +3057,20 @@
             this.Name = "Agregar_reporte_grupo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo reporte grupos";
-            this.panel_aceite_reso.ResumeLayout(false);
-            this.panel_aceite_reso.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.panel_aceite_resonador.ResumeLayout(false);
+            this.panel_aceite_resonador.PerformLayout();
+            this.panel_aceite_ultrafrezeers.ResumeLayout(false);
+            this.panel_aceite_ultrafrezeers.PerformLayout();
+            this.panel_aceite_patologia.ResumeLayout(false);
+            this.panel_aceite_patologia.PerformLayout();
+            this.panel_aceite_cirugia.ResumeLayout(false);
+            this.panel_aceite_cirugia.PerformLayout();
+            this.panel_aceite_hemoterapia.ResumeLayout(false);
+            this.panel_aceite_hemoterapia.PerformLayout();
+            this.panel_aceite_UTI.ResumeLayout(false);
+            this.panel_aceite_UTI.PerformLayout();
+            this.panel_aceite_bioterio.ResumeLayout(false);
+            this.panel_aceite_bioterio.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -3255,34 +3255,34 @@
         private System.Windows.Forms.Label label_marcha;
         private System.Windows.Forms.Label label_temperatura;
         private System.Windows.Forms.Label label_presion;
-        private System.Windows.Forms.Panel panel_aceite_reso;
+        private System.Windows.Forms.Panel panel_aceite_resonador;
         private System.Windows.Forms.RadioButton radioButton_aceite_ok_osc_reso;
         private System.Windows.Forms.RadioButton radioButton_aceite_ok_reso;
         private System.Windows.Forms.RadioButton radioButton_aceite_mal_reso;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_aceite_ultrafrezeers;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton radioButton_aceite_ok_osc_ultrafreezers;
+        private System.Windows.Forms.RadioButton radioButton_aceite_ok_ultrafreezers;
+        private System.Windows.Forms.Panel panel_aceite_patologia;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.RadioButton radioButton_aceite_ok_osc_patologia;
+        private System.Windows.Forms.RadioButton radioButton_aceite_ok_patologia;
+        private System.Windows.Forms.Panel panel_aceite_cirugia;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.RadioButton radioButton_aceite_ok_cirugia;
+        private System.Windows.Forms.Panel panel_aceite_hemoterapia;
         private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.RadioButton radioButton_aceite_ok_hemoterapia;
+        private System.Windows.Forms.Panel panel_aceite_UTI;
         private System.Windows.Forms.RadioButton radioButton13;
         private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.RadioButton radioButton_aceite_ok_uti;
+        private System.Windows.Forms.Panel panel_aceite_bioterio;
         private System.Windows.Forms.RadioButton radioButton16;
         private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton18;
+        private System.Windows.Forms.RadioButton radioButton_aceite_ok_bioterio;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.RadioButton radioButton19;
         private System.Windows.Forms.RadioButton radioButton21;
