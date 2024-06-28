@@ -20,6 +20,8 @@ namespace Administracion_equipos_Roffo
 
         private void Chequeo()
         {
+            
+
 
         }
 
