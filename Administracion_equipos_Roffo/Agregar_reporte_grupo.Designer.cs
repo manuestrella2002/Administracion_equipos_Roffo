@@ -1266,7 +1266,7 @@
             // 
             this.panel_agua_bat_hemoterapia.Controls.Add(this.radioButton_agua_bat_bajo_hemoterapia);
             this.panel_agua_bat_hemoterapia.Controls.Add(this.radioButton_agua_bat_ok_hemoterapia);
-            this.panel_agua_bat_hemoterapia.Location = new System.Drawing.Point(715, 189);
+            this.panel_agua_bat_hemoterapia.Location = new System.Drawing.Point(715, 192);
             this.panel_agua_bat_hemoterapia.Name = "panel_agua_bat_hemoterapia";
             this.panel_agua_bat_hemoterapia.Size = new System.Drawing.Size(61, 46);
             this.panel_agua_bat_hemoterapia.TabIndex = 31;
