@@ -274,6 +274,29 @@
             this.masked_marcha_min_UTI = new System.Windows.Forms.MaskedTextBox();
             this.masked_marcha_hora_UTI = new System.Windows.Forms.MaskedTextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.panel_aceite_resonador.SuspendLayout();
             this.panel_aceite_ultrafrezeers.SuspendLayout();
             this.panel_aceite_patologia.SuspendLayout();
@@ -422,6 +445,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_presion_patologia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_presion_ultrafrezeers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_presion_resonador)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_cirugia
@@ -508,7 +543,7 @@
             // 
             this.label_refrigerante.AutoSize = true;
             this.label_refrigerante.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_refrigerante.Location = new System.Drawing.Point(12, 101);
+            this.label_refrigerante.Location = new System.Drawing.Point(6, 10);
             this.label_refrigerante.Name = "label_refrigerante";
             this.label_refrigerante.Size = new System.Drawing.Size(96, 28);
             this.label_refrigerante.TabIndex = 8;
@@ -518,7 +553,7 @@
             // 
             this.label_combustible.AutoSize = true;
             this.label_combustible.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_combustible.Location = new System.Drawing.Point(15, 165);
+            this.label_combustible.Location = new System.Drawing.Point(6, 13);
             this.label_combustible.Name = "label_combustible";
             this.label_combustible.Size = new System.Drawing.Size(88, 28);
             this.label_combustible.TabIndex = 9;
@@ -528,7 +563,7 @@
             // 
             this.label_agua_bat.AutoSize = true;
             this.label_agua_bat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_agua_bat.Location = new System.Drawing.Point(14, 206);
+            this.label_agua_bat.Location = new System.Drawing.Point(6, 7);
             this.label_agua_bat.Name = "label_agua_bat";
             this.label_agua_bat.Size = new System.Drawing.Size(91, 28);
             this.label_agua_bat.TabIndex = 10;
@@ -538,7 +573,7 @@
             // 
             this.label_bat_carga.AutoSize = true;
             this.label_bat_carga.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_bat_carga.Location = new System.Drawing.Point(5, 247);
+            this.label_bat_carga.Location = new System.Drawing.Point(19, 255);
             this.label_bat_carga.Name = "label_bat_carga";
             this.label_bat_carga.Size = new System.Drawing.Size(109, 15);
             this.label_bat_carga.TabIndex = 11;
@@ -548,7 +583,7 @@
             // 
             this.label_bat_reposo.AutoSize = true;
             this.label_bat_reposo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_bat_reposo.Location = new System.Drawing.Point(1, 275);
+            this.label_bat_reposo.Location = new System.Drawing.Point(19, 282);
             this.label_bat_reposo.Name = "label_bat_reposo";
             this.label_bat_reposo.Size = new System.Drawing.Size(117, 15);
             this.label_bat_reposo.TabIndex = 12;
@@ -558,7 +593,7 @@
             // 
             this.label_u_a_entrada.AutoSize = true;
             this.label_u_a_entrada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_u_a_entrada.Location = new System.Drawing.Point(23, 303);
+            this.label_u_a_entrada.Location = new System.Drawing.Point(19, 317);
             this.label_u_a_entrada.Name = "label_u_a_entrada";
             this.label_u_a_entrada.Size = new System.Drawing.Size(72, 54);
             this.label_u_a_entrada.TabIndex = 13;
@@ -568,7 +603,7 @@
             // 
             this.label_u_a_generada.AutoSize = true;
             this.label_u_a_generada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_u_a_generada.Location = new System.Drawing.Point(23, 370);
+            this.label_u_a_generada.Location = new System.Drawing.Point(19, 390);
             this.label_u_a_generada.Name = "label_u_a_generada";
             this.label_u_a_generada.Size = new System.Drawing.Size(72, 54);
             this.label_u_a_generada.TabIndex = 14;
@@ -578,7 +613,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(103, 303);
+            this.label1.Location = new System.Drawing.Point(99, 317);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(17, 15);
             this.label1.TabIndex = 15;
@@ -589,7 +624,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(103, 325);
+            this.label2.Location = new System.Drawing.Point(99, 339);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 15);
             this.label2.TabIndex = 16;
@@ -599,7 +634,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(103, 347);
+            this.label3.Location = new System.Drawing.Point(99, 361);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(16, 15);
             this.label3.TabIndex = 17;
@@ -609,7 +644,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(103, 413);
+            this.label4.Location = new System.Drawing.Point(99, 433);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(16, 15);
             this.label4.TabIndex = 20;
@@ -619,7 +654,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(103, 391);
+            this.label5.Location = new System.Drawing.Point(99, 411);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(16, 15);
             this.label5.TabIndex = 19;
@@ -629,7 +664,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(103, 369);
+            this.label6.Location = new System.Drawing.Point(99, 389);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(17, 15);
             this.label6.TabIndex = 18;
@@ -639,7 +674,7 @@
             // 
             this.label_frec_Hz.AutoSize = true;
             this.label_frec_Hz.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_frec_Hz.Location = new System.Drawing.Point(28, 447);
+            this.label_frec_Hz.Location = new System.Drawing.Point(11, 8);
             this.label_frec_Hz.Name = "label_frec_Hz";
             this.label_frec_Hz.Size = new System.Drawing.Size(61, 15);
             this.label_frec_Hz.TabIndex = 21;
@@ -649,7 +684,7 @@
             // 
             this.label_rpm.AutoSize = true;
             this.label_rpm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_rpm.Location = new System.Drawing.Point(41, 485);
+            this.label_rpm.Location = new System.Drawing.Point(37, 505);
             this.label_rpm.Name = "label_rpm";
             this.label_rpm.Size = new System.Drawing.Size(36, 15);
             this.label_rpm.TabIndex = 22;
@@ -659,7 +694,7 @@
             // 
             this.label_nro_arranques.AutoSize = true;
             this.label_nro_arranques.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_nro_arranques.Location = new System.Drawing.Point(4, 513);
+            this.label_nro_arranques.Location = new System.Drawing.Point(18, 533);
             this.label_nro_arranques.Name = "label_nro_arranques";
             this.label_nro_arranques.Size = new System.Drawing.Size(110, 15);
             this.label_nro_arranques.TabIndex = 23;
@@ -669,7 +704,7 @@
             // 
             this.label_marcha.AutoSize = true;
             this.label_marcha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_marcha.Location = new System.Drawing.Point(28, 541);
+            this.label_marcha.Location = new System.Drawing.Point(24, 561);
             this.label_marcha.Name = "label_marcha";
             this.label_marcha.Size = new System.Drawing.Size(58, 15);
             this.label_marcha.TabIndex = 24;
@@ -679,7 +714,7 @@
             // 
             this.label_temperatura.AutoSize = true;
             this.label_temperatura.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_temperatura.Location = new System.Drawing.Point(10, 569);
+            this.label_temperatura.Location = new System.Drawing.Point(21, 589);
             this.label_temperatura.Name = "label_temperatura";
             this.label_temperatura.Size = new System.Drawing.Size(94, 15);
             this.label_temperatura.TabIndex = 25;
@@ -689,7 +724,7 @@
             // 
             this.label_presion.AutoSize = true;
             this.label_presion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_presion.Location = new System.Drawing.Point(27, 597);
+            this.label_presion.Location = new System.Drawing.Point(23, 617);
             this.label_presion.Name = "label_presion";
             this.label_presion.Size = new System.Drawing.Size(60, 15);
             this.label_presion.TabIndex = 26;
@@ -700,15 +735,15 @@
             this.panel_aceite_resonador.Controls.Add(this.radioButton_aceite_mal_reso);
             this.panel_aceite_resonador.Controls.Add(this.radioButton_aceite_ok_osc_reso);
             this.panel_aceite_resonador.Controls.Add(this.radioButton_aceite_ok_reso);
-            this.panel_aceite_resonador.Location = new System.Drawing.Point(126, 27);
+            this.panel_aceite_resonador.Location = new System.Drawing.Point(126, 24);
             this.panel_aceite_resonador.Name = "panel_aceite_resonador";
-            this.panel_aceite_resonador.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_resonador.Size = new System.Drawing.Size(94, 65);
             this.panel_aceite_resonador.TabIndex = 27;
             // 
             // radioButton_aceite_mal_reso
             // 
             this.radioButton_aceite_mal_reso.AutoSize = true;
-            this.radioButton_aceite_mal_reso.Location = new System.Drawing.Point(2, 39);
+            this.radioButton_aceite_mal_reso.Location = new System.Drawing.Point(3, 42);
             this.radioButton_aceite_mal_reso.Name = "radioButton_aceite_mal_reso";
             this.radioButton_aceite_mal_reso.Size = new System.Drawing.Size(47, 17);
             this.radioButton_aceite_mal_reso.TabIndex = 2;
@@ -745,13 +780,13 @@
             this.panel_aceite_ultrafrezeers.Controls.Add(this.radioButton_aceite_ok_ultrafreezers);
             this.panel_aceite_ultrafrezeers.Location = new System.Drawing.Point(269, 24);
             this.panel_aceite_ultrafrezeers.Name = "panel_aceite_ultrafrezeers";
-            this.panel_aceite_ultrafrezeers.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_ultrafrezeers.Size = new System.Drawing.Size(94, 65);
             this.panel_aceite_ultrafrezeers.TabIndex = 28;
             // 
             // radioButton_aceite_mal_ultrafrezeers
             // 
             this.radioButton_aceite_mal_ultrafrezeers.AutoSize = true;
-            this.radioButton_aceite_mal_ultrafrezeers.Location = new System.Drawing.Point(2, 39);
+            this.radioButton_aceite_mal_ultrafrezeers.Location = new System.Drawing.Point(3, 43);
             this.radioButton_aceite_mal_ultrafrezeers.Name = "radioButton_aceite_mal_ultrafrezeers";
             this.radioButton_aceite_mal_ultrafrezeers.Size = new System.Drawing.Size(47, 17);
             this.radioButton_aceite_mal_ultrafrezeers.TabIndex = 2;
@@ -788,13 +823,13 @@
             this.panel_aceite_patologia.Controls.Add(this.radioButton_aceite_ok_patologia);
             this.panel_aceite_patologia.Location = new System.Drawing.Point(411, 24);
             this.panel_aceite_patologia.Name = "panel_aceite_patologia";
-            this.panel_aceite_patologia.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_patologia.Size = new System.Drawing.Size(94, 65);
             this.panel_aceite_patologia.TabIndex = 29;
             // 
             // radioButton_aceite_mal_patologia
             // 
             this.radioButton_aceite_mal_patologia.AutoSize = true;
-            this.radioButton_aceite_mal_patologia.Location = new System.Drawing.Point(2, 39);
+            this.radioButton_aceite_mal_patologia.Location = new System.Drawing.Point(3, 44);
             this.radioButton_aceite_mal_patologia.Name = "radioButton_aceite_mal_patologia";
             this.radioButton_aceite_mal_patologia.Size = new System.Drawing.Size(47, 17);
             this.radioButton_aceite_mal_patologia.TabIndex = 2;
@@ -831,13 +866,13 @@
             this.panel_aceite_cirugia.Controls.Add(this.radioButton_aceite_ok_cirugia);
             this.panel_aceite_cirugia.Location = new System.Drawing.Point(543, 24);
             this.panel_aceite_cirugia.Name = "panel_aceite_cirugia";
-            this.panel_aceite_cirugia.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_cirugia.Size = new System.Drawing.Size(94, 65);
             this.panel_aceite_cirugia.TabIndex = 30;
             // 
             // radioButton_aceite_mal_cirugia
             // 
             this.radioButton_aceite_mal_cirugia.AutoSize = true;
-            this.radioButton_aceite_mal_cirugia.Location = new System.Drawing.Point(2, 39);
+            this.radioButton_aceite_mal_cirugia.Location = new System.Drawing.Point(4, 43);
             this.radioButton_aceite_mal_cirugia.Name = "radioButton_aceite_mal_cirugia";
             this.radioButton_aceite_mal_cirugia.Size = new System.Drawing.Size(47, 17);
             this.radioButton_aceite_mal_cirugia.TabIndex = 2;
@@ -874,13 +909,13 @@
             this.panel_aceite_hemoterapia.Controls.Add(this.radioButton_aceite_ok_hemoterapia);
             this.panel_aceite_hemoterapia.Location = new System.Drawing.Point(698, 24);
             this.panel_aceite_hemoterapia.Name = "panel_aceite_hemoterapia";
-            this.panel_aceite_hemoterapia.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_hemoterapia.Size = new System.Drawing.Size(94, 65);
             this.panel_aceite_hemoterapia.TabIndex = 31;
             // 
             // radioButton_aceite_mal_hemoterapia
             // 
             this.radioButton_aceite_mal_hemoterapia.AutoSize = true;
-            this.radioButton_aceite_mal_hemoterapia.Location = new System.Drawing.Point(2, 39);
+            this.radioButton_aceite_mal_hemoterapia.Location = new System.Drawing.Point(4, 43);
             this.radioButton_aceite_mal_hemoterapia.Name = "radioButton_aceite_mal_hemoterapia";
             this.radioButton_aceite_mal_hemoterapia.Size = new System.Drawing.Size(47, 17);
             this.radioButton_aceite_mal_hemoterapia.TabIndex = 2;
@@ -917,13 +952,13 @@
             this.panel_aceite_UTI.Controls.Add(this.radioButton_aceite_ok_uti);
             this.panel_aceite_UTI.Location = new System.Drawing.Point(834, 24);
             this.panel_aceite_UTI.Name = "panel_aceite_UTI";
-            this.panel_aceite_UTI.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_UTI.Size = new System.Drawing.Size(94, 65);
             this.panel_aceite_UTI.TabIndex = 32;
             // 
             // radioButton_aceite_mal_UTI
             // 
             this.radioButton_aceite_mal_UTI.AutoSize = true;
-            this.radioButton_aceite_mal_UTI.Location = new System.Drawing.Point(2, 39);
+            this.radioButton_aceite_mal_UTI.Location = new System.Drawing.Point(3, 43);
             this.radioButton_aceite_mal_UTI.Name = "radioButton_aceite_mal_UTI";
             this.radioButton_aceite_mal_UTI.Size = new System.Drawing.Size(47, 17);
             this.radioButton_aceite_mal_UTI.TabIndex = 2;
@@ -960,13 +995,13 @@
             this.panel_aceite_bioterio.Controls.Add(this.radioButton_aceite_ok_bioterio);
             this.panel_aceite_bioterio.Location = new System.Drawing.Point(972, 24);
             this.panel_aceite_bioterio.Name = "panel_aceite_bioterio";
-            this.panel_aceite_bioterio.Size = new System.Drawing.Size(94, 59);
+            this.panel_aceite_bioterio.Size = new System.Drawing.Size(94, 65);
             this.panel_aceite_bioterio.TabIndex = 33;
             // 
             // radioButton_aceite_mal_bioterio
             // 
             this.radioButton_aceite_mal_bioterio.AutoSize = true;
-            this.radioButton_aceite_mal_bioterio.Location = new System.Drawing.Point(2, 39);
+            this.radioButton_aceite_mal_bioterio.Location = new System.Drawing.Point(3, 43);
             this.radioButton_aceite_mal_bioterio.Name = "radioButton_aceite_mal_bioterio";
             this.radioButton_aceite_mal_bioterio.Size = new System.Drawing.Size(47, 17);
             this.radioButton_aceite_mal_bioterio.TabIndex = 2;
@@ -1000,7 +1035,7 @@
             // 
             this.panel_refri_resonador.Controls.Add(this.radioButton_refri_mal_resonador);
             this.panel_refri_resonador.Controls.Add(this.radiobutton_Refri_ok_resonador);
-            this.panel_refri_resonador.Location = new System.Drawing.Point(148, 95);
+            this.panel_refri_resonador.Location = new System.Drawing.Point(148, 98);
             this.panel_refri_resonador.Name = "panel_refri_resonador";
             this.panel_refri_resonador.Size = new System.Drawing.Size(51, 46);
             this.panel_refri_resonador.TabIndex = 28;
@@ -1031,7 +1066,7 @@
             // 
             this.panel_refri_ultrafrezeers.Controls.Add(this.radioButton_refri_mal_ultrafrezeers);
             this.panel_refri_ultrafrezeers.Controls.Add(this.radiobutton_Refri_ok_ultrafrezeers);
-            this.panel_refri_ultrafrezeers.Location = new System.Drawing.Point(291, 92);
+            this.panel_refri_ultrafrezeers.Location = new System.Drawing.Point(291, 98);
             this.panel_refri_ultrafrezeers.Name = "panel_refri_ultrafrezeers";
             this.panel_refri_ultrafrezeers.Size = new System.Drawing.Size(51, 46);
             this.panel_refri_ultrafrezeers.TabIndex = 29;
@@ -1062,7 +1097,7 @@
             // 
             this.panel_refri_patologia.Controls.Add(this.radioButton_refri_mal_patologia);
             this.panel_refri_patologia.Controls.Add(this.radiobutton_Refri_ok_patologia);
-            this.panel_refri_patologia.Location = new System.Drawing.Point(433, 92);
+            this.panel_refri_patologia.Location = new System.Drawing.Point(433, 98);
             this.panel_refri_patologia.Name = "panel_refri_patologia";
             this.panel_refri_patologia.Size = new System.Drawing.Size(51, 46);
             this.panel_refri_patologia.TabIndex = 30;
@@ -1093,7 +1128,7 @@
             // 
             this.panel_refri_cirugia.Controls.Add(this.radioButton_refri_mal_cirugia);
             this.panel_refri_cirugia.Controls.Add(this.radiobutton_Refri_ok_cirugia);
-            this.panel_refri_cirugia.Location = new System.Drawing.Point(565, 92);
+            this.panel_refri_cirugia.Location = new System.Drawing.Point(565, 98);
             this.panel_refri_cirugia.Name = "panel_refri_cirugia";
             this.panel_refri_cirugia.Size = new System.Drawing.Size(51, 46);
             this.panel_refri_cirugia.TabIndex = 31;
@@ -1124,7 +1159,7 @@
             // 
             this.panel_refri_hemoterapia.Controls.Add(this.radioButton_refri_mal_hemoterapia);
             this.panel_refri_hemoterapia.Controls.Add(this.radiobutton_Refri_ok_hemoterapia);
-            this.panel_refri_hemoterapia.Location = new System.Drawing.Point(720, 92);
+            this.panel_refri_hemoterapia.Location = new System.Drawing.Point(720, 98);
             this.panel_refri_hemoterapia.Name = "panel_refri_hemoterapia";
             this.panel_refri_hemoterapia.Size = new System.Drawing.Size(51, 46);
             this.panel_refri_hemoterapia.TabIndex = 32;
@@ -1155,7 +1190,7 @@
             // 
             this.panel_refri_UTI.Controls.Add(this.radioButton_refri_mal_UTI);
             this.panel_refri_UTI.Controls.Add(this.radiobutton_Refri_ok_UTI);
-            this.panel_refri_UTI.Location = new System.Drawing.Point(856, 92);
+            this.panel_refri_UTI.Location = new System.Drawing.Point(856, 98);
             this.panel_refri_UTI.Name = "panel_refri_UTI";
             this.panel_refri_UTI.Size = new System.Drawing.Size(51, 46);
             this.panel_refri_UTI.TabIndex = 33;
@@ -1186,7 +1221,7 @@
             // 
             this.panel_refri_bioterio.Controls.Add(this.radioButton_refri_mal_bioterio);
             this.panel_refri_bioterio.Controls.Add(this.radiobutton_Refri_ok_bioterio);
-            this.panel_refri_bioterio.Location = new System.Drawing.Point(994, 92);
+            this.panel_refri_bioterio.Location = new System.Drawing.Point(994, 98);
             this.panel_refri_bioterio.Name = "panel_refri_bioterio";
             this.panel_refri_bioterio.Size = new System.Drawing.Size(51, 46);
             this.panel_refri_bioterio.TabIndex = 34;
@@ -1215,49 +1250,49 @@
             // 
             // numeric_comb_resonador
             // 
-            this.numeric_comb_resonador.Location = new System.Drawing.Point(148, 168);
+            this.numeric_comb_resonador.Location = new System.Drawing.Point(135, 15);
             this.numeric_comb_resonador.Name = "numeric_comb_resonador";
             this.numeric_comb_resonador.Size = new System.Drawing.Size(51, 20);
             this.numeric_comb_resonador.TabIndex = 35;
             // 
             // numeric_comb_ultrafrezeers
             // 
-            this.numeric_comb_ultrafrezeers.Location = new System.Drawing.Point(291, 165);
+            this.numeric_comb_ultrafrezeers.Location = new System.Drawing.Point(276, 15);
             this.numeric_comb_ultrafrezeers.Name = "numeric_comb_ultrafrezeers";
             this.numeric_comb_ultrafrezeers.Size = new System.Drawing.Size(51, 20);
             this.numeric_comb_ultrafrezeers.TabIndex = 36;
             // 
             // numeric_comb_patologia
             // 
-            this.numeric_comb_patologia.Location = new System.Drawing.Point(433, 165);
+            this.numeric_comb_patologia.Location = new System.Drawing.Point(420, 15);
             this.numeric_comb_patologia.Name = "numeric_comb_patologia";
             this.numeric_comb_patologia.Size = new System.Drawing.Size(51, 20);
             this.numeric_comb_patologia.TabIndex = 37;
             // 
             // numeric_comb_cirugia
             // 
-            this.numeric_comb_cirugia.Location = new System.Drawing.Point(565, 163);
+            this.numeric_comb_cirugia.Location = new System.Drawing.Point(552, 15);
             this.numeric_comb_cirugia.Name = "numeric_comb_cirugia";
             this.numeric_comb_cirugia.Size = new System.Drawing.Size(51, 20);
             this.numeric_comb_cirugia.TabIndex = 38;
             // 
             // numeric_comb_hemoterapia
             // 
-            this.numeric_comb_hemoterapia.Location = new System.Drawing.Point(720, 163);
+            this.numeric_comb_hemoterapia.Location = new System.Drawing.Point(707, 15);
             this.numeric_comb_hemoterapia.Name = "numeric_comb_hemoterapia";
             this.numeric_comb_hemoterapia.Size = new System.Drawing.Size(51, 20);
             this.numeric_comb_hemoterapia.TabIndex = 39;
             // 
             // numeric_comb_UTI
             // 
-            this.numeric_comb_UTI.Location = new System.Drawing.Point(856, 165);
+            this.numeric_comb_UTI.Location = new System.Drawing.Point(838, 15);
             this.numeric_comb_UTI.Name = "numeric_comb_UTI";
             this.numeric_comb_UTI.Size = new System.Drawing.Size(51, 20);
             this.numeric_comb_UTI.TabIndex = 40;
             // 
             // numeric_comb_bioterio
             // 
-            this.numeric_comb_bioterio.Location = new System.Drawing.Point(994, 163);
+            this.numeric_comb_bioterio.Location = new System.Drawing.Point(981, 15);
             this.numeric_comb_bioterio.Name = "numeric_comb_bioterio";
             this.numeric_comb_bioterio.Size = new System.Drawing.Size(51, 20);
             this.numeric_comb_bioterio.TabIndex = 41;
@@ -1266,7 +1301,7 @@
             // 
             this.panel_agua_bat_hemoterapia.Controls.Add(this.radioButton_agua_bat_bajo_hemoterapia);
             this.panel_agua_bat_hemoterapia.Controls.Add(this.radioButton_agua_bat_ok_hemoterapia);
-            this.panel_agua_bat_hemoterapia.Location = new System.Drawing.Point(715, 192);
+            this.panel_agua_bat_hemoterapia.Location = new System.Drawing.Point(716, 201);
             this.panel_agua_bat_hemoterapia.Name = "panel_agua_bat_hemoterapia";
             this.panel_agua_bat_hemoterapia.Size = new System.Drawing.Size(61, 46);
             this.panel_agua_bat_hemoterapia.TabIndex = 31;
@@ -1297,7 +1332,7 @@
             // 
             this.panel_agua_bat_UTI.Controls.Add(this.radioButton_agua_bat_bajo_UTI);
             this.panel_agua_bat_UTI.Controls.Add(this.radioButton_agua_bat_ok_UTI);
-            this.panel_agua_bat_UTI.Location = new System.Drawing.Point(851, 192);
+            this.panel_agua_bat_UTI.Location = new System.Drawing.Point(851, 201);
             this.panel_agua_bat_UTI.Name = "panel_agua_bat_UTI";
             this.panel_agua_bat_UTI.Size = new System.Drawing.Size(61, 46);
             this.panel_agua_bat_UTI.TabIndex = 32;
@@ -1326,105 +1361,105 @@
             // 
             // numeric_U_bat_carga_resonador
             // 
-            this.numeric_U_bat_carga_resonador.Location = new System.Drawing.Point(148, 247);
+            this.numeric_U_bat_carga_resonador.Location = new System.Drawing.Point(148, 253);
             this.numeric_U_bat_carga_resonador.Name = "numeric_U_bat_carga_resonador";
             this.numeric_U_bat_carga_resonador.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_carga_resonador.TabIndex = 42;
             // 
             // numeric_U_bat_carga_ultrafrezeers
             // 
-            this.numeric_U_bat_carga_ultrafrezeers.Location = new System.Drawing.Point(291, 247);
+            this.numeric_U_bat_carga_ultrafrezeers.Location = new System.Drawing.Point(291, 253);
             this.numeric_U_bat_carga_ultrafrezeers.Name = "numeric_U_bat_carga_ultrafrezeers";
             this.numeric_U_bat_carga_ultrafrezeers.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_carga_ultrafrezeers.TabIndex = 43;
             // 
             // numeric_U_bat_carga_patologia
             // 
-            this.numeric_U_bat_carga_patologia.Location = new System.Drawing.Point(433, 247);
+            this.numeric_U_bat_carga_patologia.Location = new System.Drawing.Point(433, 253);
             this.numeric_U_bat_carga_patologia.Name = "numeric_U_bat_carga_patologia";
             this.numeric_U_bat_carga_patologia.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_carga_patologia.TabIndex = 44;
             // 
             // numeric_U_bat_carga_cirugia
             // 
-            this.numeric_U_bat_carga_cirugia.Location = new System.Drawing.Point(565, 247);
+            this.numeric_U_bat_carga_cirugia.Location = new System.Drawing.Point(565, 253);
             this.numeric_U_bat_carga_cirugia.Name = "numeric_U_bat_carga_cirugia";
             this.numeric_U_bat_carga_cirugia.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_carga_cirugia.TabIndex = 45;
             // 
             // numeric_U_bat_carga_hemoterapia
             // 
-            this.numeric_U_bat_carga_hemoterapia.Location = new System.Drawing.Point(720, 247);
+            this.numeric_U_bat_carga_hemoterapia.Location = new System.Drawing.Point(720, 253);
             this.numeric_U_bat_carga_hemoterapia.Name = "numeric_U_bat_carga_hemoterapia";
             this.numeric_U_bat_carga_hemoterapia.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_carga_hemoterapia.TabIndex = 46;
             // 
             // numeric_U_bat_carga_UTI
             // 
-            this.numeric_U_bat_carga_UTI.Location = new System.Drawing.Point(856, 247);
+            this.numeric_U_bat_carga_UTI.Location = new System.Drawing.Point(856, 253);
             this.numeric_U_bat_carga_UTI.Name = "numeric_U_bat_carga_UTI";
             this.numeric_U_bat_carga_UTI.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_carga_UTI.TabIndex = 47;
             // 
             // numeric_U_bat_carga_bioterio
             // 
-            this.numeric_U_bat_carga_bioterio.Location = new System.Drawing.Point(994, 247);
+            this.numeric_U_bat_carga_bioterio.Location = new System.Drawing.Point(994, 253);
             this.numeric_U_bat_carga_bioterio.Name = "numeric_U_bat_carga_bioterio";
             this.numeric_U_bat_carga_bioterio.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_carga_bioterio.TabIndex = 48;
             // 
             // numeric_U_bat_rep_bioterio
             // 
-            this.numeric_U_bat_rep_bioterio.Location = new System.Drawing.Point(994, 276);
+            this.numeric_U_bat_rep_bioterio.Location = new System.Drawing.Point(994, 282);
             this.numeric_U_bat_rep_bioterio.Name = "numeric_U_bat_rep_bioterio";
             this.numeric_U_bat_rep_bioterio.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_rep_bioterio.TabIndex = 55;
             // 
             // numeric_U_bat_rep_UTI
             // 
-            this.numeric_U_bat_rep_UTI.Location = new System.Drawing.Point(856, 276);
+            this.numeric_U_bat_rep_UTI.Location = new System.Drawing.Point(856, 282);
             this.numeric_U_bat_rep_UTI.Name = "numeric_U_bat_rep_UTI";
             this.numeric_U_bat_rep_UTI.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_rep_UTI.TabIndex = 54;
             // 
             // numeric_U_bat_rep_hemoterapia
             // 
-            this.numeric_U_bat_rep_hemoterapia.Location = new System.Drawing.Point(720, 276);
+            this.numeric_U_bat_rep_hemoterapia.Location = new System.Drawing.Point(720, 282);
             this.numeric_U_bat_rep_hemoterapia.Name = "numeric_U_bat_rep_hemoterapia";
             this.numeric_U_bat_rep_hemoterapia.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_rep_hemoterapia.TabIndex = 53;
             // 
             // numeric_U_bat_rep_cirugia
             // 
-            this.numeric_U_bat_rep_cirugia.Location = new System.Drawing.Point(565, 276);
+            this.numeric_U_bat_rep_cirugia.Location = new System.Drawing.Point(565, 282);
             this.numeric_U_bat_rep_cirugia.Name = "numeric_U_bat_rep_cirugia";
             this.numeric_U_bat_rep_cirugia.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_rep_cirugia.TabIndex = 52;
             // 
             // numeric_U_bat_rep_patologia
             // 
-            this.numeric_U_bat_rep_patologia.Location = new System.Drawing.Point(433, 276);
+            this.numeric_U_bat_rep_patologia.Location = new System.Drawing.Point(433, 282);
             this.numeric_U_bat_rep_patologia.Name = "numeric_U_bat_rep_patologia";
             this.numeric_U_bat_rep_patologia.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_rep_patologia.TabIndex = 51;
             // 
             // numeric_U_bat_rep_ultrafrezeers
             // 
-            this.numeric_U_bat_rep_ultrafrezeers.Location = new System.Drawing.Point(291, 276);
+            this.numeric_U_bat_rep_ultrafrezeers.Location = new System.Drawing.Point(291, 282);
             this.numeric_U_bat_rep_ultrafrezeers.Name = "numeric_U_bat_rep_ultrafrezeers";
             this.numeric_U_bat_rep_ultrafrezeers.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_rep_ultrafrezeers.TabIndex = 50;
             // 
             // numeric_U_bat_rep_resonador
             // 
-            this.numeric_U_bat_rep_resonador.Location = new System.Drawing.Point(148, 276);
+            this.numeric_U_bat_rep_resonador.Location = new System.Drawing.Point(148, 282);
             this.numeric_U_bat_rep_resonador.Name = "numeric_U_bat_rep_resonador";
             this.numeric_U_bat_rep_resonador.Size = new System.Drawing.Size(51, 20);
             this.numeric_U_bat_rep_resonador.TabIndex = 49;
             // 
             // numeric_I_ent_R_resonador
             // 
-            this.numeric_I_ent_R_resonador.Location = new System.Drawing.Point(182, 298);
+            this.numeric_I_ent_R_resonador.Location = new System.Drawing.Point(178, 312);
             this.numeric_I_ent_R_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1436,7 +1471,7 @@
             // 
             // numeric_U_ent_R_resonador
             // 
-            this.numeric_U_ent_R_resonador.Location = new System.Drawing.Point(125, 298);
+            this.numeric_U_ent_R_resonador.Location = new System.Drawing.Point(121, 312);
             this.numeric_U_ent_R_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1448,7 +1483,7 @@
             // 
             // numeric_I_ent_R_ultrafrezeers
             // 
-            this.numeric_I_ent_R_ultrafrezeers.Location = new System.Drawing.Point(316, 298);
+            this.numeric_I_ent_R_ultrafrezeers.Location = new System.Drawing.Point(312, 312);
             this.numeric_I_ent_R_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1460,7 +1495,7 @@
             // 
             // numeric_U_ent_R_Ultrafrezeers
             // 
-            this.numeric_U_ent_R_Ultrafrezeers.Location = new System.Drawing.Point(259, 298);
+            this.numeric_U_ent_R_Ultrafrezeers.Location = new System.Drawing.Point(255, 312);
             this.numeric_U_ent_R_Ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1472,7 +1507,7 @@
             // 
             // numeric_I_ent_R_patologia
             // 
-            this.numeric_I_ent_R_patologia.Location = new System.Drawing.Point(457, 298);
+            this.numeric_I_ent_R_patologia.Location = new System.Drawing.Point(453, 312);
             this.numeric_I_ent_R_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1484,7 +1519,7 @@
             // 
             // numeric_U_ent_R_patologia
             // 
-            this.numeric_U_ent_R_patologia.Location = new System.Drawing.Point(400, 298);
+            this.numeric_U_ent_R_patologia.Location = new System.Drawing.Point(396, 312);
             this.numeric_U_ent_R_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1496,7 +1531,7 @@
             // 
             // numeric_I_ent_R_cirugia
             // 
-            this.numeric_I_ent_R_cirugia.Location = new System.Drawing.Point(594, 298);
+            this.numeric_I_ent_R_cirugia.Location = new System.Drawing.Point(590, 312);
             this.numeric_I_ent_R_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1508,7 +1543,7 @@
             // 
             // numeric_U_ent_R_cirugia
             // 
-            this.numeric_U_ent_R_cirugia.Location = new System.Drawing.Point(537, 298);
+            this.numeric_U_ent_R_cirugia.Location = new System.Drawing.Point(533, 312);
             this.numeric_U_ent_R_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1520,7 +1555,7 @@
             // 
             // numeric_I_ent_R_hemoterapia
             // 
-            this.numeric_I_ent_R_hemoterapia.Location = new System.Drawing.Point(744, 298);
+            this.numeric_I_ent_R_hemoterapia.Location = new System.Drawing.Point(740, 312);
             this.numeric_I_ent_R_hemoterapia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1532,7 +1567,7 @@
             // 
             // numeric_I_ent_R_UTI
             // 
-            this.numeric_I_ent_R_UTI.Location = new System.Drawing.Point(882, 298);
+            this.numeric_I_ent_R_UTI.Location = new System.Drawing.Point(878, 312);
             this.numeric_I_ent_R_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1544,7 +1579,7 @@
             // 
             // numeric_U_ent_R_UTI
             // 
-            this.numeric_U_ent_R_UTI.Location = new System.Drawing.Point(825, 298);
+            this.numeric_U_ent_R_UTI.Location = new System.Drawing.Point(821, 312);
             this.numeric_U_ent_R_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1556,7 +1591,7 @@
             // 
             // numeric_I_ent_R_bioterio
             // 
-            this.numeric_I_ent_R_bioterio.Location = new System.Drawing.Point(1017, 298);
+            this.numeric_I_ent_R_bioterio.Location = new System.Drawing.Point(1013, 312);
             this.numeric_I_ent_R_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1568,7 +1603,7 @@
             // 
             // numeric_U_ent_R_bioterio
             // 
-            this.numeric_U_ent_R_bioterio.Location = new System.Drawing.Point(960, 298);
+            this.numeric_U_ent_R_bioterio.Location = new System.Drawing.Point(956, 312);
             this.numeric_U_ent_R_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1580,7 +1615,7 @@
             // 
             // numeric_I_ent_S_bioterio
             // 
-            this.numeric_I_ent_S_bioterio.Location = new System.Drawing.Point(1017, 320);
+            this.numeric_I_ent_S_bioterio.Location = new System.Drawing.Point(1013, 334);
             this.numeric_I_ent_S_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1592,7 +1627,7 @@
             // 
             // numeric_U_ent_S_bioterio
             // 
-            this.numeric_U_ent_S_bioterio.Location = new System.Drawing.Point(960, 320);
+            this.numeric_U_ent_S_bioterio.Location = new System.Drawing.Point(956, 334);
             this.numeric_U_ent_S_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1604,7 +1639,7 @@
             // 
             // numeric_I_ent_S_UTI
             // 
-            this.numeric_I_ent_S_UTI.Location = new System.Drawing.Point(882, 320);
+            this.numeric_I_ent_S_UTI.Location = new System.Drawing.Point(878, 334);
             this.numeric_I_ent_S_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1616,7 +1651,7 @@
             // 
             // numeric_U_ent_S_UTI
             // 
-            this.numeric_U_ent_S_UTI.Location = new System.Drawing.Point(825, 320);
+            this.numeric_U_ent_S_UTI.Location = new System.Drawing.Point(821, 334);
             this.numeric_U_ent_S_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1628,7 +1663,7 @@
             // 
             // numeric_I_ent_S_hemoterapia
             // 
-            this.numeric_I_ent_S_hemoterapia.Location = new System.Drawing.Point(744, 320);
+            this.numeric_I_ent_S_hemoterapia.Location = new System.Drawing.Point(740, 334);
             this.numeric_I_ent_S_hemoterapia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1640,7 +1675,7 @@
             // 
             // numeric_I_ent_S_cirugia
             // 
-            this.numeric_I_ent_S_cirugia.Location = new System.Drawing.Point(594, 320);
+            this.numeric_I_ent_S_cirugia.Location = new System.Drawing.Point(590, 334);
             this.numeric_I_ent_S_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1652,7 +1687,7 @@
             // 
             // numeric_U_ent_S_cirugia
             // 
-            this.numeric_U_ent_S_cirugia.Location = new System.Drawing.Point(537, 320);
+            this.numeric_U_ent_S_cirugia.Location = new System.Drawing.Point(533, 334);
             this.numeric_U_ent_S_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1664,7 +1699,7 @@
             // 
             // numeric_I_ent_S_patologia
             // 
-            this.numeric_I_ent_S_patologia.Location = new System.Drawing.Point(457, 320);
+            this.numeric_I_ent_S_patologia.Location = new System.Drawing.Point(453, 334);
             this.numeric_I_ent_S_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1676,7 +1711,7 @@
             // 
             // numeric_U_ent_S_patologia
             // 
-            this.numeric_U_ent_S_patologia.Location = new System.Drawing.Point(400, 320);
+            this.numeric_U_ent_S_patologia.Location = new System.Drawing.Point(396, 334);
             this.numeric_U_ent_S_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1688,7 +1723,7 @@
             // 
             // numeric_I_ent_S_ultrafrezeers
             // 
-            this.numeric_I_ent_S_ultrafrezeers.Location = new System.Drawing.Point(316, 320);
+            this.numeric_I_ent_S_ultrafrezeers.Location = new System.Drawing.Point(312, 334);
             this.numeric_I_ent_S_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1700,7 +1735,7 @@
             // 
             // numeric_U_ent_S_ultrafrezeers
             // 
-            this.numeric_U_ent_S_ultrafrezeers.Location = new System.Drawing.Point(259, 320);
+            this.numeric_U_ent_S_ultrafrezeers.Location = new System.Drawing.Point(255, 334);
             this.numeric_U_ent_S_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1712,7 +1747,7 @@
             // 
             // numeric_I_ent_S_resonador
             // 
-            this.numeric_I_ent_S_resonador.Location = new System.Drawing.Point(182, 320);
+            this.numeric_I_ent_S_resonador.Location = new System.Drawing.Point(178, 334);
             this.numeric_I_ent_S_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1724,7 +1759,7 @@
             // 
             // numeric_U_ent_S_resonador
             // 
-            this.numeric_U_ent_S_resonador.Location = new System.Drawing.Point(125, 320);
+            this.numeric_U_ent_S_resonador.Location = new System.Drawing.Point(121, 334);
             this.numeric_U_ent_S_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1736,7 +1771,7 @@
             // 
             // numeric_I_ent_T_bioterio
             // 
-            this.numeric_I_ent_T_bioterio.Location = new System.Drawing.Point(1017, 342);
+            this.numeric_I_ent_T_bioterio.Location = new System.Drawing.Point(1013, 356);
             this.numeric_I_ent_T_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1748,7 +1783,7 @@
             // 
             // numeric_U_ent_T_bioterio
             // 
-            this.numeric_U_ent_T_bioterio.Location = new System.Drawing.Point(960, 342);
+            this.numeric_U_ent_T_bioterio.Location = new System.Drawing.Point(956, 356);
             this.numeric_U_ent_T_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1760,7 +1795,7 @@
             // 
             // numeric_I_ent_T_UTI
             // 
-            this.numeric_I_ent_T_UTI.Location = new System.Drawing.Point(882, 342);
+            this.numeric_I_ent_T_UTI.Location = new System.Drawing.Point(878, 356);
             this.numeric_I_ent_T_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1772,7 +1807,7 @@
             // 
             // numeric_U_ent_T_UTI
             // 
-            this.numeric_U_ent_T_UTI.Location = new System.Drawing.Point(825, 342);
+            this.numeric_U_ent_T_UTI.Location = new System.Drawing.Point(821, 356);
             this.numeric_U_ent_T_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1784,7 +1819,7 @@
             // 
             // numeric_I_ent_T_hemoterapia
             // 
-            this.numeric_I_ent_T_hemoterapia.Location = new System.Drawing.Point(744, 342);
+            this.numeric_I_ent_T_hemoterapia.Location = new System.Drawing.Point(740, 356);
             this.numeric_I_ent_T_hemoterapia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1796,7 +1831,7 @@
             // 
             // numeric_I_ent_T_cirugia
             // 
-            this.numeric_I_ent_T_cirugia.Location = new System.Drawing.Point(594, 342);
+            this.numeric_I_ent_T_cirugia.Location = new System.Drawing.Point(590, 356);
             this.numeric_I_ent_T_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1808,7 +1843,7 @@
             // 
             // numeric_U_ent_T_cirugia
             // 
-            this.numeric_U_ent_T_cirugia.Location = new System.Drawing.Point(537, 342);
+            this.numeric_U_ent_T_cirugia.Location = new System.Drawing.Point(533, 356);
             this.numeric_U_ent_T_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1820,7 +1855,7 @@
             // 
             // numeric_I_ent_T_patologia
             // 
-            this.numeric_I_ent_T_patologia.Location = new System.Drawing.Point(457, 342);
+            this.numeric_I_ent_T_patologia.Location = new System.Drawing.Point(453, 356);
             this.numeric_I_ent_T_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1832,7 +1867,7 @@
             // 
             // numeric_U_ent_T_patologia
             // 
-            this.numeric_U_ent_T_patologia.Location = new System.Drawing.Point(400, 342);
+            this.numeric_U_ent_T_patologia.Location = new System.Drawing.Point(396, 356);
             this.numeric_U_ent_T_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1844,7 +1879,7 @@
             // 
             // numeric_I_ent_T_ultrafrezeers
             // 
-            this.numeric_I_ent_T_ultrafrezeers.Location = new System.Drawing.Point(316, 342);
+            this.numeric_I_ent_T_ultrafrezeers.Location = new System.Drawing.Point(312, 356);
             this.numeric_I_ent_T_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1856,7 +1891,7 @@
             // 
             // numeric_U_ent_T_utrafrezeers
             // 
-            this.numeric_U_ent_T_utrafrezeers.Location = new System.Drawing.Point(259, 342);
+            this.numeric_U_ent_T_utrafrezeers.Location = new System.Drawing.Point(255, 356);
             this.numeric_U_ent_T_utrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1868,7 +1903,7 @@
             // 
             // numeric_I_ent_T_resonador
             // 
-            this.numeric_I_ent_T_resonador.Location = new System.Drawing.Point(182, 342);
+            this.numeric_I_ent_T_resonador.Location = new System.Drawing.Point(178, 356);
             this.numeric_I_ent_T_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1880,7 +1915,7 @@
             // 
             // numeric_U_ent_T_resonador
             // 
-            this.numeric_U_ent_T_resonador.Location = new System.Drawing.Point(125, 342);
+            this.numeric_U_ent_T_resonador.Location = new System.Drawing.Point(121, 356);
             this.numeric_U_ent_T_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1892,7 +1927,7 @@
             // 
             // numeric_I_gen_R_bioterio
             // 
-            this.numeric_I_gen_R_bioterio.Location = new System.Drawing.Point(1017, 364);
+            this.numeric_I_gen_R_bioterio.Location = new System.Drawing.Point(1013, 384);
             this.numeric_I_gen_R_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1904,7 +1939,7 @@
             // 
             // numeric_U_gen_R_bioterio
             // 
-            this.numeric_U_gen_R_bioterio.Location = new System.Drawing.Point(960, 364);
+            this.numeric_U_gen_R_bioterio.Location = new System.Drawing.Point(956, 384);
             this.numeric_U_gen_R_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1916,7 +1951,7 @@
             // 
             // numeric_I_gen_R_UTI
             // 
-            this.numeric_I_gen_R_UTI.Location = new System.Drawing.Point(882, 364);
+            this.numeric_I_gen_R_UTI.Location = new System.Drawing.Point(878, 384);
             this.numeric_I_gen_R_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1928,7 +1963,7 @@
             // 
             // numeric_U_gen_R_UTI
             // 
-            this.numeric_U_gen_R_UTI.Location = new System.Drawing.Point(825, 364);
+            this.numeric_U_gen_R_UTI.Location = new System.Drawing.Point(821, 384);
             this.numeric_U_gen_R_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1940,7 +1975,7 @@
             // 
             // numeric_I_gen_R_hemoterapia
             // 
-            this.numeric_I_gen_R_hemoterapia.Location = new System.Drawing.Point(744, 364);
+            this.numeric_I_gen_R_hemoterapia.Location = new System.Drawing.Point(740, 384);
             this.numeric_I_gen_R_hemoterapia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1952,7 +1987,7 @@
             // 
             // numeric_U_gen_R_hemoterapia
             // 
-            this.numeric_U_gen_R_hemoterapia.Location = new System.Drawing.Point(688, 364);
+            this.numeric_U_gen_R_hemoterapia.Location = new System.Drawing.Point(684, 384);
             this.numeric_U_gen_R_hemoterapia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1964,7 +1999,7 @@
             // 
             // numeric_I_gen_R_cirugia
             // 
-            this.numeric_I_gen_R_cirugia.Location = new System.Drawing.Point(594, 364);
+            this.numeric_I_gen_R_cirugia.Location = new System.Drawing.Point(590, 384);
             this.numeric_I_gen_R_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1976,7 +2011,7 @@
             // 
             // numeric_U_gen_R_cirugia
             // 
-            this.numeric_U_gen_R_cirugia.Location = new System.Drawing.Point(537, 364);
+            this.numeric_U_gen_R_cirugia.Location = new System.Drawing.Point(533, 384);
             this.numeric_U_gen_R_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -1988,7 +2023,7 @@
             // 
             // numeric_I_gen_R_patologia
             // 
-            this.numeric_I_gen_R_patologia.Location = new System.Drawing.Point(457, 364);
+            this.numeric_I_gen_R_patologia.Location = new System.Drawing.Point(453, 384);
             this.numeric_I_gen_R_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2000,7 +2035,7 @@
             // 
             // numeric_U_gen_R_patologia
             // 
-            this.numeric_U_gen_R_patologia.Location = new System.Drawing.Point(400, 364);
+            this.numeric_U_gen_R_patologia.Location = new System.Drawing.Point(396, 384);
             this.numeric_U_gen_R_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2012,7 +2047,7 @@
             // 
             // numeric_I_gen_R_ultrafrezeers
             // 
-            this.numeric_I_gen_R_ultrafrezeers.Location = new System.Drawing.Point(316, 364);
+            this.numeric_I_gen_R_ultrafrezeers.Location = new System.Drawing.Point(312, 384);
             this.numeric_I_gen_R_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2024,7 +2059,7 @@
             // 
             // numeric_U_gen_R_ultrafrezeers
             // 
-            this.numeric_U_gen_R_ultrafrezeers.Location = new System.Drawing.Point(259, 364);
+            this.numeric_U_gen_R_ultrafrezeers.Location = new System.Drawing.Point(255, 384);
             this.numeric_U_gen_R_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2036,7 +2071,7 @@
             // 
             // numeric_I_gen_R_resonador
             // 
-            this.numeric_I_gen_R_resonador.Location = new System.Drawing.Point(182, 364);
+            this.numeric_I_gen_R_resonador.Location = new System.Drawing.Point(178, 384);
             this.numeric_I_gen_R_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2049,7 +2084,7 @@
             // 
             // numeric_U_gen_R_resonador
             // 
-            this.numeric_U_gen_R_resonador.Location = new System.Drawing.Point(125, 364);
+            this.numeric_U_gen_R_resonador.Location = new System.Drawing.Point(121, 384);
             this.numeric_U_gen_R_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2061,7 +2096,7 @@
             // 
             // numeric_I_gen_S_bioterio
             // 
-            this.numeric_I_gen_S_bioterio.Location = new System.Drawing.Point(1017, 386);
+            this.numeric_I_gen_S_bioterio.Location = new System.Drawing.Point(1013, 406);
             this.numeric_I_gen_S_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2073,7 +2108,7 @@
             // 
             // numeric_U_gen_S_bioterio
             // 
-            this.numeric_U_gen_S_bioterio.Location = new System.Drawing.Point(960, 386);
+            this.numeric_U_gen_S_bioterio.Location = new System.Drawing.Point(956, 406);
             this.numeric_U_gen_S_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2085,7 +2120,7 @@
             // 
             // numeric_I_gen_S_UTI
             // 
-            this.numeric_I_gen_S_UTI.Location = new System.Drawing.Point(882, 386);
+            this.numeric_I_gen_S_UTI.Location = new System.Drawing.Point(878, 406);
             this.numeric_I_gen_S_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2097,7 +2132,7 @@
             // 
             // numeric_U_gen_S_UTI
             // 
-            this.numeric_U_gen_S_UTI.Location = new System.Drawing.Point(825, 386);
+            this.numeric_U_gen_S_UTI.Location = new System.Drawing.Point(821, 406);
             this.numeric_U_gen_S_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2109,7 +2144,7 @@
             // 
             // numeric_I_gen_S_hemoterapia
             // 
-            this.numeric_I_gen_S_hemoterapia.Location = new System.Drawing.Point(744, 386);
+            this.numeric_I_gen_S_hemoterapia.Location = new System.Drawing.Point(740, 406);
             this.numeric_I_gen_S_hemoterapia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2121,7 +2156,7 @@
             // 
             // numeric_I_gen_S_cirugia
             // 
-            this.numeric_I_gen_S_cirugia.Location = new System.Drawing.Point(594, 386);
+            this.numeric_I_gen_S_cirugia.Location = new System.Drawing.Point(590, 406);
             this.numeric_I_gen_S_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2133,7 +2168,7 @@
             // 
             // numeric_U_gen_S_cirugia
             // 
-            this.numeric_U_gen_S_cirugia.Location = new System.Drawing.Point(537, 386);
+            this.numeric_U_gen_S_cirugia.Location = new System.Drawing.Point(533, 406);
             this.numeric_U_gen_S_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2145,7 +2180,7 @@
             // 
             // numeric_I_gen_S_patologia
             // 
-            this.numeric_I_gen_S_patologia.Location = new System.Drawing.Point(457, 386);
+            this.numeric_I_gen_S_patologia.Location = new System.Drawing.Point(453, 406);
             this.numeric_I_gen_S_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2157,7 +2192,7 @@
             // 
             // numeric_U_gen_S_patologia
             // 
-            this.numeric_U_gen_S_patologia.Location = new System.Drawing.Point(400, 386);
+            this.numeric_U_gen_S_patologia.Location = new System.Drawing.Point(396, 406);
             this.numeric_U_gen_S_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2169,7 +2204,7 @@
             // 
             // numeric_I_gen_S_ultrafrezeers
             // 
-            this.numeric_I_gen_S_ultrafrezeers.Location = new System.Drawing.Point(316, 386);
+            this.numeric_I_gen_S_ultrafrezeers.Location = new System.Drawing.Point(312, 406);
             this.numeric_I_gen_S_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2181,7 +2216,7 @@
             // 
             // numeric_U_gen_S_ultrafrezeers
             // 
-            this.numeric_U_gen_S_ultrafrezeers.Location = new System.Drawing.Point(259, 386);
+            this.numeric_U_gen_S_ultrafrezeers.Location = new System.Drawing.Point(255, 406);
             this.numeric_U_gen_S_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2193,7 +2228,7 @@
             // 
             // numeric_I_gen_S_resonador
             // 
-            this.numeric_I_gen_S_resonador.Location = new System.Drawing.Point(182, 386);
+            this.numeric_I_gen_S_resonador.Location = new System.Drawing.Point(178, 406);
             this.numeric_I_gen_S_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2205,7 +2240,7 @@
             // 
             // numeric_U_gen_S_resonador
             // 
-            this.numeric_U_gen_S_resonador.Location = new System.Drawing.Point(125, 386);
+            this.numeric_U_gen_S_resonador.Location = new System.Drawing.Point(121, 406);
             this.numeric_U_gen_S_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2217,7 +2252,7 @@
             // 
             // numeric_I_gen_T_bioterio
             // 
-            this.numeric_I_gen_T_bioterio.Location = new System.Drawing.Point(1017, 408);
+            this.numeric_I_gen_T_bioterio.Location = new System.Drawing.Point(1013, 428);
             this.numeric_I_gen_T_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2229,7 +2264,7 @@
             // 
             // numeric_U_gen_T_bioterio
             // 
-            this.numeric_U_gen_T_bioterio.Location = new System.Drawing.Point(960, 408);
+            this.numeric_U_gen_T_bioterio.Location = new System.Drawing.Point(956, 428);
             this.numeric_U_gen_T_bioterio.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2241,7 +2276,7 @@
             // 
             // numeric_I_gen_T_UTI
             // 
-            this.numeric_I_gen_T_UTI.Location = new System.Drawing.Point(882, 408);
+            this.numeric_I_gen_T_UTI.Location = new System.Drawing.Point(878, 428);
             this.numeric_I_gen_T_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2253,7 +2288,7 @@
             // 
             // numeric_U_gen_T_UTI
             // 
-            this.numeric_U_gen_T_UTI.Location = new System.Drawing.Point(825, 408);
+            this.numeric_U_gen_T_UTI.Location = new System.Drawing.Point(821, 428);
             this.numeric_U_gen_T_UTI.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2265,7 +2300,7 @@
             // 
             // numeric_I_gen_T_hemoterapia
             // 
-            this.numeric_I_gen_T_hemoterapia.Location = new System.Drawing.Point(744, 408);
+            this.numeric_I_gen_T_hemoterapia.Location = new System.Drawing.Point(740, 428);
             this.numeric_I_gen_T_hemoterapia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2277,7 +2312,7 @@
             // 
             // numeric_I_gen_T_cirugia
             // 
-            this.numeric_I_gen_T_cirugia.Location = new System.Drawing.Point(594, 408);
+            this.numeric_I_gen_T_cirugia.Location = new System.Drawing.Point(590, 428);
             this.numeric_I_gen_T_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2289,7 +2324,7 @@
             // 
             // numeric_U_gen_T_cirugia
             // 
-            this.numeric_U_gen_T_cirugia.Location = new System.Drawing.Point(537, 408);
+            this.numeric_U_gen_T_cirugia.Location = new System.Drawing.Point(533, 428);
             this.numeric_U_gen_T_cirugia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2301,7 +2336,7 @@
             // 
             // numeric_I_gen_T_patologia
             // 
-            this.numeric_I_gen_T_patologia.Location = new System.Drawing.Point(457, 408);
+            this.numeric_I_gen_T_patologia.Location = new System.Drawing.Point(453, 428);
             this.numeric_I_gen_T_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2313,7 +2348,7 @@
             // 
             // numeric_U_gen_T_patologia
             // 
-            this.numeric_U_gen_T_patologia.Location = new System.Drawing.Point(400, 408);
+            this.numeric_U_gen_T_patologia.Location = new System.Drawing.Point(396, 428);
             this.numeric_U_gen_T_patologia.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2325,7 +2360,7 @@
             // 
             // numeric_I_gen_T_ultrafrezeers
             // 
-            this.numeric_I_gen_T_ultrafrezeers.Location = new System.Drawing.Point(316, 408);
+            this.numeric_I_gen_T_ultrafrezeers.Location = new System.Drawing.Point(312, 428);
             this.numeric_I_gen_T_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2337,7 +2372,7 @@
             // 
             // numeric_U_gen_T_ultrafrezeers
             // 
-            this.numeric_U_gen_T_ultrafrezeers.Location = new System.Drawing.Point(259, 408);
+            this.numeric_U_gen_T_ultrafrezeers.Location = new System.Drawing.Point(255, 428);
             this.numeric_U_gen_T_ultrafrezeers.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2349,7 +2384,7 @@
             // 
             // numeric_I_gen_T_resonador
             // 
-            this.numeric_I_gen_T_resonador.Location = new System.Drawing.Point(182, 408);
+            this.numeric_I_gen_T_resonador.Location = new System.Drawing.Point(178, 428);
             this.numeric_I_gen_T_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2361,7 +2396,7 @@
             // 
             // numeric_U_gen_T_resonador
             // 
-            this.numeric_U_gen_T_resonador.Location = new System.Drawing.Point(125, 408);
+            this.numeric_U_gen_T_resonador.Location = new System.Drawing.Point(121, 428);
             this.numeric_U_gen_T_resonador.Maximum = new decimal(new int[] {
             600,
             0,
@@ -2373,56 +2408,56 @@
             // 
             // numeric_frec_resonador
             // 
-            this.numeric_frec_resonador.Location = new System.Drawing.Point(146, 444);
+            this.numeric_frec_resonador.Location = new System.Drawing.Point(129, 5);
             this.numeric_frec_resonador.Name = "numeric_frec_resonador";
             this.numeric_frec_resonador.Size = new System.Drawing.Size(51, 20);
             this.numeric_frec_resonador.TabIndex = 140;
             // 
             // numeric_frec_ultrafrezeers
             // 
-            this.numeric_frec_ultrafrezeers.Location = new System.Drawing.Point(289, 444);
+            this.numeric_frec_ultrafrezeers.Location = new System.Drawing.Point(272, 5);
             this.numeric_frec_ultrafrezeers.Name = "numeric_frec_ultrafrezeers";
             this.numeric_frec_ultrafrezeers.Size = new System.Drawing.Size(51, 20);
             this.numeric_frec_ultrafrezeers.TabIndex = 141;
             // 
             // numeric_frec_cirugia
             // 
-            this.numeric_frec_cirugia.Location = new System.Drawing.Point(566, 444);
+            this.numeric_frec_cirugia.Location = new System.Drawing.Point(549, 5);
             this.numeric_frec_cirugia.Name = "numeric_frec_cirugia";
             this.numeric_frec_cirugia.Size = new System.Drawing.Size(51, 20);
             this.numeric_frec_cirugia.TabIndex = 143;
             // 
             // numeric_frec_patologia
             // 
-            this.numeric_frec_patologia.Location = new System.Drawing.Point(431, 444);
+            this.numeric_frec_patologia.Location = new System.Drawing.Point(414, 5);
             this.numeric_frec_patologia.Name = "numeric_frec_patologia";
             this.numeric_frec_patologia.Size = new System.Drawing.Size(51, 20);
             this.numeric_frec_patologia.TabIndex = 142;
             // 
             // numeric_frec_hemoterapia
             // 
-            this.numeric_frec_hemoterapia.Location = new System.Drawing.Point(718, 444);
+            this.numeric_frec_hemoterapia.Location = new System.Drawing.Point(701, 5);
             this.numeric_frec_hemoterapia.Name = "numeric_frec_hemoterapia";
             this.numeric_frec_hemoterapia.Size = new System.Drawing.Size(51, 20);
             this.numeric_frec_hemoterapia.TabIndex = 144;
             // 
             // numeric_frec_UTI
             // 
-            this.numeric_frec_UTI.Location = new System.Drawing.Point(854, 444);
+            this.numeric_frec_UTI.Location = new System.Drawing.Point(837, 5);
             this.numeric_frec_UTI.Name = "numeric_frec_UTI";
             this.numeric_frec_UTI.Size = new System.Drawing.Size(51, 20);
             this.numeric_frec_UTI.TabIndex = 145;
             // 
             // numeric_frec_bioterio
             // 
-            this.numeric_frec_bioterio.Location = new System.Drawing.Point(992, 444);
+            this.numeric_frec_bioterio.Location = new System.Drawing.Point(975, 5);
             this.numeric_frec_bioterio.Name = "numeric_frec_bioterio";
             this.numeric_frec_bioterio.Size = new System.Drawing.Size(51, 20);
             this.numeric_frec_bioterio.TabIndex = 146;
             // 
             // numeric_rpm_bioterio
             // 
-            this.numeric_rpm_bioterio.Location = new System.Drawing.Point(992, 487);
+            this.numeric_rpm_bioterio.Location = new System.Drawing.Point(988, 504);
             this.numeric_rpm_bioterio.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2434,7 +2469,7 @@
             // 
             // numeric_rpm_cirugia
             // 
-            this.numeric_rpm_cirugia.Location = new System.Drawing.Point(566, 485);
+            this.numeric_rpm_cirugia.Location = new System.Drawing.Point(562, 503);
             this.numeric_rpm_cirugia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2446,7 +2481,7 @@
             // 
             // numeric_rpm_patologia
             // 
-            this.numeric_rpm_patologia.Location = new System.Drawing.Point(431, 485);
+            this.numeric_rpm_patologia.Location = new System.Drawing.Point(427, 503);
             this.numeric_rpm_patologia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2458,7 +2493,7 @@
             // 
             // numeric_rpm_ultrafrezeers
             // 
-            this.numeric_rpm_ultrafrezeers.Location = new System.Drawing.Point(289, 485);
+            this.numeric_rpm_ultrafrezeers.Location = new System.Drawing.Point(285, 503);
             this.numeric_rpm_ultrafrezeers.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2470,7 +2505,7 @@
             // 
             // numeric_rpm_resonador
             // 
-            this.numeric_rpm_resonador.Location = new System.Drawing.Point(146, 485);
+            this.numeric_rpm_resonador.Location = new System.Drawing.Point(142, 503);
             this.numeric_rpm_resonador.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2482,7 +2517,7 @@
             // 
             // numeric_nro_arranques_bioterio
             // 
-            this.numeric_nro_arranques_bioterio.Location = new System.Drawing.Point(992, 513);
+            this.numeric_nro_arranques_bioterio.Location = new System.Drawing.Point(988, 533);
             this.numeric_nro_arranques_bioterio.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2494,7 +2529,7 @@
             // 
             // numeric_nro_arranques_UTI
             // 
-            this.numeric_nro_arranques_UTI.Location = new System.Drawing.Point(854, 513);
+            this.numeric_nro_arranques_UTI.Location = new System.Drawing.Point(850, 533);
             this.numeric_nro_arranques_UTI.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2506,7 +2541,7 @@
             // 
             // numeric_nro_arranques_cirugia
             // 
-            this.numeric_nro_arranques_cirugia.Location = new System.Drawing.Point(566, 511);
+            this.numeric_nro_arranques_cirugia.Location = new System.Drawing.Point(562, 531);
             this.numeric_nro_arranques_cirugia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2518,7 +2553,7 @@
             // 
             // numeric_nro_arranques_patologia
             // 
-            this.numeric_nro_arranques_patologia.Location = new System.Drawing.Point(431, 511);
+            this.numeric_nro_arranques_patologia.Location = new System.Drawing.Point(427, 531);
             this.numeric_nro_arranques_patologia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2530,7 +2565,7 @@
             // 
             // numeric_nro_arranques_ultrafrezeers
             // 
-            this.numeric_nro_arranques_ultrafrezeers.Location = new System.Drawing.Point(289, 511);
+            this.numeric_nro_arranques_ultrafrezeers.Location = new System.Drawing.Point(285, 531);
             this.numeric_nro_arranques_ultrafrezeers.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2542,7 +2577,7 @@
             // 
             // numeric_nro_arranques_resonador
             // 
-            this.numeric_nro_arranques_resonador.Location = new System.Drawing.Point(146, 511);
+            this.numeric_nro_arranques_resonador.Location = new System.Drawing.Point(142, 531);
             this.numeric_nro_arranques_resonador.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2554,7 +2589,7 @@
             // 
             // masked_marcha_hora_resonador
             // 
-            this.masked_marcha_hora_resonador.Location = new System.Drawing.Point(140, 538);
+            this.masked_marcha_hora_resonador.Location = new System.Drawing.Point(136, 559);
             this.masked_marcha_hora_resonador.Mask = "99999";
             this.masked_marcha_hora_resonador.Name = "masked_marcha_hora_resonador";
             this.masked_marcha_hora_resonador.Size = new System.Drawing.Size(29, 20);
@@ -2563,7 +2598,7 @@
             // 
             // masked_marcha_hora_bioterio
             // 
-            this.masked_marcha_hora_bioterio.Location = new System.Drawing.Point(992, 543);
+            this.masked_marcha_hora_bioterio.Location = new System.Drawing.Point(988, 561);
             this.masked_marcha_hora_bioterio.Mask = "000.0";
             this.masked_marcha_hora_bioterio.Name = "masked_marcha_hora_bioterio";
             this.masked_marcha_hora_bioterio.Size = new System.Drawing.Size(45, 20);
@@ -2572,7 +2607,7 @@
             // 
             // numeric_Temperatura_bioterio
             // 
-            this.numeric_Temperatura_bioterio.Location = new System.Drawing.Point(992, 569);
+            this.numeric_Temperatura_bioterio.Location = new System.Drawing.Point(988, 589);
             this.numeric_Temperatura_bioterio.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2584,7 +2619,7 @@
             // 
             // numeric_Temperatura_UTI
             // 
-            this.numeric_Temperatura_UTI.Location = new System.Drawing.Point(854, 569);
+            this.numeric_Temperatura_UTI.Location = new System.Drawing.Point(850, 589);
             this.numeric_Temperatura_UTI.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2596,7 +2631,7 @@
             // 
             // numeric_Temperatura_hemoterapia
             // 
-            this.numeric_Temperatura_hemoterapia.Location = new System.Drawing.Point(718, 569);
+            this.numeric_Temperatura_hemoterapia.Location = new System.Drawing.Point(714, 589);
             this.numeric_Temperatura_hemoterapia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2608,7 +2643,7 @@
             // 
             // numeric_Temperatura_cirugia
             // 
-            this.numeric_Temperatura_cirugia.Location = new System.Drawing.Point(566, 569);
+            this.numeric_Temperatura_cirugia.Location = new System.Drawing.Point(562, 589);
             this.numeric_Temperatura_cirugia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2620,7 +2655,7 @@
             // 
             // numeric_Temperatura_patologia
             // 
-            this.numeric_Temperatura_patologia.Location = new System.Drawing.Point(431, 569);
+            this.numeric_Temperatura_patologia.Location = new System.Drawing.Point(427, 589);
             this.numeric_Temperatura_patologia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2632,7 +2667,7 @@
             // 
             // numeric_Temperatura_ultrafrezeers
             // 
-            this.numeric_Temperatura_ultrafrezeers.Location = new System.Drawing.Point(289, 569);
+            this.numeric_Temperatura_ultrafrezeers.Location = new System.Drawing.Point(285, 589);
             this.numeric_Temperatura_ultrafrezeers.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2644,7 +2679,7 @@
             // 
             // numeric_Temperatura_resonador
             // 
-            this.numeric_Temperatura_resonador.Location = new System.Drawing.Point(146, 569);
+            this.numeric_Temperatura_resonador.Location = new System.Drawing.Point(142, 589);
             this.numeric_Temperatura_resonador.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2656,7 +2691,7 @@
             // 
             // numeric_presion_bioterio
             // 
-            this.numeric_presion_bioterio.Location = new System.Drawing.Point(992, 594);
+            this.numeric_presion_bioterio.Location = new System.Drawing.Point(988, 619);
             this.numeric_presion_bioterio.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2668,7 +2703,7 @@
             // 
             // numeric_presion_UTI
             // 
-            this.numeric_presion_UTI.Location = new System.Drawing.Point(854, 594);
+            this.numeric_presion_UTI.Location = new System.Drawing.Point(850, 618);
             this.numeric_presion_UTI.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2680,7 +2715,7 @@
             // 
             // numeric_presion_hemoterapia
             // 
-            this.numeric_presion_hemoterapia.Location = new System.Drawing.Point(718, 594);
+            this.numeric_presion_hemoterapia.Location = new System.Drawing.Point(714, 618);
             this.numeric_presion_hemoterapia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2692,7 +2727,7 @@
             // 
             // numeric_presion_cirugia
             // 
-            this.numeric_presion_cirugia.Location = new System.Drawing.Point(566, 594);
+            this.numeric_presion_cirugia.Location = new System.Drawing.Point(562, 618);
             this.numeric_presion_cirugia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2704,7 +2739,7 @@
             // 
             // numeric_presion_patologia
             // 
-            this.numeric_presion_patologia.Location = new System.Drawing.Point(431, 594);
+            this.numeric_presion_patologia.Location = new System.Drawing.Point(427, 618);
             this.numeric_presion_patologia.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2716,7 +2751,7 @@
             // 
             // numeric_presion_ultrafrezeers
             // 
-            this.numeric_presion_ultrafrezeers.Location = new System.Drawing.Point(289, 594);
+            this.numeric_presion_ultrafrezeers.Location = new System.Drawing.Point(285, 618);
             this.numeric_presion_ultrafrezeers.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2728,7 +2763,7 @@
             // 
             // numeric_presion_resonador
             // 
-            this.numeric_presion_resonador.Location = new System.Drawing.Point(146, 594);
+            this.numeric_presion_resonador.Location = new System.Drawing.Point(142, 618);
             this.numeric_presion_resonador.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -2742,7 +2777,7 @@
             // 
             this.label_estado.AutoSize = true;
             this.label_estado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_estado.Location = new System.Drawing.Point(29, 629);
+            this.label_estado.Location = new System.Drawing.Point(25, 655);
             this.label_estado.Name = "label_estado";
             this.label_estado.Size = new System.Drawing.Size(56, 15);
             this.label_estado.TabIndex = 183;
@@ -2754,7 +2789,7 @@
             this.comboBox_estado_reso.Items.AddRange(new object[] {
             "Fuera de servicio",
             "Operativo"});
-            this.comboBox_estado_reso.Location = new System.Drawing.Point(132, 629);
+            this.comboBox_estado_reso.Location = new System.Drawing.Point(128, 652);
             this.comboBox_estado_reso.Name = "comboBox_estado_reso";
             this.comboBox_estado_reso.Size = new System.Drawing.Size(85, 21);
             this.comboBox_estado_reso.TabIndex = 184;
@@ -2765,7 +2800,7 @@
             this.comboBox_estado_ultrafrezzers.Items.AddRange(new object[] {
             "Fuera de servicio",
             "Operativo"});
-            this.comboBox_estado_ultrafrezzers.Location = new System.Drawing.Point(272, 629);
+            this.comboBox_estado_ultrafrezzers.Location = new System.Drawing.Point(268, 651);
             this.comboBox_estado_ultrafrezzers.Name = "comboBox_estado_ultrafrezzers";
             this.comboBox_estado_ultrafrezzers.Size = new System.Drawing.Size(85, 21);
             this.comboBox_estado_ultrafrezzers.TabIndex = 185;
@@ -2776,7 +2811,7 @@
             this.comboBox_estado_patologia.Items.AddRange(new object[] {
             "Fuera de servicio",
             "Operativo"});
-            this.comboBox_estado_patologia.Location = new System.Drawing.Point(412, 629);
+            this.comboBox_estado_patologia.Location = new System.Drawing.Point(408, 651);
             this.comboBox_estado_patologia.Name = "comboBox_estado_patologia";
             this.comboBox_estado_patologia.Size = new System.Drawing.Size(85, 21);
             this.comboBox_estado_patologia.TabIndex = 186;
@@ -2787,7 +2822,7 @@
             this.comboBox_estado_cirugia.Items.AddRange(new object[] {
             "Fuera de servicio",
             "Operativo"});
-            this.comboBox_estado_cirugia.Location = new System.Drawing.Point(552, 629);
+            this.comboBox_estado_cirugia.Location = new System.Drawing.Point(548, 651);
             this.comboBox_estado_cirugia.Name = "comboBox_estado_cirugia";
             this.comboBox_estado_cirugia.Size = new System.Drawing.Size(85, 21);
             this.comboBox_estado_cirugia.TabIndex = 187;
@@ -2798,7 +2833,7 @@
             this.comboBox_estado_hemoterapia.Items.AddRange(new object[] {
             "Fuera de servicio",
             "Operativo"});
-            this.comboBox_estado_hemoterapia.Location = new System.Drawing.Point(692, 629);
+            this.comboBox_estado_hemoterapia.Location = new System.Drawing.Point(688, 651);
             this.comboBox_estado_hemoterapia.Name = "comboBox_estado_hemoterapia";
             this.comboBox_estado_hemoterapia.Size = new System.Drawing.Size(85, 21);
             this.comboBox_estado_hemoterapia.TabIndex = 188;
@@ -2809,7 +2844,7 @@
             this.comboBox_estado_UTI.Items.AddRange(new object[] {
             "Fuera de servicio",
             "Operativo"});
-            this.comboBox_estado_UTI.Location = new System.Drawing.Point(832, 629);
+            this.comboBox_estado_UTI.Location = new System.Drawing.Point(828, 651);
             this.comboBox_estado_UTI.Name = "comboBox_estado_UTI";
             this.comboBox_estado_UTI.Size = new System.Drawing.Size(85, 21);
             this.comboBox_estado_UTI.TabIndex = 189;
@@ -2820,13 +2855,14 @@
             this.comboBox_estado_bioterio.Items.AddRange(new object[] {
             "Fuera de servicio",
             "Operativo"});
-            this.comboBox_estado_bioterio.Location = new System.Drawing.Point(972, 629);
+            this.comboBox_estado_bioterio.Location = new System.Drawing.Point(968, 651);
             this.comboBox_estado_bioterio.Name = "comboBox_estado_bioterio";
             this.comboBox_estado_bioterio.Size = new System.Drawing.Size(85, 21);
             this.comboBox_estado_bioterio.TabIndex = 190;
             // 
             // button_cancelar
             // 
+            this.button_cancelar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button_cancelar.Location = new System.Drawing.Point(1108, 398);
             this.button_cancelar.Name = "button_cancelar";
             this.button_cancelar.Size = new System.Drawing.Size(85, 43);
@@ -2837,6 +2873,7 @@
             // 
             // button_guardar_reporte
             // 
+            this.button_guardar_reporte.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button_guardar_reporte.Location = new System.Drawing.Point(1108, 234);
             this.button_guardar_reporte.Name = "button_guardar_reporte";
             this.button_guardar_reporte.Size = new System.Drawing.Size(85, 43);
@@ -2847,7 +2884,7 @@
             // 
             // masked_marcha_min_resonador
             // 
-            this.masked_marcha_min_resonador.Location = new System.Drawing.Point(181, 538);
+            this.masked_marcha_min_resonador.Location = new System.Drawing.Point(177, 559);
             this.masked_marcha_min_resonador.Mask = "99999";
             this.masked_marcha_min_resonador.Name = "masked_marcha_min_resonador";
             this.masked_marcha_min_resonador.Size = new System.Drawing.Size(29, 20);
@@ -2858,7 +2895,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(165, 537);
+            this.label7.Location = new System.Drawing.Point(161, 557);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(14, 20);
             this.label7.TabIndex = 194;
@@ -2868,7 +2905,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(206, 537);
+            this.label8.Location = new System.Drawing.Point(202, 557);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(12, 20);
             this.label8.TabIndex = 195;
@@ -2878,7 +2915,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(339, 538);
+            this.label9.Location = new System.Drawing.Point(335, 558);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(12, 20);
             this.label9.TabIndex = 199;
@@ -2888,7 +2925,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(298, 538);
+            this.label10.Location = new System.Drawing.Point(294, 558);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(14, 20);
             this.label10.TabIndex = 198;
@@ -2896,7 +2933,7 @@
             // 
             // masked_marcha_min_ultrafrezeers
             // 
-            this.masked_marcha_min_ultrafrezeers.Location = new System.Drawing.Point(314, 539);
+            this.masked_marcha_min_ultrafrezeers.Location = new System.Drawing.Point(310, 560);
             this.masked_marcha_min_ultrafrezeers.Mask = "99999";
             this.masked_marcha_min_ultrafrezeers.Name = "masked_marcha_min_ultrafrezeers";
             this.masked_marcha_min_ultrafrezeers.Size = new System.Drawing.Size(29, 20);
@@ -2905,7 +2942,7 @@
             // 
             // masked_marcha_hora_ultrafrezeers
             // 
-            this.masked_marcha_hora_ultrafrezeers.Location = new System.Drawing.Point(273, 539);
+            this.masked_marcha_hora_ultrafrezeers.Location = new System.Drawing.Point(269, 560);
             this.masked_marcha_hora_ultrafrezeers.Mask = "99999";
             this.masked_marcha_hora_ultrafrezeers.Name = "masked_marcha_hora_ultrafrezeers";
             this.masked_marcha_hora_ultrafrezeers.Size = new System.Drawing.Size(29, 20);
@@ -2916,7 +2953,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(480, 539);
+            this.label11.Location = new System.Drawing.Point(476, 559);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(12, 20);
             this.label11.TabIndex = 203;
@@ -2926,7 +2963,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(439, 539);
+            this.label12.Location = new System.Drawing.Point(435, 559);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(14, 20);
             this.label12.TabIndex = 202;
@@ -2934,7 +2971,7 @@
             // 
             // masked_marcha_min_patologia
             // 
-            this.masked_marcha_min_patologia.Location = new System.Drawing.Point(455, 540);
+            this.masked_marcha_min_patologia.Location = new System.Drawing.Point(451, 560);
             this.masked_marcha_min_patologia.Mask = "99999";
             this.masked_marcha_min_patologia.Name = "masked_marcha_min_patologia";
             this.masked_marcha_min_patologia.Size = new System.Drawing.Size(29, 20);
@@ -2943,7 +2980,7 @@
             // 
             // masked_marcha_hora_patologia
             // 
-            this.masked_marcha_hora_patologia.Location = new System.Drawing.Point(414, 540);
+            this.masked_marcha_hora_patologia.Location = new System.Drawing.Point(410, 560);
             this.masked_marcha_hora_patologia.Mask = "99999";
             this.masked_marcha_hora_patologia.Name = "masked_marcha_hora_patologia";
             this.masked_marcha_hora_patologia.Size = new System.Drawing.Size(29, 20);
@@ -2954,7 +2991,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(618, 540);
+            this.label13.Location = new System.Drawing.Point(614, 560);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(12, 20);
             this.label13.TabIndex = 207;
@@ -2964,7 +3001,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(577, 540);
+            this.label14.Location = new System.Drawing.Point(573, 560);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(14, 20);
             this.label14.TabIndex = 206;
@@ -2972,7 +3009,7 @@
             // 
             // masked_marcha_min_cirugia
             // 
-            this.masked_marcha_min_cirugia.Location = new System.Drawing.Point(593, 541);
+            this.masked_marcha_min_cirugia.Location = new System.Drawing.Point(589, 561);
             this.masked_marcha_min_cirugia.Mask = "99999";
             this.masked_marcha_min_cirugia.Name = "masked_marcha_min_cirugia";
             this.masked_marcha_min_cirugia.Size = new System.Drawing.Size(29, 20);
@@ -2981,7 +3018,7 @@
             // 
             // masked_marcha_hora_cirugia
             // 
-            this.masked_marcha_hora_cirugia.Location = new System.Drawing.Point(552, 541);
+            this.masked_marcha_hora_cirugia.Location = new System.Drawing.Point(548, 561);
             this.masked_marcha_hora_cirugia.Mask = "99999";
             this.masked_marcha_hora_cirugia.Name = "masked_marcha_hora_cirugia";
             this.masked_marcha_hora_cirugia.Size = new System.Drawing.Size(29, 20);
@@ -2992,7 +3029,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(903, 541);
+            this.label15.Location = new System.Drawing.Point(899, 561);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(12, 20);
             this.label15.TabIndex = 211;
@@ -3002,7 +3039,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(862, 541);
+            this.label16.Location = new System.Drawing.Point(858, 560);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(14, 20);
             this.label16.TabIndex = 210;
@@ -3010,7 +3047,7 @@
             // 
             // masked_marcha_min_UTI
             // 
-            this.masked_marcha_min_UTI.Location = new System.Drawing.Point(878, 542);
+            this.masked_marcha_min_UTI.Location = new System.Drawing.Point(874, 561);
             this.masked_marcha_min_UTI.Mask = "99999";
             this.masked_marcha_min_UTI.Name = "masked_marcha_min_UTI";
             this.masked_marcha_min_UTI.Size = new System.Drawing.Size(29, 20);
@@ -3019,7 +3056,7 @@
             // 
             // masked_marcha_hora_UTI
             // 
-            this.masked_marcha_hora_UTI.Location = new System.Drawing.Point(837, 542);
+            this.masked_marcha_hora_UTI.Location = new System.Drawing.Point(833, 561);
             this.masked_marcha_hora_UTI.Mask = "99999";
             this.masked_marcha_hora_UTI.Name = "masked_marcha_hora_UTI";
             this.masked_marcha_hora_UTI.Size = new System.Drawing.Size(29, 20);
@@ -3030,17 +3067,223 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1035, 543);
+            this.label17.Location = new System.Drawing.Point(1031, 561);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(14, 20);
             this.label17.TabIndex = 212;
             this.label17.Text = "°";
             // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(12, 21);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1067, 74);
+            this.panel1.TabIndex = 213;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label_refrigerante);
+            this.panel2.Location = new System.Drawing.Point(12, 95);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1067, 52);
+            this.panel2.TabIndex = 214;
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.label_combustible);
+            this.panel3.Controls.Add(this.numeric_comb_resonador);
+            this.panel3.Controls.Add(this.numeric_comb_ultrafrezeers);
+            this.panel3.Controls.Add(this.numeric_comb_patologia);
+            this.panel3.Controls.Add(this.numeric_comb_cirugia);
+            this.panel3.Controls.Add(this.numeric_comb_hemoterapia);
+            this.panel3.Controls.Add(this.numeric_comb_UTI);
+            this.panel3.Controls.Add(this.numeric_comb_bioterio);
+            this.panel3.Location = new System.Drawing.Point(12, 147);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1067, 52);
+            this.panel3.TabIndex = 215;
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label18);
+            this.panel4.Controls.Add(this.numericUpDown1);
+            this.panel4.Controls.Add(this.numericUpDown2);
+            this.panel4.Controls.Add(this.numericUpDown3);
+            this.panel4.Controls.Add(this.numericUpDown4);
+            this.panel4.Controls.Add(this.numericUpDown5);
+            this.panel4.Controls.Add(this.numericUpDown6);
+            this.panel4.Controls.Add(this.numericUpDown7);
+            this.panel4.Location = new System.Drawing.Point(-1, -1);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1067, 52);
+            this.panel4.TabIndex = 216;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label18.Location = new System.Drawing.Point(6, 13);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(88, 28);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "NIVEL \r\nCOMBUSTIBLE:";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(135, 15);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDown1.TabIndex = 35;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(276, 15);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDown2.TabIndex = 36;
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(420, 15);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDown3.TabIndex = 37;
+            // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.Location = new System.Drawing.Point(552, 15);
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDown4.TabIndex = 38;
+            // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.Location = new System.Drawing.Point(707, 15);
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDown5.TabIndex = 39;
+            // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.Location = new System.Drawing.Point(838, 15);
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDown6.TabIndex = 40;
+            // 
+            // numericUpDown7
+            // 
+            this.numericUpDown7.Location = new System.Drawing.Point(981, 15);
+            this.numericUpDown7.Name = "numericUpDown7";
+            this.numericUpDown7.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDown7.TabIndex = 41;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label_agua_bat);
+            this.panel5.Location = new System.Drawing.Point(12, 198);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1067, 52);
+            this.panel5.TabIndex = 216;
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Location = new System.Drawing.Point(12, 250);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1067, 56);
+            this.panel6.TabIndex = 217;
+            // 
+            // panel7
+            // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Location = new System.Drawing.Point(12, 306);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1067, 72);
+            this.panel7.TabIndex = 218;
+            // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Location = new System.Drawing.Point(12, 378);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1067, 80);
+            this.panel8.TabIndex = 219;
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.numeric_frec_patologia);
+            this.panel9.Controls.Add(this.label_frec_Hz);
+            this.panel9.Controls.Add(this.numeric_frec_resonador);
+            this.panel9.Controls.Add(this.numeric_frec_ultrafrezeers);
+            this.panel9.Controls.Add(this.numeric_frec_cirugia);
+            this.panel9.Controls.Add(this.numeric_frec_hemoterapia);
+            this.panel9.Controls.Add(this.numeric_frec_UTI);
+            this.panel9.Controls.Add(this.numeric_frec_bioterio);
+            this.panel9.Location = new System.Drawing.Point(12, 458);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1067, 41);
+            this.panel9.TabIndex = 220;
+            // 
+            // panel11
+            // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Location = new System.Drawing.Point(12, 499);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1067, 28);
+            this.panel11.TabIndex = 222;
+            // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Location = new System.Drawing.Point(12, 527);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1067, 29);
+            this.panel12.TabIndex = 223;
+            // 
+            // panel13
+            // 
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Location = new System.Drawing.Point(12, 556);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(1067, 27);
+            this.panel13.TabIndex = 224;
+            // 
+            // panel14
+            // 
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Location = new System.Drawing.Point(12, 583);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1067, 31);
+            this.panel14.TabIndex = 225;
+            // 
+            // panel15
+            // 
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Location = new System.Drawing.Point(12, 614);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1067, 29);
+            this.panel15.TabIndex = 226;
+            // 
+            // panel16
+            // 
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Location = new System.Drawing.Point(12, 643);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(1067, 42);
+            this.panel16.TabIndex = 227;
+            // 
             // Agregar_reporte_grupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1214, 679);
+            this.ClientSize = new System.Drawing.Size(1214, 711);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
@@ -3098,13 +3341,6 @@
             this.Controls.Add(this.numeric_rpm_patologia);
             this.Controls.Add(this.numeric_rpm_ultrafrezeers);
             this.Controls.Add(this.numeric_rpm_resonador);
-            this.Controls.Add(this.numeric_frec_bioterio);
-            this.Controls.Add(this.numeric_frec_UTI);
-            this.Controls.Add(this.numeric_frec_hemoterapia);
-            this.Controls.Add(this.numeric_frec_cirugia);
-            this.Controls.Add(this.numeric_frec_patologia);
-            this.Controls.Add(this.numeric_frec_ultrafrezeers);
-            this.Controls.Add(this.numeric_frec_resonador);
             this.Controls.Add(this.numeric_I_gen_T_bioterio);
             this.Controls.Add(this.numeric_U_gen_T_bioterio);
             this.Controls.Add(this.numeric_I_gen_T_UTI);
@@ -3200,13 +3436,6 @@
             this.Controls.Add(this.numeric_U_bat_carga_resonador);
             this.Controls.Add(this.panel_agua_bat_UTI);
             this.Controls.Add(this.panel_agua_bat_hemoterapia);
-            this.Controls.Add(this.numeric_comb_bioterio);
-            this.Controls.Add(this.numeric_comb_UTI);
-            this.Controls.Add(this.numeric_comb_hemoterapia);
-            this.Controls.Add(this.numeric_comb_cirugia);
-            this.Controls.Add(this.numeric_comb_patologia);
-            this.Controls.Add(this.numeric_comb_ultrafrezeers);
-            this.Controls.Add(this.numeric_comb_resonador);
             this.Controls.Add(this.panel_refri_bioterio);
             this.Controls.Add(this.panel_refri_UTI);
             this.Controls.Add(this.panel_refri_hemoterapia);
@@ -3226,7 +3455,6 @@
             this.Controls.Add(this.label_marcha);
             this.Controls.Add(this.label_nro_arranques);
             this.Controls.Add(this.label_rpm);
-            this.Controls.Add(this.label_frec_Hz);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -3237,9 +3465,6 @@
             this.Controls.Add(this.label_u_a_entrada);
             this.Controls.Add(this.label_bat_reposo);
             this.Controls.Add(this.label_bat_carga);
-            this.Controls.Add(this.label_agua_bat);
-            this.Controls.Add(this.label_combustible);
-            this.Controls.Add(this.label_refrigerante);
             this.Controls.Add(this.label_aceite);
             this.Controls.Add(this.label_bioterio);
             this.Controls.Add(this.label_uti);
@@ -3248,9 +3473,24 @@
             this.Controls.Add(this.label_ultrafrezeers);
             this.Controls.Add(this.label_resonador);
             this.Controls.Add(this.label_cirugia);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel13);
+            this.Controls.Add(this.panel14);
+            this.Controls.Add(this.panel15);
+            this.Controls.Add(this.panel16);
             this.Name = "Agregar_reporte_grupo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo reporte grupos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel_aceite_resonador.ResumeLayout(false);
             this.panel_aceite_resonador.PerformLayout();
             this.panel_aceite_ultrafrezeers.ResumeLayout(false);
@@ -3415,6 +3655,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_presion_patologia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_presion_ultrafrezeers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_presion_resonador)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3668,5 +3925,28 @@
         private System.Windows.Forms.MaskedTextBox masked_marcha_min_UTI;
         private System.Windows.Forms.MaskedTextBox masked_marcha_hora_UTI;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel16;
     }
 }
