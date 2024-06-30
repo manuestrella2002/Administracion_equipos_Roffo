@@ -128,6 +128,12 @@
     <Compile Include="Agregar_proveedor.Designer.cs">
       <DependentUpon>Agregar_proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Agregar_reparacion_externa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_reparacion_externa.Designer.cs">
+      <DependentUpon>Agregar_reparacion_externa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agregar_reporte_grupo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,12 @@
     </Compile>
     <Compile Include="Asociar_equipo_orden.Designer.cs">
       <DependentUpon>Asociar_equipo_orden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cerrar_reparacion_externa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cerrar_reparacion_externa.Designer.cs">
+      <DependentUpon>Cerrar_reparacion_externa.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -213,6 +225,12 @@
     <Compile Include="Ver_proveedores.Designer.cs">
       <DependentUpon>Ver_proveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ver_reparacion_externa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_reparacion_externa.Designer.cs">
+      <DependentUpon>Ver_reparacion_externa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver_reportes_grupos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,11 +252,17 @@
     <EmbeddedResource Include="Agregar_proveedor.resx">
       <DependentUpon>Agregar_proveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_reparacion_externa.resx">
+      <DependentUpon>Agregar_reparacion_externa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agregar_reporte_grupo.resx">
       <DependentUpon>Agregar_reporte_grupo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Asociar_equipo_orden.resx">
       <DependentUpon>Asociar_equipo_orden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cerrar_reparacion_externa.resx">
+      <DependentUpon>Cerrar_reparacion_externa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -275,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_proveedores.resx">
       <DependentUpon>Ver_proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_reparacion_externa.resx">
+      <DependentUpon>Ver_reparacion_externa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_reportes_grupos.resx">
       <DependentUpon>Ver_reportes_grupos.cs</DependentUpon>

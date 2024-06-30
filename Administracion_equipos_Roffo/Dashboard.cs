@@ -223,7 +223,10 @@ namespace Administracion_equipos_Roffo
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            Ver_reparacion_externa ver_Reparacion_Externa = new Ver_reparacion_externa();
+            this.Hide();
+            ver_Reparacion_Externa.ShowDialog();
+            this.Show();
         }
 
         private void button_reporte_equipo_Click(object sender, EventArgs e)
