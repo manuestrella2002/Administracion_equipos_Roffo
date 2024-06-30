@@ -1,6 +1,6 @@
 ﻿namespace Administracion_equipos_Roffo
 {
-    partial class Ver_ordenes_inactivas
+    partial class Ver_actualizaciones_ordenes
     {
         /// <summary>
         /// Required designer variable.
@@ -30,21 +30,16 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button_reabrir_orden = new System.Windows.Forms.Button();
-            this.button_volver_Dashboard = new System.Windows.Forms.Button();
+            this.label_orden = new System.Windows.Forms.Label();
+            this.button_volver_dashboard = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowDrop = true;
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
@@ -54,58 +49,56 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 23);
-            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Location = new System.Drawing.Point(55, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(773, 326);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.Size = new System.Drawing.Size(635, 306);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // button_reabrir_orden
+            // label_orden
             // 
-            this.button_reabrir_orden.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_reabrir_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_reabrir_orden.Location = new System.Drawing.Point(22, 355);
-            this.button_reabrir_orden.Name = "button_reabrir_orden";
-            this.button_reabrir_orden.Size = new System.Drawing.Size(102, 46);
-            this.button_reabrir_orden.TabIndex = 3;
-            this.button_reabrir_orden.Text = "Reabrir orden";
-            this.button_reabrir_orden.UseVisualStyleBackColor = true;
-            this.button_reabrir_orden.Click += new System.EventHandler(this.button_reabrir_orden_Click);
+            this.label_orden.AutoSize = true;
+            this.label_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_orden.Location = new System.Drawing.Point(52, 44);
+            this.label_orden.Name = "label_orden";
+            this.label_orden.Size = new System.Drawing.Size(47, 16);
+            this.label_orden.TabIndex = 1;
+            this.label_orden.Text = "Orden:";
             // 
-            // button_volver_Dashboard
+            // button_volver_dashboard
             // 
-            this.button_volver_Dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_volver_Dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_volver_Dashboard.Location = new System.Drawing.Point(693, 356);
-            this.button_volver_Dashboard.Name = "button_volver_Dashboard";
-            this.button_volver_Dashboard.Size = new System.Drawing.Size(102, 46);
-            this.button_volver_Dashboard.TabIndex = 4;
-            this.button_volver_Dashboard.Text = "Volver al Dashboard";
-            this.button_volver_Dashboard.UseVisualStyleBackColor = true;
-            this.button_volver_Dashboard.Click += new System.EventHandler(this.button_volver_Dashboard_Click);
+            this.button_volver_dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_volver_dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_volver_dashboard.Location = new System.Drawing.Point(587, 393);
+            this.button_volver_dashboard.Name = "button_volver_dashboard";
+            this.button_volver_dashboard.Size = new System.Drawing.Size(103, 48);
+            this.button_volver_dashboard.TabIndex = 3;
+            this.button_volver_dashboard.Text = "Volver al Dashboard";
+            this.button_volver_dashboard.UseVisualStyleBackColor = true;
+            this.button_volver_dashboard.Click += new System.EventHandler(this.button_volver_dashboard_Click);
             // 
-            // Ver_ordenes_inactivas
+            // Ver_actualizaciones_ordenes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 414);
-            this.Controls.Add(this.button_volver_Dashboard);
-            this.Controls.Add(this.button_reabrir_orden);
+            this.ClientSize = new System.Drawing.Size(744, 450);
+            this.Controls.Add(this.button_volver_dashboard);
+            this.Controls.Add(this.label_orden);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Ver_ordenes_inactivas";
+            this.Name = "Ver_actualizaciones_ordenes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ordenes inactivas";
+            this.Text = "Actualizaciones de orden";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button_reabrir_orden;
-        private System.Windows.Forms.Button button_volver_Dashboard;
+        private System.Windows.Forms.Label label_orden;
+        private System.Windows.Forms.Button button_volver_dashboard;
     }
 }

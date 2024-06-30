@@ -228,8 +228,6 @@
             this.numeric_nro_arranques_patologia = new System.Windows.Forms.NumericUpDown();
             this.numeric_nro_arranques_ultrafrezeers = new System.Windows.Forms.NumericUpDown();
             this.numeric_nro_arranques_resonador = new System.Windows.Forms.NumericUpDown();
-            this.masked_marcha_hora_resonador = new System.Windows.Forms.MaskedTextBox();
-            this.masked_marcha_hora_bioterio = new System.Windows.Forms.MaskedTextBox();
             this.numeric_Temperatura_bioterio = new System.Windows.Forms.NumericUpDown();
             this.numeric_Temperatura_UTI = new System.Windows.Forms.NumericUpDown();
             this.numeric_Temperatura_hemoterapia = new System.Windows.Forms.NumericUpDown();
@@ -254,25 +252,16 @@
             this.comboBox_estado_bioterio = new System.Windows.Forms.ComboBox();
             this.button_cancelar = new System.Windows.Forms.Button();
             this.button_guardar_reporte = new System.Windows.Forms.Button();
-            this.masked_marcha_min_resonador = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.masked_marcha_min_ultrafrezeers = new System.Windows.Forms.MaskedTextBox();
-            this.masked_marcha_hora_ultrafrezeers = new System.Windows.Forms.MaskedTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.masked_marcha_min_patologia = new System.Windows.Forms.MaskedTextBox();
-            this.masked_marcha_hora_patologia = new System.Windows.Forms.MaskedTextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.masked_marcha_min_cirugia = new System.Windows.Forms.MaskedTextBox();
-            this.masked_marcha_hora_cirugia = new System.Windows.Forms.MaskedTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.masked_marcha_min_UTI = new System.Windows.Forms.MaskedTextBox();
-            this.masked_marcha_hora_UTI = new System.Windows.Forms.MaskedTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -297,6 +286,17 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.numeric_hora_resonador = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_resonador = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_ultrafrezeers = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_ultrafrezeers = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_patologia = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_patologia = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_cirugia = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_cirugia = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_UTI = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_UTI = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_bioterio = new System.Windows.Forms.NumericUpDown();
             this.panel_aceite_resonador.SuspendLayout();
             this.panel_aceite_ultrafrezeers.SuspendLayout();
             this.panel_aceite_patologia.SuspendLayout();
@@ -457,6 +457,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_resonador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_resonador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_ultrafrezeers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_ultrafrezeers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_patologia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_patologia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_cirugia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_cirugia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_UTI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_UTI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_bioterio)).BeginInit();
             this.SuspendLayout();
             // 
             // label_cirugia
@@ -2587,24 +2599,6 @@
             this.numeric_nro_arranques_resonador.Size = new System.Drawing.Size(51, 20);
             this.numeric_nro_arranques_resonador.TabIndex = 154;
             // 
-            // masked_marcha_hora_resonador
-            // 
-            this.masked_marcha_hora_resonador.Location = new System.Drawing.Point(136, 559);
-            this.masked_marcha_hora_resonador.Mask = "99999";
-            this.masked_marcha_hora_resonador.Name = "masked_marcha_hora_resonador";
-            this.masked_marcha_hora_resonador.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_hora_resonador.TabIndex = 161;
-            this.masked_marcha_hora_resonador.ValidatingType = typeof(int);
-            // 
-            // masked_marcha_hora_bioterio
-            // 
-            this.masked_marcha_hora_bioterio.Location = new System.Drawing.Point(988, 561);
-            this.masked_marcha_hora_bioterio.Mask = "000.0";
-            this.masked_marcha_hora_bioterio.Name = "masked_marcha_hora_bioterio";
-            this.masked_marcha_hora_bioterio.Size = new System.Drawing.Size(45, 20);
-            this.masked_marcha_hora_bioterio.TabIndex = 167;
-            this.masked_marcha_hora_bioterio.ValidatingType = typeof(int);
-            // 
             // numeric_Temperatura_bioterio
             // 
             this.numeric_Temperatura_bioterio.Location = new System.Drawing.Point(988, 589);
@@ -2882,15 +2876,6 @@
             this.button_guardar_reporte.UseVisualStyleBackColor = true;
             this.button_guardar_reporte.Click += new System.EventHandler(this.button_guardar_reporte_Click);
             // 
-            // masked_marcha_min_resonador
-            // 
-            this.masked_marcha_min_resonador.Location = new System.Drawing.Point(177, 559);
-            this.masked_marcha_min_resonador.Mask = "99999";
-            this.masked_marcha_min_resonador.Name = "masked_marcha_min_resonador";
-            this.masked_marcha_min_resonador.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_min_resonador.TabIndex = 193;
-            this.masked_marcha_min_resonador.ValidatingType = typeof(int);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -2905,7 +2890,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(202, 557);
+            this.label8.Location = new System.Drawing.Point(204, -1);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(12, 20);
             this.label8.TabIndex = 195;
@@ -2915,7 +2900,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(335, 558);
+            this.label9.Location = new System.Drawing.Point(338, 1);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(12, 20);
             this.label9.TabIndex = 199;
@@ -2931,29 +2916,11 @@
             this.label10.TabIndex = 198;
             this.label10.Text = "°";
             // 
-            // masked_marcha_min_ultrafrezeers
-            // 
-            this.masked_marcha_min_ultrafrezeers.Location = new System.Drawing.Point(310, 560);
-            this.masked_marcha_min_ultrafrezeers.Mask = "99999";
-            this.masked_marcha_min_ultrafrezeers.Name = "masked_marcha_min_ultrafrezeers";
-            this.masked_marcha_min_ultrafrezeers.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_min_ultrafrezeers.TabIndex = 197;
-            this.masked_marcha_min_ultrafrezeers.ValidatingType = typeof(int);
-            // 
-            // masked_marcha_hora_ultrafrezeers
-            // 
-            this.masked_marcha_hora_ultrafrezeers.Location = new System.Drawing.Point(269, 560);
-            this.masked_marcha_hora_ultrafrezeers.Mask = "99999";
-            this.masked_marcha_hora_ultrafrezeers.Name = "masked_marcha_hora_ultrafrezeers";
-            this.masked_marcha_hora_ultrafrezeers.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_hora_ultrafrezeers.TabIndex = 196;
-            this.masked_marcha_hora_ultrafrezeers.ValidatingType = typeof(int);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(476, 559);
+            this.label11.Location = new System.Drawing.Point(480, 2);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(12, 20);
             this.label11.TabIndex = 203;
@@ -2969,29 +2936,11 @@
             this.label12.TabIndex = 202;
             this.label12.Text = "°";
             // 
-            // masked_marcha_min_patologia
-            // 
-            this.masked_marcha_min_patologia.Location = new System.Drawing.Point(451, 560);
-            this.masked_marcha_min_patologia.Mask = "99999";
-            this.masked_marcha_min_patologia.Name = "masked_marcha_min_patologia";
-            this.masked_marcha_min_patologia.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_min_patologia.TabIndex = 201;
-            this.masked_marcha_min_patologia.ValidatingType = typeof(int);
-            // 
-            // masked_marcha_hora_patologia
-            // 
-            this.masked_marcha_hora_patologia.Location = new System.Drawing.Point(410, 560);
-            this.masked_marcha_hora_patologia.Mask = "99999";
-            this.masked_marcha_hora_patologia.Name = "masked_marcha_hora_patologia";
-            this.masked_marcha_hora_patologia.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_hora_patologia.TabIndex = 200;
-            this.masked_marcha_hora_patologia.ValidatingType = typeof(int);
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(614, 560);
+            this.label13.Location = new System.Drawing.Point(616, -1);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(12, 20);
             this.label13.TabIndex = 207;
@@ -3007,29 +2956,11 @@
             this.label14.TabIndex = 206;
             this.label14.Text = "°";
             // 
-            // masked_marcha_min_cirugia
-            // 
-            this.masked_marcha_min_cirugia.Location = new System.Drawing.Point(589, 561);
-            this.masked_marcha_min_cirugia.Mask = "99999";
-            this.masked_marcha_min_cirugia.Name = "masked_marcha_min_cirugia";
-            this.masked_marcha_min_cirugia.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_min_cirugia.TabIndex = 205;
-            this.masked_marcha_min_cirugia.ValidatingType = typeof(int);
-            // 
-            // masked_marcha_hora_cirugia
-            // 
-            this.masked_marcha_hora_cirugia.Location = new System.Drawing.Point(548, 561);
-            this.masked_marcha_hora_cirugia.Mask = "99999";
-            this.masked_marcha_hora_cirugia.Name = "masked_marcha_hora_cirugia";
-            this.masked_marcha_hora_cirugia.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_hora_cirugia.TabIndex = 204;
-            this.masked_marcha_hora_cirugia.ValidatingType = typeof(int);
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(899, 561);
+            this.label15.Location = new System.Drawing.Point(906, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(12, 20);
             this.label15.TabIndex = 211;
@@ -3039,35 +2970,17 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(858, 560);
+            this.label16.Location = new System.Drawing.Point(847, 2);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(14, 20);
             this.label16.TabIndex = 210;
             this.label16.Text = "°";
             // 
-            // masked_marcha_min_UTI
-            // 
-            this.masked_marcha_min_UTI.Location = new System.Drawing.Point(874, 561);
-            this.masked_marcha_min_UTI.Mask = "99999";
-            this.masked_marcha_min_UTI.Name = "masked_marcha_min_UTI";
-            this.masked_marcha_min_UTI.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_min_UTI.TabIndex = 209;
-            this.masked_marcha_min_UTI.ValidatingType = typeof(int);
-            // 
-            // masked_marcha_hora_UTI
-            // 
-            this.masked_marcha_hora_UTI.Location = new System.Drawing.Point(833, 561);
-            this.masked_marcha_hora_UTI.Mask = "99999";
-            this.masked_marcha_hora_UTI.Name = "masked_marcha_hora_UTI";
-            this.masked_marcha_hora_UTI.Size = new System.Drawing.Size(29, 20);
-            this.masked_marcha_hora_UTI.TabIndex = 208;
-            this.masked_marcha_hora_UTI.ValidatingType = typeof(int);
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1031, 561);
+            this.label17.Location = new System.Drawing.Point(1022, 4);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(14, 20);
             this.label17.TabIndex = 212;
@@ -3250,6 +3163,24 @@
             // panel13
             // 
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Controls.Add(this.numeric_hora_bioterio);
+            this.panel13.Controls.Add(this.label16);
+            this.panel13.Controls.Add(this.label15);
+            this.panel13.Controls.Add(this.numeric_min_UTI);
+            this.panel13.Controls.Add(this.numeric_hora_UTI);
+            this.panel13.Controls.Add(this.numeric_min_cirugia);
+            this.panel13.Controls.Add(this.numeric_hora_cirugia);
+            this.panel13.Controls.Add(this.label13);
+            this.panel13.Controls.Add(this.numeric_min_patologia);
+            this.panel13.Controls.Add(this.numeric_hora_patologia);
+            this.panel13.Controls.Add(this.numeric_min_ultrafrezeers);
+            this.panel13.Controls.Add(this.numeric_hora_ultrafrezeers);
+            this.panel13.Controls.Add(this.label11);
+            this.panel13.Controls.Add(this.numeric_min_resonador);
+            this.panel13.Controls.Add(this.numeric_hora_resonador);
+            this.panel13.Controls.Add(this.label17);
+            this.panel13.Controls.Add(this.label8);
+            this.panel13.Controls.Add(this.label9);
             this.panel13.Location = new System.Drawing.Point(12, 556);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(1067, 27);
@@ -3279,31 +3210,153 @@
             this.panel16.Size = new System.Drawing.Size(1067, 42);
             this.panel16.TabIndex = 227;
             // 
+            // numeric_hora_resonador
+            // 
+            this.numeric_hora_resonador.Location = new System.Drawing.Point(108, 4);
+            this.numeric_hora_resonador.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numeric_hora_resonador.Name = "numeric_hora_resonador";
+            this.numeric_hora_resonador.Size = new System.Drawing.Size(42, 20);
+            this.numeric_hora_resonador.TabIndex = 0;
+            // 
+            // numeric_min_resonador
+            // 
+            this.numeric_min_resonador.Location = new System.Drawing.Point(162, 3);
+            this.numeric_min_resonador.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numeric_min_resonador.Name = "numeric_min_resonador";
+            this.numeric_min_resonador.Size = new System.Drawing.Size(45, 20);
+            this.numeric_min_resonador.TabIndex = 213;
+            // 
+            // numeric_min_ultrafrezeers
+            // 
+            this.numeric_min_ultrafrezeers.Location = new System.Drawing.Point(295, 4);
+            this.numeric_min_ultrafrezeers.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numeric_min_ultrafrezeers.Name = "numeric_min_ultrafrezeers";
+            this.numeric_min_ultrafrezeers.Size = new System.Drawing.Size(45, 20);
+            this.numeric_min_ultrafrezeers.TabIndex = 215;
+            // 
+            // numeric_hora_ultrafrezeers
+            // 
+            this.numeric_hora_ultrafrezeers.Location = new System.Drawing.Point(242, 4);
+            this.numeric_hora_ultrafrezeers.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numeric_hora_ultrafrezeers.Name = "numeric_hora_ultrafrezeers";
+            this.numeric_hora_ultrafrezeers.Size = new System.Drawing.Size(42, 20);
+            this.numeric_hora_ultrafrezeers.TabIndex = 214;
+            // 
+            // numeric_min_patologia
+            // 
+            this.numeric_min_patologia.Location = new System.Drawing.Point(437, 3);
+            this.numeric_min_patologia.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numeric_min_patologia.Name = "numeric_min_patologia";
+            this.numeric_min_patologia.Size = new System.Drawing.Size(45, 20);
+            this.numeric_min_patologia.TabIndex = 217;
+            // 
+            // numeric_hora_patologia
+            // 
+            this.numeric_hora_patologia.Location = new System.Drawing.Point(383, 2);
+            this.numeric_hora_patologia.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numeric_hora_patologia.Name = "numeric_hora_patologia";
+            this.numeric_hora_patologia.Size = new System.Drawing.Size(42, 20);
+            this.numeric_hora_patologia.TabIndex = 216;
+            // 
+            // numeric_min_cirugia
+            // 
+            this.numeric_min_cirugia.Location = new System.Drawing.Point(575, 2);
+            this.numeric_min_cirugia.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numeric_min_cirugia.Name = "numeric_min_cirugia";
+            this.numeric_min_cirugia.Size = new System.Drawing.Size(45, 20);
+            this.numeric_min_cirugia.TabIndex = 219;
+            // 
+            // numeric_hora_cirugia
+            // 
+            this.numeric_hora_cirugia.Location = new System.Drawing.Point(521, 3);
+            this.numeric_hora_cirugia.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numeric_hora_cirugia.Name = "numeric_hora_cirugia";
+            this.numeric_hora_cirugia.Size = new System.Drawing.Size(42, 20);
+            this.numeric_hora_cirugia.TabIndex = 218;
+            // 
+            // numeric_min_UTI
+            // 
+            this.numeric_min_UTI.Location = new System.Drawing.Point(863, 2);
+            this.numeric_min_UTI.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numeric_min_UTI.Name = "numeric_min_UTI";
+            this.numeric_min_UTI.Size = new System.Drawing.Size(45, 20);
+            this.numeric_min_UTI.TabIndex = 221;
+            // 
+            // numeric_hora_UTI
+            // 
+            this.numeric_hora_UTI.Location = new System.Drawing.Point(808, 2);
+            this.numeric_hora_UTI.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numeric_hora_UTI.Name = "numeric_hora_UTI";
+            this.numeric_hora_UTI.Size = new System.Drawing.Size(42, 20);
+            this.numeric_hora_UTI.TabIndex = 220;
+            // 
+            // numeric_hora_bioterio
+            // 
+            this.numeric_hora_bioterio.DecimalPlaces = 2;
+            this.numeric_hora_bioterio.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numeric_hora_bioterio.Location = new System.Drawing.Point(976, 4);
+            this.numeric_hora_bioterio.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numeric_hora_bioterio.Name = "numeric_hora_bioterio";
+            this.numeric_hora_bioterio.Size = new System.Drawing.Size(48, 20);
+            this.numeric_hora_bioterio.TabIndex = 222;
+            // 
             // Agregar_reporte_grupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1214, 711);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.masked_marcha_min_UTI);
-            this.Controls.Add(this.masked_marcha_hora_UTI);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.masked_marcha_min_cirugia);
-            this.Controls.Add(this.masked_marcha_hora_cirugia);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.masked_marcha_min_patologia);
-            this.Controls.Add(this.masked_marcha_hora_patologia);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.masked_marcha_min_ultrafrezeers);
-            this.Controls.Add(this.masked_marcha_hora_ultrafrezeers);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.masked_marcha_min_resonador);
             this.Controls.Add(this.button_guardar_reporte);
             this.Controls.Add(this.button_cancelar);
             this.Controls.Add(this.comboBox_estado_bioterio);
@@ -3328,8 +3381,6 @@
             this.Controls.Add(this.numeric_Temperatura_patologia);
             this.Controls.Add(this.numeric_Temperatura_ultrafrezeers);
             this.Controls.Add(this.numeric_Temperatura_resonador);
-            this.Controls.Add(this.masked_marcha_hora_bioterio);
-            this.Controls.Add(this.masked_marcha_hora_resonador);
             this.Controls.Add(this.numeric_nro_arranques_bioterio);
             this.Controls.Add(this.numeric_nro_arranques_UTI);
             this.Controls.Add(this.numeric_nro_arranques_cirugia);
@@ -3672,6 +3723,19 @@
             this.panel5.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_resonador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_resonador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_ultrafrezeers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_ultrafrezeers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_patologia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_patologia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_cirugia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_cirugia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_UTI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_UTI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_bioterio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3879,8 +3943,6 @@
         private System.Windows.Forms.NumericUpDown numeric_nro_arranques_patologia;
         private System.Windows.Forms.NumericUpDown numeric_nro_arranques_ultrafrezeers;
         private System.Windows.Forms.NumericUpDown numeric_nro_arranques_resonador;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_hora_resonador;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_hora_bioterio;
         private System.Windows.Forms.NumericUpDown numeric_Temperatura_bioterio;
         private System.Windows.Forms.NumericUpDown numeric_Temperatura_UTI;
         private System.Windows.Forms.NumericUpDown numeric_Temperatura_hemoterapia;
@@ -3905,25 +3967,16 @@
         private System.Windows.Forms.ComboBox comboBox_estado_bioterio;
         private System.Windows.Forms.Button button_cancelar;
         private System.Windows.Forms.Button button_guardar_reporte;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_min_resonador;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_min_ultrafrezeers;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_hora_ultrafrezeers;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_min_patologia;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_hora_patologia;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_min_cirugia;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_hora_cirugia;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_min_UTI;
-        private System.Windows.Forms.MaskedTextBox masked_marcha_hora_UTI;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -3948,5 +4001,16 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.NumericUpDown numeric_min_UTI;
+        private System.Windows.Forms.NumericUpDown numeric_hora_UTI;
+        private System.Windows.Forms.NumericUpDown numeric_min_cirugia;
+        private System.Windows.Forms.NumericUpDown numeric_hora_cirugia;
+        private System.Windows.Forms.NumericUpDown numeric_min_patologia;
+        private System.Windows.Forms.NumericUpDown numeric_hora_patologia;
+        private System.Windows.Forms.NumericUpDown numeric_min_ultrafrezeers;
+        private System.Windows.Forms.NumericUpDown numeric_hora_ultrafrezeers;
+        private System.Windows.Forms.NumericUpDown numeric_min_resonador;
+        private System.Windows.Forms.NumericUpDown numeric_hora_resonador;
+        private System.Windows.Forms.NumericUpDown numeric_hora_bioterio;
     }
 }

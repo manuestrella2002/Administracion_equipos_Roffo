@@ -36,7 +36,9 @@ namespace Administracion_equipos_Roffo
             string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
 
             // Define tu consulta SQL
-            string query = "SELECT ot.Id_orden, ot.Descripcion,ot.Fecha_creacion_orden, e.Nombre_equipo as Equipo_asociado, ot.Lugar_orden FROM orden_de_trabajo as ot LEFT OUTER JOIN equipo as e on ot.equipo_Id_equipo=e.Id_equipo WHERE ot.Fecha_fin_orden IS NULL  ORDER BY ot.Fecha_creacion_orden DESC";
+            string query = "SELECT ot.Id_orden, ot.Descripcion,ot.Fecha_creacion_orden, ot.Lugar_orden, aot.Fecha_actualizacion as Fecha_ultima_actualizacion,aot.Descripcion as Ultima_actualizacion, e.Nombre_equipo as Equipo_asociado FROM orden_de_trabajo as ot " +
+                "LEFT OUTER JOIN equipo as e ON ot.equipo_Id_equipo=e.Id_equipo " +
+                "LEFT OUTER JOIN ( SELECT aot1.* FROM actualizacion_ordenes_de_trabajo AS aot1 INNER JOIN ( SELECT Id_orden_de_trabajo, MAX(Fecha_actualizacion) AS MaxFecha FROM actualizacion_ordenes_de_trabajo GROUP BY Id_orden_de_trabajo) AS subquery  ON aot1.Id_orden_de_trabajo = subquery.Id_orden_de_trabajo   AND aot1.Fecha_actualizacion = subquery.MaxFecha) AS aot ON ot.Id_orden = aot.Id_orden_de_trabajo WHERE ot.Fecha_fin_orden IS NULL ORDER BY ot.Fecha_creacion_orden DESC";
 
             // Crea un DataTable para contener los datos
             DataTable tabla_ordenes = new DataTable();
@@ -227,6 +229,42 @@ namespace Administracion_equipos_Roffo
         private void button_reporte_equipo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_actualizar_orden_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DialogResult Resultado;
+                Resultado = MessageBox.Show("¿Esta seguro que quiere actualizar la orden?", "Atención", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (Resultado == DialogResult.Yes)
+                {
+                    DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                    int Id_orden = int.Parse(selectedRow.Cells["Id_orden"].Value.ToString());
+                    Actualizar_orden actualizar_Orden = new Actualizar_orden(Id_orden);
+                    this.Hide();
+                    actualizar_Orden.ShowDialog();
+                    LoadDataGridView();
+                    this.Show();
+
+                }
+            }
+        }
+
+        private void button_historial_completo_orden_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                    DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                    int Id_orden = int.Parse(selectedRow.Cells["Id_orden"].Value.ToString());
+                    Ver_actualizaciones_ordenes ver_Actualizaciones_Ordenes = new Ver_actualizaciones_ordenes(Id_orden);
+                    this.Hide();
+                    ver_Actualizaciones_Ordenes.ShowDialog();
+                    LoadDataGridView();
+                    this.Show();
+
+
+            }
         }
     }
 }

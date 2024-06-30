@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button_volver_dashboard = new System.Windows.Forms.Button();
             this.button_modificar_grupo = new System.Windows.Forms.Button();
@@ -42,19 +43,28 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(12, 22);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(458, 213);
+            this.dataGridView1.Size = new System.Drawing.Size(482, 224);
             this.dataGridView1.TabIndex = 0;
             // 
             // button_volver_dashboard
             // 
             this.button_volver_dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_volver_dashboard.Location = new System.Drawing.Point(376, 241);
+            this.button_volver_dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_volver_dashboard.Location = new System.Drawing.Point(400, 259);
             this.button_volver_dashboard.Name = "button_volver_dashboard";
-            this.button_volver_dashboard.Size = new System.Drawing.Size(94, 35);
+            this.button_volver_dashboard.Size = new System.Drawing.Size(94, 44);
             this.button_volver_dashboard.TabIndex = 1;
             this.button_volver_dashboard.Text = "Volver al Dashboard";
             this.button_volver_dashboard.UseVisualStyleBackColor = true;
@@ -63,9 +73,10 @@
             // button_modificar_grupo
             // 
             this.button_modificar_grupo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_modificar_grupo.Location = new System.Drawing.Point(12, 241);
+            this.button_modificar_grupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_modificar_grupo.Location = new System.Drawing.Point(12, 259);
             this.button_modificar_grupo.Name = "button_modificar_grupo";
-            this.button_modificar_grupo.Size = new System.Drawing.Size(94, 35);
+            this.button_modificar_grupo.Size = new System.Drawing.Size(102, 44);
             this.button_modificar_grupo.TabIndex = 2;
             this.button_modificar_grupo.Text = "Modificar grupo";
             this.button_modificar_grupo.UseVisualStyleBackColor = true;
@@ -75,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 288);
+            this.ClientSize = new System.Drawing.Size(506, 315);
             this.Controls.Add(this.button_modificar_grupo);
             this.Controls.Add(this.button_volver_dashboard);
             this.Controls.Add(this.dataGridView1);

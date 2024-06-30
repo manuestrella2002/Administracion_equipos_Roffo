@@ -49,9 +49,10 @@
             this.label_nombre_prov.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_nombre_prov.AutoSize = true;
+            this.label_nombre_prov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_nombre_prov.Location = new System.Drawing.Point(23, 33);
             this.label_nombre_prov.Name = "label_nombre_prov";
-            this.label_nombre_prov.Size = new System.Drawing.Size(47, 13);
+            this.label_nombre_prov.Size = new System.Drawing.Size(59, 16);
             this.label_nombre_prov.TabIndex = 0;
             this.label_nombre_prov.Text = "Nombre:";
             // 
@@ -59,9 +60,10 @@
             // 
             this.textBox_nombre_prov.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox_nombre_prov.Location = new System.Drawing.Point(76, 30);
+            this.textBox_nombre_prov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_nombre_prov.Location = new System.Drawing.Point(88, 30);
             this.textBox_nombre_prov.Name = "textBox_nombre_prov";
-            this.textBox_nombre_prov.Size = new System.Drawing.Size(194, 20);
+            this.textBox_nombre_prov.Size = new System.Drawing.Size(194, 22);
             this.textBox_nombre_prov.TabIndex = 1;
             // 
             // label_calle
@@ -69,9 +71,10 @@
             this.label_calle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_calle.AutoSize = true;
+            this.label_calle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_calle.Location = new System.Drawing.Point(23, 81);
             this.label_calle.Name = "label_calle";
-            this.label_calle.Size = new System.Drawing.Size(33, 13);
+            this.label_calle.Size = new System.Drawing.Size(41, 16);
             this.label_calle.TabIndex = 2;
             this.label_calle.Text = "Calle:";
             // 
@@ -79,9 +82,10 @@
             // 
             this.textBox_calle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox_calle.Location = new System.Drawing.Point(76, 78);
+            this.textBox_calle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_calle.Location = new System.Drawing.Point(88, 78);
             this.textBox_calle.Name = "textBox_calle";
-            this.textBox_calle.Size = new System.Drawing.Size(194, 20);
+            this.textBox_calle.Size = new System.Drawing.Size(194, 22);
             this.textBox_calle.TabIndex = 3;
             // 
             // label_nro
@@ -89,9 +93,10 @@
             this.label_nro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_nro.AutoSize = true;
+            this.label_nro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_nro.Location = new System.Drawing.Point(23, 121);
             this.label_nro.Name = "label_nro";
-            this.label_nro.Size = new System.Drawing.Size(47, 13);
+            this.label_nro.Size = new System.Drawing.Size(58, 16);
             this.label_nro.TabIndex = 4;
             this.label_nro.Text = "Número:";
             // 
@@ -99,10 +104,11 @@
             // 
             this.maskedTextBox_nro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.maskedTextBox_nro.Location = new System.Drawing.Point(76, 118);
+            this.maskedTextBox_nro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox_nro.Location = new System.Drawing.Point(87, 118);
             this.maskedTextBox_nro.Mask = "99999";
             this.maskedTextBox_nro.Name = "maskedTextBox_nro";
-            this.maskedTextBox_nro.Size = new System.Drawing.Size(38, 20);
+            this.maskedTextBox_nro.Size = new System.Drawing.Size(38, 22);
             this.maskedTextBox_nro.TabIndex = 5;
             // 
             // label_Localidad
@@ -110,9 +116,10 @@
             this.label_Localidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_Localidad.AutoSize = true;
+            this.label_Localidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Localidad.Location = new System.Drawing.Point(23, 158);
             this.label_Localidad.Name = "label_Localidad";
-            this.label_Localidad.Size = new System.Drawing.Size(56, 13);
+            this.label_Localidad.Size = new System.Drawing.Size(70, 16);
             this.label_Localidad.TabIndex = 6;
             this.label_Localidad.Text = "Localidad:";
             // 
@@ -120,10 +127,11 @@
             // 
             this.comboBox_localidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox_localidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_localidad.FormattingEnabled = true;
-            this.comboBox_localidad.Location = new System.Drawing.Point(76, 155);
+            this.comboBox_localidad.Location = new System.Drawing.Point(99, 155);
             this.comboBox_localidad.Name = "comboBox_localidad";
-            this.comboBox_localidad.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_localidad.Size = new System.Drawing.Size(121, 24);
             this.comboBox_localidad.TabIndex = 7;
             // 
             // label_mail
@@ -131,9 +139,10 @@
             this.label_mail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_mail.AutoSize = true;
+            this.label_mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_mail.Location = new System.Drawing.Point(23, 203);
             this.label_mail.Name = "label_mail";
-            this.label_mail.Size = new System.Drawing.Size(29, 13);
+            this.label_mail.Size = new System.Drawing.Size(35, 16);
             this.label_mail.TabIndex = 8;
             this.label_mail.Text = "Mail:";
             // 
@@ -141,9 +150,10 @@
             // 
             this.textBox_mail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox_mail.Location = new System.Drawing.Point(76, 200);
+            this.textBox_mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_mail.Location = new System.Drawing.Point(64, 200);
             this.textBox_mail.Name = "textBox_mail";
-            this.textBox_mail.Size = new System.Drawing.Size(194, 20);
+            this.textBox_mail.Size = new System.Drawing.Size(194, 22);
             this.textBox_mail.TabIndex = 9;
             // 
             // label_telefono
@@ -151,15 +161,17 @@
             this.label_telefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_telefono.AutoSize = true;
+            this.label_telefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_telefono.Location = new System.Drawing.Point(23, 246);
             this.label_telefono.Name = "label_telefono";
-            this.label_telefono.Size = new System.Drawing.Size(52, 13);
+            this.label_telefono.Size = new System.Drawing.Size(64, 16);
             this.label_telefono.TabIndex = 10;
             this.label_telefono.Text = "Teléfono:";
             // 
             // button_guardar
             // 
             this.button_guardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_guardar.Location = new System.Drawing.Point(354, 246);
             this.button_guardar.Name = "button_guardar";
             this.button_guardar.Size = new System.Drawing.Size(89, 43);
@@ -171,6 +183,7 @@
             // button_cancelar
             // 
             this.button_cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_cancelar.Location = new System.Drawing.Point(247, 246);
             this.button_cancelar.Name = "button_cancelar";
             this.button_cancelar.Size = new System.Drawing.Size(89, 43);
@@ -181,9 +194,10 @@
             // 
             // textBox_telefono
             // 
-            this.textBox_telefono.Location = new System.Drawing.Point(81, 243);
+            this.textBox_telefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_telefono.Location = new System.Drawing.Point(88, 243);
             this.textBox_telefono.Name = "textBox_telefono";
-            this.textBox_telefono.Size = new System.Drawing.Size(100, 20);
+            this.textBox_telefono.Size = new System.Drawing.Size(100, 22);
             this.textBox_telefono.TabIndex = 14;
             // 
             // Agregar_proveedor

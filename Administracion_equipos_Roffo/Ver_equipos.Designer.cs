@@ -55,9 +55,10 @@
             // button_agregar_equipo
             // 
             this.button_agregar_equipo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_agregar_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_agregar_equipo.Location = new System.Drawing.Point(12, 336);
             this.button_agregar_equipo.Name = "button_agregar_equipo";
-            this.button_agregar_equipo.Size = new System.Drawing.Size(107, 37);
+            this.button_agregar_equipo.Size = new System.Drawing.Size(118, 52);
             this.button_agregar_equipo.TabIndex = 1;
             this.button_agregar_equipo.Text = "Agregar Equipo";
             this.button_agregar_equipo.UseVisualStyleBackColor = true;
@@ -66,9 +67,10 @@
             // button_modificar_equipo
             // 
             this.button_modificar_equipo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_modificar_equipo.Location = new System.Drawing.Point(140, 336);
+            this.button_modificar_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_modificar_equipo.Location = new System.Drawing.Point(153, 336);
             this.button_modificar_equipo.Name = "button_modificar_equipo";
-            this.button_modificar_equipo.Size = new System.Drawing.Size(104, 37);
+            this.button_modificar_equipo.Size = new System.Drawing.Size(110, 52);
             this.button_modificar_equipo.TabIndex = 2;
             this.button_modificar_equipo.Text = "Modificar Equipo";
             this.button_modificar_equipo.UseVisualStyleBackColor = true;
@@ -77,9 +79,10 @@
             // button_eliminar_equipo
             // 
             this.button_eliminar_equipo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_eliminar_equipo.Location = new System.Drawing.Point(271, 336);
+            this.button_eliminar_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_eliminar_equipo.Location = new System.Drawing.Point(297, 336);
             this.button_eliminar_equipo.Name = "button_eliminar_equipo";
-            this.button_eliminar_equipo.Size = new System.Drawing.Size(104, 37);
+            this.button_eliminar_equipo.Size = new System.Drawing.Size(113, 52);
             this.button_eliminar_equipo.TabIndex = 3;
             this.button_eliminar_equipo.Text = "Eliminar Equipo";
             this.button_eliminar_equipo.UseVisualStyleBackColor = true;
@@ -88,9 +91,10 @@
             // button_volver_dashboard
             // 
             this.button_volver_dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_volver_dashboard.Location = new System.Drawing.Point(856, 336);
+            this.button_volver_dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_volver_dashboard.Location = new System.Drawing.Point(853, 336);
             this.button_volver_dashboard.Name = "button_volver_dashboard";
-            this.button_volver_dashboard.Size = new System.Drawing.Size(104, 37);
+            this.button_volver_dashboard.Size = new System.Drawing.Size(107, 52);
             this.button_volver_dashboard.TabIndex = 4;
             this.button_volver_dashboard.Text = "Volver al Dashboard";
             this.button_volver_dashboard.UseVisualStyleBackColor = true;
@@ -100,9 +104,10 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(444, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.Size = new System.Drawing.Size(106, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "Lista de equipos";
             // 

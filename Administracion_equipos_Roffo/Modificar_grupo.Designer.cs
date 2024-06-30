@@ -43,9 +43,10 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 55);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 13);
+            this.label1.Size = new System.Drawing.Size(172, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre grupo electrogeno:";
             // 
@@ -53,10 +54,11 @@
             // 
             this.textBox_nombre_grupo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_nombre_grupo.Location = new System.Drawing.Point(185, 52);
+            this.textBox_nombre_grupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_nombre_grupo.Location = new System.Drawing.Point(190, 27);
             this.textBox_nombre_grupo.Name = "textBox_nombre_grupo";
             this.textBox_nombre_grupo.ReadOnly = true;
-            this.textBox_nombre_grupo.Size = new System.Drawing.Size(106, 20);
+            this.textBox_nombre_grupo.Size = new System.Drawing.Size(106, 22);
             this.textBox_nombre_grupo.TabIndex = 1;
             // 
             // label_combustible
@@ -64,9 +66,10 @@
             this.label_combustible.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label_combustible.AutoSize = true;
-            this.label_combustible.Location = new System.Drawing.Point(43, 101);
+            this.label_combustible.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_combustible.Location = new System.Drawing.Point(12, 76);
             this.label_combustible.Name = "label_combustible";
-            this.label_combustible.Size = new System.Drawing.Size(67, 13);
+            this.label_combustible.Size = new System.Drawing.Size(85, 16);
             this.label_combustible.TabIndex = 2;
             this.label_combustible.Text = "Combustible:";
             // 
@@ -75,9 +78,10 @@
             this.label_estado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label_estado.AutoSize = true;
-            this.label_estado.Location = new System.Drawing.Point(43, 147);
+            this.label_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_estado.Location = new System.Drawing.Point(12, 122);
             this.label_estado.Name = "label_estado";
-            this.label_estado.Size = new System.Drawing.Size(43, 13);
+            this.label_estado.Size = new System.Drawing.Size(53, 16);
             this.label_estado.TabIndex = 3;
             this.label_estado.Text = "Estado:";
             // 
@@ -85,34 +89,37 @@
             // 
             this.comboBox_combustible.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_combustible.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_combustible.FormattingEnabled = true;
             this.comboBox_combustible.Items.AddRange(new object[] {
             "Gasoil Premium",
             "Gasoil Comun"});
-            this.comboBox_combustible.Location = new System.Drawing.Point(116, 98);
+            this.comboBox_combustible.Location = new System.Drawing.Point(103, 73);
             this.comboBox_combustible.Name = "comboBox_combustible";
-            this.comboBox_combustible.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_combustible.Size = new System.Drawing.Size(121, 24);
             this.comboBox_combustible.TabIndex = 4;
             // 
             // comboBox_estado
             // 
             this.comboBox_estado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_estado.FormattingEnabled = true;
             this.comboBox_estado.Items.AddRange(new object[] {
             "Fuera de servicio",
             "Operativo"});
-            this.comboBox_estado.Location = new System.Drawing.Point(92, 144);
+            this.comboBox_estado.Location = new System.Drawing.Point(71, 114);
             this.comboBox_estado.Name = "comboBox_estado";
-            this.comboBox_estado.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_estado.Size = new System.Drawing.Size(121, 24);
             this.comboBox_estado.TabIndex = 5;
             // 
             // button_guardar_cambios
             // 
             this.button_guardar_cambios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_guardar_cambios.Location = new System.Drawing.Point(302, 193);
+            this.button_guardar_cambios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_guardar_cambios.Location = new System.Drawing.Point(297, 185);
             this.button_guardar_cambios.Name = "button_guardar_cambios";
-            this.button_guardar_cambios.Size = new System.Drawing.Size(104, 39);
+            this.button_guardar_cambios.Size = new System.Drawing.Size(109, 47);
             this.button_guardar_cambios.TabIndex = 6;
             this.button_guardar_cambios.Text = "Guardar cambios";
             this.button_guardar_cambios.UseVisualStyleBackColor = true;
@@ -121,9 +128,10 @@
             // button_cancelar
             // 
             this.button_cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_cancelar.Location = new System.Drawing.Point(185, 193);
+            this.button_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_cancelar.Location = new System.Drawing.Point(180, 185);
             this.button_cancelar.Name = "button_cancelar";
-            this.button_cancelar.Size = new System.Drawing.Size(104, 39);
+            this.button_cancelar.Size = new System.Drawing.Size(111, 47);
             this.button_cancelar.TabIndex = 7;
             this.button_cancelar.Text = "Cancelar";
             this.button_cancelar.UseVisualStyleBackColor = true;

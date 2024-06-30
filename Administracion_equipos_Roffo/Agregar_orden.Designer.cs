@@ -41,18 +41,20 @@
             // 
             this.label_nueva_orden.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_nueva_orden.AutoSize = true;
-            this.label_nueva_orden.Location = new System.Drawing.Point(229, 9);
+            this.label_nueva_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nueva_orden.Location = new System.Drawing.Point(226, 11);
             this.label_nueva_orden.Name = "label_nueva_orden";
-            this.label_nueva_orden.Size = new System.Drawing.Size(86, 13);
+            this.label_nueva_orden.Size = new System.Drawing.Size(106, 16);
             this.label_nueva_orden.TabIndex = 0;
             this.label_nueva_orden.Text = "NUEVA ORDEN";
             // 
             // label_descripcion
             // 
             this.label_descripcion.AutoSize = true;
-            this.label_descripcion.Location = new System.Drawing.Point(25, 76);
+            this.label_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_descripcion.Location = new System.Drawing.Point(12, 78);
             this.label_descripcion.Name = "label_descripcion";
-            this.label_descripcion.Size = new System.Drawing.Size(66, 13);
+            this.label_descripcion.Size = new System.Drawing.Size(82, 16);
             this.label_descripcion.TabIndex = 1;
             this.label_descripcion.Text = "Descripción:";
             // 
@@ -63,7 +65,8 @@
             this.textBox_descripcion_orden.AllowDrop = true;
             this.textBox_descripcion_orden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_descripcion_orden.Location = new System.Drawing.Point(97, 73);
+            this.textBox_descripcion_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_descripcion_orden.Location = new System.Drawing.Point(94, 75);
             this.textBox_descripcion_orden.Multiline = true;
             this.textBox_descripcion_orden.Name = "textBox_descripcion_orden";
             this.textBox_descripcion_orden.Size = new System.Drawing.Size(372, 80);
@@ -72,24 +75,27 @@
             // label_lugar
             // 
             this.label_lugar.AutoSize = true;
-            this.label_lugar.Location = new System.Drawing.Point(39, 184);
+            this.label_lugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_lugar.Location = new System.Drawing.Point(44, 181);
             this.label_lugar.Name = "label_lugar";
-            this.label_lugar.Size = new System.Drawing.Size(37, 13);
+            this.label_lugar.Size = new System.Drawing.Size(44, 16);
             this.label_lugar.TabIndex = 3;
             this.label_lugar.Text = "Lugar:";
             // 
             // comboBox_lugar_orden
             // 
+            this.comboBox_lugar_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_lugar_orden.FormattingEnabled = true;
-            this.comboBox_lugar_orden.Location = new System.Drawing.Point(97, 181);
+            this.comboBox_lugar_orden.Location = new System.Drawing.Point(94, 178);
             this.comboBox_lugar_orden.Name = "comboBox_lugar_orden";
-            this.comboBox_lugar_orden.Size = new System.Drawing.Size(113, 21);
+            this.comboBox_lugar_orden.Size = new System.Drawing.Size(113, 24);
             this.comboBox_lugar_orden.TabIndex = 4;
             // 
             // button_crear_orden
             // 
             this.button_crear_orden.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_crear_orden.Location = new System.Drawing.Point(380, 242);
+            this.button_crear_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_crear_orden.Location = new System.Drawing.Point(377, 236);
             this.button_crear_orden.Name = "button_crear_orden";
             this.button_crear_orden.Size = new System.Drawing.Size(89, 40);
             this.button_crear_orden.TabIndex = 5;
@@ -100,7 +106,8 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(269, 242);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(270, 236);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 40);
             this.button1.TabIndex = 6;

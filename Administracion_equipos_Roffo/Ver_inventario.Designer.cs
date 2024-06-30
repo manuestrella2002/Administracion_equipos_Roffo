@@ -44,19 +44,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(578, 318);
+            this.dataGridView1.Size = new System.Drawing.Size(591, 314);
             this.dataGridView1.TabIndex = 1;
             // 
             // button_volver_dashboard
             // 
             this.button_volver_dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_volver_dashboard.Location = new System.Drawing.Point(504, 348);
+            this.button_volver_dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_volver_dashboard.Location = new System.Drawing.Point(514, 350);
             this.button_volver_dashboard.Name = "button_volver_dashboard";
-            this.button_volver_dashboard.Size = new System.Drawing.Size(86, 36);
+            this.button_volver_dashboard.Size = new System.Drawing.Size(89, 46);
             this.button_volver_dashboard.TabIndex = 2;
             this.button_volver_dashboard.Text = "Volver al Dashboard";
             this.button_volver_dashboard.UseVisualStyleBackColor = true;
@@ -65,9 +66,10 @@
             // button_agregar_parte
             // 
             this.button_agregar_parte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_agregar_parte.Location = new System.Drawing.Point(12, 348);
+            this.button_agregar_parte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_agregar_parte.Location = new System.Drawing.Point(12, 350);
             this.button_agregar_parte.Name = "button_agregar_parte";
-            this.button_agregar_parte.Size = new System.Drawing.Size(86, 36);
+            this.button_agregar_parte.Size = new System.Drawing.Size(86, 46);
             this.button_agregar_parte.TabIndex = 3;
             this.button_agregar_parte.Text = "Agregar parte";
             this.button_agregar_parte.UseVisualStyleBackColor = true;
@@ -76,9 +78,10 @@
             // button_modificar_parte
             // 
             this.button_modificar_parte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_modificar_parte.Location = new System.Drawing.Point(104, 348);
+            this.button_modificar_parte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_modificar_parte.Location = new System.Drawing.Point(104, 350);
             this.button_modificar_parte.Name = "button_modificar_parte";
-            this.button_modificar_parte.Size = new System.Drawing.Size(86, 36);
+            this.button_modificar_parte.Size = new System.Drawing.Size(86, 46);
             this.button_modificar_parte.TabIndex = 4;
             this.button_modificar_parte.Text = "Modificar parte";
             this.button_modificar_parte.UseVisualStyleBackColor = true;
@@ -87,9 +90,10 @@
             // button_eliminar_parte
             // 
             this.button_eliminar_parte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_eliminar_parte.Location = new System.Drawing.Point(196, 348);
+            this.button_eliminar_parte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_eliminar_parte.Location = new System.Drawing.Point(196, 350);
             this.button_eliminar_parte.Name = "button_eliminar_parte";
-            this.button_eliminar_parte.Size = new System.Drawing.Size(86, 36);
+            this.button_eliminar_parte.Size = new System.Drawing.Size(86, 46);
             this.button_eliminar_parte.TabIndex = 5;
             this.button_eliminar_parte.Text = "Eliminar parte";
             this.button_eliminar_parte.UseVisualStyleBackColor = true;
@@ -99,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 394);
+            this.ClientSize = new System.Drawing.Size(613, 408);
             this.Controls.Add(this.button_eliminar_parte);
             this.Controls.Add(this.button_modificar_parte);
             this.Controls.Add(this.button_agregar_parte);

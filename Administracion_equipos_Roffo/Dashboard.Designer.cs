@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_ver_equipos = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,12 +43,15 @@
             this.button_reporte_grupo = new System.Windows.Forms.Button();
             this.button_reparacion_externa = new System.Windows.Forms.Button();
             this.button_reporte_equipo = new System.Windows.Forms.Button();
+            this.button_actualizar_orden = new System.Windows.Forms.Button();
+            this.button_historial_completo_orden = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button_ver_equipos
             // 
             this.button_ver_equipos.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button_ver_equipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ver_equipos.Location = new System.Drawing.Point(23, 115);
             this.button_ver_equipos.Name = "button_ver_equipos";
             this.button_ver_equipos.Size = new System.Drawing.Size(124, 71);
@@ -67,26 +71,36 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(165, 38);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(690, 302);
+            this.dataGridView1.Size = new System.Drawing.Size(801, 302);
             this.dataGridView1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(405, 22);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(460, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 13);
+            this.label1.Size = new System.Drawing.Size(222, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "ORDENES DE TRABAJO ACTIVAS";
             // 
             // button_ver_ordenes_inactivas
             // 
             this.button_ver_ordenes_inactivas.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button_ver_ordenes_inactivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ver_ordenes_inactivas.Location = new System.Drawing.Point(23, 38);
             this.button_ver_ordenes_inactivas.Name = "button_ver_ordenes_inactivas";
             this.button_ver_ordenes_inactivas.Size = new System.Drawing.Size(124, 71);
@@ -98,7 +112,8 @@
             // button_cerrar_orden
             // 
             this.button_cerrar_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button_cerrar_orden.Location = new System.Drawing.Point(731, 351);
+            this.button_cerrar_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_cerrar_orden.Location = new System.Drawing.Point(841, 351);
             this.button_cerrar_orden.Name = "button_cerrar_orden";
             this.button_cerrar_orden.Size = new System.Drawing.Size(124, 71);
             this.button_cerrar_orden.TabIndex = 4;
@@ -109,7 +124,8 @@
             // button_nueva_orden
             // 
             this.button_nueva_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button_nueva_orden.Location = new System.Drawing.Point(165, 351);
+            this.button_nueva_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_nueva_orden.Location = new System.Drawing.Point(191, 351);
             this.button_nueva_orden.Name = "button_nueva_orden";
             this.button_nueva_orden.Size = new System.Drawing.Size(124, 71);
             this.button_nueva_orden.TabIndex = 5;
@@ -120,7 +136,8 @@
             // button_modificar_orden
             // 
             this.button_modificar_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button_modificar_orden.Location = new System.Drawing.Point(295, 351);
+            this.button_modificar_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_modificar_orden.Location = new System.Drawing.Point(451, 351);
             this.button_modificar_orden.Name = "button_modificar_orden";
             this.button_modificar_orden.Size = new System.Drawing.Size(124, 71);
             this.button_modificar_orden.TabIndex = 6;
@@ -131,7 +148,8 @@
             // button_asociar_equipo
             // 
             this.button_asociar_equipo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button_asociar_equipo.Location = new System.Drawing.Point(538, 351);
+            this.button_asociar_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_asociar_equipo.Location = new System.Drawing.Point(711, 351);
             this.button_asociar_equipo.Name = "button_asociar_equipo";
             this.button_asociar_equipo.Size = new System.Drawing.Size(124, 71);
             this.button_asociar_equipo.TabIndex = 7;
@@ -142,7 +160,8 @@
             // button_ver_grupos
             // 
             this.button_ver_grupos.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button_ver_grupos.Location = new System.Drawing.Point(874, 192);
+            this.button_ver_grupos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_ver_grupos.Location = new System.Drawing.Point(985, 192);
             this.button_ver_grupos.Name = "button_ver_grupos";
             this.button_ver_grupos.Size = new System.Drawing.Size(124, 71);
             this.button_ver_grupos.TabIndex = 8;
@@ -153,7 +172,8 @@
             // button_inventario
             // 
             this.button_inventario.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button_inventario.Location = new System.Drawing.Point(874, 38);
+            this.button_inventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_inventario.Location = new System.Drawing.Point(985, 38);
             this.button_inventario.Name = "button_inventario";
             this.button_inventario.Size = new System.Drawing.Size(124, 71);
             this.button_inventario.TabIndex = 9;
@@ -164,7 +184,8 @@
             // button_proveedores
             // 
             this.button_proveedores.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button_proveedores.Location = new System.Drawing.Point(874, 115);
+            this.button_proveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_proveedores.Location = new System.Drawing.Point(985, 115);
             this.button_proveedores.Name = "button_proveedores";
             this.button_proveedores.Size = new System.Drawing.Size(124, 71);
             this.button_proveedores.TabIndex = 10;
@@ -175,7 +196,8 @@
             // button_reporte_grupo
             // 
             this.button_reporte_grupo.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button_reporte_grupo.Location = new System.Drawing.Point(874, 269);
+            this.button_reporte_grupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_reporte_grupo.Location = new System.Drawing.Point(985, 269);
             this.button_reporte_grupo.Name = "button_reporte_grupo";
             this.button_reporte_grupo.Size = new System.Drawing.Size(124, 71);
             this.button_reporte_grupo.TabIndex = 11;
@@ -186,6 +208,7 @@
             // button_reparacion_externa
             // 
             this.button_reparacion_externa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button_reparacion_externa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_reparacion_externa.Location = new System.Drawing.Point(23, 269);
             this.button_reparacion_externa.Name = "button_reparacion_externa";
             this.button_reparacion_externa.Size = new System.Drawing.Size(124, 71);
@@ -197,6 +220,7 @@
             // button_reporte_equipo
             // 
             this.button_reporte_equipo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button_reporte_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_reporte_equipo.Location = new System.Drawing.Point(23, 192);
             this.button_reporte_equipo.Name = "button_reporte_equipo";
             this.button_reporte_equipo.Size = new System.Drawing.Size(124, 71);
@@ -205,11 +229,37 @@
             this.button_reporte_equipo.UseVisualStyleBackColor = true;
             this.button_reporte_equipo.Click += new System.EventHandler(this.button_reporte_equipo_Click);
             // 
+            // button_actualizar_orden
+            // 
+            this.button_actualizar_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button_actualizar_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_actualizar_orden.Location = new System.Drawing.Point(321, 351);
+            this.button_actualizar_orden.Name = "button_actualizar_orden";
+            this.button_actualizar_orden.Size = new System.Drawing.Size(124, 71);
+            this.button_actualizar_orden.TabIndex = 14;
+            this.button_actualizar_orden.Text = "Actualizar Orden";
+            this.button_actualizar_orden.UseVisualStyleBackColor = true;
+            this.button_actualizar_orden.Click += new System.EventHandler(this.button_actualizar_orden_Click);
+            // 
+            // button_historial_completo_orden
+            // 
+            this.button_historial_completo_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button_historial_completo_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_historial_completo_orden.Location = new System.Drawing.Point(581, 351);
+            this.button_historial_completo_orden.Name = "button_historial_completo_orden";
+            this.button_historial_completo_orden.Size = new System.Drawing.Size(124, 71);
+            this.button_historial_completo_orden.TabIndex = 15;
+            this.button_historial_completo_orden.Text = "Historial completo de la orden";
+            this.button_historial_completo_orden.UseVisualStyleBackColor = true;
+            this.button_historial_completo_orden.Click += new System.EventHandler(this.button_historial_completo_orden_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 428);
+            this.ClientSize = new System.Drawing.Size(1133, 428);
+            this.Controls.Add(this.button_historial_completo_orden);
+            this.Controls.Add(this.button_actualizar_orden);
             this.Controls.Add(this.button_reporte_equipo);
             this.Controls.Add(this.button_reparacion_externa);
             this.Controls.Add(this.button_reporte_grupo);
@@ -250,5 +300,7 @@
         private System.Windows.Forms.Button button_reporte_grupo;
         private System.Windows.Forms.Button button_reparacion_externa;
         private System.Windows.Forms.Button button_reporte_equipo;
+        private System.Windows.Forms.Button button_actualizar_orden;
+        private System.Windows.Forms.Button button_historial_completo_orden;
     }
 }

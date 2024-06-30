@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button_ver_reporte_completo = new System.Windows.Forms.Button();
             this.button_modificar_reporte = new System.Windows.Forms.Button();
@@ -47,6 +48,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(121, 53);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -56,6 +65,7 @@
             // 
             // button_ver_reporte_completo
             // 
+            this.button_ver_reporte_completo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ver_reporte_completo.Location = new System.Drawing.Point(12, 99);
             this.button_ver_reporte_completo.Name = "button_ver_reporte_completo";
             this.button_ver_reporte_completo.Size = new System.Drawing.Size(94, 40);
@@ -66,6 +76,7 @@
             // 
             // button_modificar_reporte
             // 
+            this.button_modificar_reporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_modificar_reporte.Location = new System.Drawing.Point(12, 145);
             this.button_modificar_reporte.Name = "button_modificar_reporte";
             this.button_modificar_reporte.Size = new System.Drawing.Size(94, 40);
@@ -76,6 +87,7 @@
             // 
             // button_eliminar_reporte
             // 
+            this.button_eliminar_reporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_eliminar_reporte.Location = new System.Drawing.Point(12, 191);
             this.button_eliminar_reporte.Name = "button_eliminar_reporte";
             this.button_eliminar_reporte.Size = new System.Drawing.Size(94, 40);
@@ -86,6 +98,7 @@
             // 
             // button_crear_reporte
             // 
+            this.button_crear_reporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_crear_reporte.Location = new System.Drawing.Point(12, 53);
             this.button_crear_reporte.Name = "button_crear_reporte";
             this.button_crear_reporte.Size = new System.Drawing.Size(94, 40);
@@ -97,6 +110,7 @@
             // button_tendencias
             // 
             this.button_tendencias.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_tendencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_tendencias.Location = new System.Drawing.Point(12, 302);
             this.button_tendencias.Name = "button_tendencias";
             this.button_tendencias.Size = new System.Drawing.Size(94, 40);
@@ -108,6 +122,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(470, 348);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 40);
@@ -120,9 +135,10 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(296, 37);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(296, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 13);
+            this.label1.Size = new System.Drawing.Size(107, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Lista de reportes";
             // 

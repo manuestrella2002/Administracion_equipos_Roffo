@@ -39,9 +39,10 @@
             // label_descripcion
             // 
             this.label_descripcion.AutoSize = true;
+            this.label_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_descripcion.Location = new System.Drawing.Point(30, 58);
             this.label_descripcion.Name = "label_descripcion";
-            this.label_descripcion.Size = new System.Drawing.Size(66, 13);
+            this.label_descripcion.Size = new System.Drawing.Size(82, 16);
             this.label_descripcion.TabIndex = 0;
             this.label_descripcion.Text = "Descripción:";
             // 
@@ -52,6 +53,7 @@
             this.textBox_descripcion_orden.AllowDrop = true;
             this.textBox_descripcion_orden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_descripcion_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_descripcion_orden.Location = new System.Drawing.Point(111, 55);
             this.textBox_descripcion_orden.Multiline = true;
             this.textBox_descripcion_orden.Name = "textBox_descripcion_orden";
@@ -60,24 +62,27 @@
             // 
             // comboBox_lugar_orden
             // 
+            this.comboBox_lugar_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_lugar_orden.FormattingEnabled = true;
             this.comboBox_lugar_orden.Location = new System.Drawing.Point(117, 204);
             this.comboBox_lugar_orden.Name = "comboBox_lugar_orden";
-            this.comboBox_lugar_orden.Size = new System.Drawing.Size(165, 21);
+            this.comboBox_lugar_orden.Size = new System.Drawing.Size(165, 24);
             this.comboBox_lugar_orden.TabIndex = 6;
             // 
             // label_lugar
             // 
             this.label_lugar.AutoSize = true;
+            this.label_lugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_lugar.Location = new System.Drawing.Point(59, 207);
             this.label_lugar.Name = "label_lugar";
-            this.label_lugar.Size = new System.Drawing.Size(37, 13);
+            this.label_lugar.Size = new System.Drawing.Size(44, 16);
             this.label_lugar.TabIndex = 5;
             this.label_lugar.Text = "Lugar:";
             // 
             // button_guardar_cambios
             // 
             this.button_guardar_cambios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_guardar_cambios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_guardar_cambios.Location = new System.Drawing.Point(435, 281);
             this.button_guardar_cambios.Name = "button_guardar_cambios";
             this.button_guardar_cambios.Size = new System.Drawing.Size(95, 42);
@@ -89,6 +94,7 @@
             // button_cancelar
             // 
             this.button_cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_cancelar.Location = new System.Drawing.Point(317, 281);
             this.button_cancelar.Name = "button_cancelar";
             this.button_cancelar.Size = new System.Drawing.Size(95, 42);

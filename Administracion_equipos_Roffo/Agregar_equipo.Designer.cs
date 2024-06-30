@@ -51,25 +51,28 @@
             // label_nombre_equipo
             // 
             this.label_nombre_equipo.AutoSize = true;
-            this.label_nombre_equipo.Location = new System.Drawing.Point(32, 24);
+            this.label_nombre_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nombre_equipo.Location = new System.Drawing.Point(28, 29);
             this.label_nombre_equipo.Name = "label_nombre_equipo";
-            this.label_nombre_equipo.Size = new System.Drawing.Size(47, 13);
+            this.label_nombre_equipo.Size = new System.Drawing.Size(59, 16);
             this.label_nombre_equipo.TabIndex = 0;
             this.label_nombre_equipo.Text = "Nombre:";
             // 
             // textBox_nombre_equipo
             // 
-            this.textBox_nombre_equipo.Location = new System.Drawing.Point(85, 21);
+            this.textBox_nombre_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_nombre_equipo.Location = new System.Drawing.Point(92, 26);
             this.textBox_nombre_equipo.Name = "textBox_nombre_equipo";
-            this.textBox_nombre_equipo.Size = new System.Drawing.Size(274, 20);
+            this.textBox_nombre_equipo.Size = new System.Drawing.Size(274, 22);
             this.textBox_nombre_equipo.TabIndex = 1;
             // 
             // label_marca_equipo
             // 
             this.label_marca_equipo.AutoSize = true;
-            this.label_marca_equipo.Location = new System.Drawing.Point(32, 57);
+            this.label_marca_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_marca_equipo.Location = new System.Drawing.Point(28, 62);
             this.label_marca_equipo.Name = "label_marca_equipo";
-            this.label_marca_equipo.Size = new System.Drawing.Size(40, 13);
+            this.label_marca_equipo.Size = new System.Drawing.Size(48, 16);
             this.label_marca_equipo.TabIndex = 2;
             this.label_marca_equipo.Text = "Marca:";
             this.label_marca_equipo.Click += new System.EventHandler(this.label_marca_equipo_Click);
@@ -77,103 +80,115 @@
             // label_modelo_equipo
             // 
             this.label_modelo_equipo.AutoSize = true;
-            this.label_modelo_equipo.Location = new System.Drawing.Point(32, 91);
+            this.label_modelo_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_modelo_equipo.Location = new System.Drawing.Point(28, 96);
             this.label_modelo_equipo.Name = "label_modelo_equipo";
-            this.label_modelo_equipo.Size = new System.Drawing.Size(45, 13);
+            this.label_modelo_equipo.Size = new System.Drawing.Size(56, 16);
             this.label_modelo_equipo.TabIndex = 3;
             this.label_modelo_equipo.Text = "Modelo:";
             // 
             // label_nro_serie_equipo
             // 
             this.label_nro_serie_equipo.AutoSize = true;
-            this.label_nro_serie_equipo.Location = new System.Drawing.Point(32, 125);
+            this.label_nro_serie_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nro_serie_equipo.Location = new System.Drawing.Point(28, 130);
             this.label_nro_serie_equipo.Name = "label_nro_serie_equipo";
-            this.label_nro_serie_equipo.Size = new System.Drawing.Size(87, 13);
+            this.label_nro_serie_equipo.Size = new System.Drawing.Size(110, 16);
             this.label_nro_serie_equipo.TabIndex = 4;
             this.label_nro_serie_equipo.Text = "Numero de serie:";
             // 
             // label_fecha_fab
             // 
             this.label_fecha_fab.AutoSize = true;
-            this.label_fecha_fab.Location = new System.Drawing.Point(32, 166);
+            this.label_fecha_fab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_fecha_fab.Location = new System.Drawing.Point(28, 171);
             this.label_fecha_fab.Name = "label_fecha_fab";
-            this.label_fecha_fab.Size = new System.Drawing.Size(95, 13);
+            this.label_fecha_fab.Size = new System.Drawing.Size(117, 16);
             this.label_fecha_fab.TabIndex = 5;
             this.label_fecha_fab.Text = "Fecha fabricación:";
             // 
             // label_fecha_adq
             // 
             this.label_fecha_adq.AutoSize = true;
-            this.label_fecha_adq.Location = new System.Drawing.Point(32, 200);
+            this.label_fecha_adq.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_fecha_adq.Location = new System.Drawing.Point(28, 205);
             this.label_fecha_adq.Name = "label_fecha_adq";
-            this.label_fecha_adq.Size = new System.Drawing.Size(96, 13);
+            this.label_fecha_adq.Size = new System.Drawing.Size(120, 16);
             this.label_fecha_adq.TabIndex = 6;
             this.label_fecha_adq.Text = "Fecha adquisición:";
             // 
             // label_ubicacion
             // 
             this.label_ubicacion.AutoSize = true;
-            this.label_ubicacion.Location = new System.Drawing.Point(32, 235);
+            this.label_ubicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ubicacion.Location = new System.Drawing.Point(28, 240);
             this.label_ubicacion.Name = "label_ubicacion";
-            this.label_ubicacion.Size = new System.Drawing.Size(58, 13);
+            this.label_ubicacion.Size = new System.Drawing.Size(71, 16);
             this.label_ubicacion.TabIndex = 7;
             this.label_ubicacion.Text = "Ubicación:";
             // 
             // label_Estado
             // 
             this.label_Estado.AutoSize = true;
-            this.label_Estado.Location = new System.Drawing.Point(32, 268);
+            this.label_Estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Estado.Location = new System.Drawing.Point(28, 273);
             this.label_Estado.Name = "label_Estado";
-            this.label_Estado.Size = new System.Drawing.Size(43, 13);
+            this.label_Estado.Size = new System.Drawing.Size(53, 16);
             this.label_Estado.TabIndex = 8;
             this.label_Estado.Text = "Estado:";
             // 
             // textBox_modelo_equipo
             // 
-            this.textBox_modelo_equipo.Location = new System.Drawing.Point(83, 88);
+            this.textBox_modelo_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_modelo_equipo.Location = new System.Drawing.Point(82, 93);
             this.textBox_modelo_equipo.Name = "textBox_modelo_equipo";
-            this.textBox_modelo_equipo.Size = new System.Drawing.Size(177, 20);
+            this.textBox_modelo_equipo.Size = new System.Drawing.Size(177, 22);
             this.textBox_modelo_equipo.TabIndex = 10;
             // 
             // comboBox_marca
             // 
+            this.comboBox_marca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_marca.FormattingEnabled = true;
-            this.comboBox_marca.Location = new System.Drawing.Point(85, 54);
+            this.comboBox_marca.Location = new System.Drawing.Point(82, 59);
             this.comboBox_marca.Name = "comboBox_marca";
-            this.comboBox_marca.Size = new System.Drawing.Size(175, 21);
+            this.comboBox_marca.Size = new System.Drawing.Size(175, 24);
             this.comboBox_marca.TabIndex = 12;
             // 
             // textBox_nro_serie_equipo
             // 
-            this.textBox_nro_serie_equipo.Location = new System.Drawing.Point(125, 122);
+            this.textBox_nro_serie_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_nro_serie_equipo.Location = new System.Drawing.Point(144, 127);
             this.textBox_nro_serie_equipo.Name = "textBox_nro_serie_equipo";
-            this.textBox_nro_serie_equipo.Size = new System.Drawing.Size(177, 20);
+            this.textBox_nro_serie_equipo.Size = new System.Drawing.Size(177, 22);
             this.textBox_nro_serie_equipo.TabIndex = 13;
             // 
             // comboBox_ubicacion
             // 
+            this.comboBox_ubicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_ubicacion.FormattingEnabled = true;
-            this.comboBox_ubicacion.Location = new System.Drawing.Point(96, 232);
+            this.comboBox_ubicacion.Location = new System.Drawing.Point(105, 237);
             this.comboBox_ubicacion.Name = "comboBox_ubicacion";
-            this.comboBox_ubicacion.Size = new System.Drawing.Size(175, 21);
+            this.comboBox_ubicacion.Size = new System.Drawing.Size(175, 24);
             this.comboBox_ubicacion.TabIndex = 14;
             // 
             // comboBox_estado
             // 
+            this.comboBox_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_estado.FormattingEnabled = true;
             this.comboBox_estado.Items.AddRange(new object[] {
             "Fuera de servicio",
             "Operativo"});
-            this.comboBox_estado.Location = new System.Drawing.Point(81, 265);
+            this.comboBox_estado.Location = new System.Drawing.Point(87, 270);
             this.comboBox_estado.Name = "comboBox_estado";
-            this.comboBox_estado.Size = new System.Drawing.Size(122, 21);
+            this.comboBox_estado.Size = new System.Drawing.Size(122, 24);
             this.comboBox_estado.TabIndex = 15;
             // 
             // button_guardar_equipo
             // 
-            this.button_guardar_equipo.Location = new System.Drawing.Point(374, 282);
+            this.button_guardar_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_guardar_equipo.Location = new System.Drawing.Point(367, 273);
             this.button_guardar_equipo.Name = "button_guardar_equipo";
-            this.button_guardar_equipo.Size = new System.Drawing.Size(100, 37);
+            this.button_guardar_equipo.Size = new System.Drawing.Size(103, 51);
             this.button_guardar_equipo.TabIndex = 16;
             this.button_guardar_equipo.Text = "Guardar equipo";
             this.button_guardar_equipo.UseVisualStyleBackColor = true;
@@ -182,28 +197,31 @@
             // dateTime_fecha_fab
             // 
             this.dateTime_fecha_fab.CustomFormat = "dd-mm-yyyy";
+            this.dateTime_fecha_fab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTime_fecha_fab.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTime_fecha_fab.Location = new System.Drawing.Point(133, 166);
+            this.dateTime_fecha_fab.Location = new System.Drawing.Point(144, 166);
             this.dateTime_fecha_fab.Name = "dateTime_fecha_fab";
             this.dateTime_fecha_fab.ShowCheckBox = true;
-            this.dateTime_fecha_fab.Size = new System.Drawing.Size(138, 20);
+            this.dateTime_fecha_fab.Size = new System.Drawing.Size(138, 22);
             this.dateTime_fecha_fab.TabIndex = 17;
             // 
             // dateTime_fecha_adq
             // 
             this.dateTime_fecha_adq.CustomFormat = "dd-mm-yyyy";
+            this.dateTime_fecha_adq.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTime_fecha_adq.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTime_fecha_adq.Location = new System.Drawing.Point(133, 200);
+            this.dateTime_fecha_adq.Location = new System.Drawing.Point(144, 205);
             this.dateTime_fecha_adq.Name = "dateTime_fecha_adq";
             this.dateTime_fecha_adq.ShowCheckBox = true;
-            this.dateTime_fecha_adq.Size = new System.Drawing.Size(138, 20);
+            this.dateTime_fecha_adq.Size = new System.Drawing.Size(138, 22);
             this.dateTime_fecha_adq.TabIndex = 18;
             // 
             // button_cancelar
             // 
-            this.button_cancelar.Location = new System.Drawing.Point(259, 282);
+            this.button_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_cancelar.Location = new System.Drawing.Point(259, 273);
             this.button_cancelar.Name = "button_cancelar";
-            this.button_cancelar.Size = new System.Drawing.Size(100, 37);
+            this.button_cancelar.Size = new System.Drawing.Size(102, 51);
             this.button_cancelar.TabIndex = 19;
             this.button_cancelar.Text = "Cancelar";
             this.button_cancelar.UseVisualStyleBackColor = true;

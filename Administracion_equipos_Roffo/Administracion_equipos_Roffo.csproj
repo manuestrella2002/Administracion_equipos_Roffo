@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizar_orden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar_orden.Designer.cs">
+      <DependentUpon>Actualizar_orden.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agregar_equipo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,12 @@
       <DependentUpon>Modificar_proveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Ver_actualizaciones_ordenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_actualizaciones_ordenes.Designer.cs">
+      <DependentUpon>Ver_actualizaciones_ordenes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver_equipos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +219,9 @@
     <Compile Include="Ver_reportes_grupos.Designer.cs">
       <DependentUpon>Ver_reportes_grupos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Actualizar_orden.resx">
+      <DependentUpon>Actualizar_orden.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agregar_equipo.resx">
       <DependentUpon>Agregar_equipo.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modificar_proveedor.resx">
       <DependentUpon>Modificar_proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_actualizaciones_ordenes.resx">
+      <DependentUpon>Ver_actualizaciones_ordenes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_equipos.resx">
       <DependentUpon>Ver_equipos.cs</DependentUpon>

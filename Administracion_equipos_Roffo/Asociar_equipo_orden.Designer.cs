@@ -53,9 +53,10 @@
             // button_asociar
             // 
             this.button_asociar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_asociar.Location = new System.Drawing.Point(408, 357);
+            this.button_asociar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_asociar.Location = new System.Drawing.Point(417, 347);
             this.button_asociar.Name = "button_asociar";
-            this.button_asociar.Size = new System.Drawing.Size(90, 37);
+            this.button_asociar.Size = new System.Drawing.Size(105, 47);
             this.button_asociar.TabIndex = 2;
             this.button_asociar.Text = "Asociar";
             this.button_asociar.UseVisualStyleBackColor = true;
@@ -64,9 +65,10 @@
             // button_crear_equipo
             // 
             this.button_crear_equipo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_crear_equipo.Location = new System.Drawing.Point(12, 357);
+            this.button_crear_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_crear_equipo.Location = new System.Drawing.Point(12, 347);
             this.button_crear_equipo.Name = "button_crear_equipo";
-            this.button_crear_equipo.Size = new System.Drawing.Size(90, 37);
+            this.button_crear_equipo.Size = new System.Drawing.Size(98, 47);
             this.button_crear_equipo.TabIndex = 3;
             this.button_crear_equipo.Text = "Crear equipo";
             this.button_crear_equipo.UseVisualStyleBackColor = true;
@@ -75,9 +77,10 @@
             // button_volver
             // 
             this.button_volver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_volver.Location = new System.Drawing.Point(870, 357);
+            this.button_volver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_volver.Location = new System.Drawing.Point(856, 347);
             this.button_volver.Name = "button_volver";
-            this.button_volver.Size = new System.Drawing.Size(90, 37);
+            this.button_volver.Size = new System.Drawing.Size(104, 47);
             this.button_volver.TabIndex = 4;
             this.button_volver.Text = "Volver al Dashboard";
             this.button_volver.UseVisualStyleBackColor = true;
