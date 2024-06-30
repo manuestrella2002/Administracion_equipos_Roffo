@@ -18,6 +18,34 @@ USE `db_roffo`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `actualizacion_ordenes_de_trabajo`
+--
+
+DROP TABLE IF EXISTS `actualizacion_ordenes_de_trabajo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `actualizacion_ordenes_de_trabajo` (
+  `id_actualizacion` int NOT NULL AUTO_INCREMENT,
+  `Descripcion` varchar(2000) NOT NULL,
+  `Fecha_actualizacion` datetime NOT NULL,
+  `Id_orden_de_trabajo` int NOT NULL,
+  PRIMARY KEY (`id_actualizacion`),
+  KEY `Id_orden_de_trabajo_idx` (`Id_orden_de_trabajo`),
+  CONSTRAINT `Id_orden_de_trabajo` FOREIGN KEY (`Id_orden_de_trabajo`) REFERENCES `orden_de_trabajo` (`Id_orden`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `actualizacion_ordenes_de_trabajo`
+--
+
+LOCK TABLES `actualizacion_ordenes_de_trabajo` WRITE;
+/*!40000 ALTER TABLE `actualizacion_ordenes_de_trabajo` DISABLE KEYS */;
+INSERT INTO `actualizacion_ordenes_de_trabajo` VALUES (1,'Faltan lamparas de repuesto, se comenzo la compra y se esta esperando que salga.','2024-06-30 00:30:16',20),(2,'Rechazaron la compra, se devuelve al servicio.','2024-06-30 00:30:54',20),(3,'Derivado a Herreria','2024-06-30 01:46:34',20);
+/*!40000 ALTER TABLE `actualizacion_ordenes_de_trabajo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `equipo`
 --
 
@@ -109,7 +137,7 @@ CREATE TABLE `grupo_electrogeno` (
 
 LOCK TABLES `grupo_electrogeno` WRITE;
 /*!40000 ALTER TABLE `grupo_electrogeno` DISABLE KEYS */;
-INSERT INTO `grupo_electrogeno` VALUES (1,'Bioterio','Operativo','Gasoil Premium'),(2,'Resonador','Operativo','Gasoil Comun'),(3,'Ultrafreezers','Fuera de Servicio','Gasoil Premium'),(4,'Patologia','Operativo','Gasoil Comun'),(5,'Hemoterapia','Operativo','Gasoil Premium'),(6,'UTI','Operativo','Gasoil Comun'),(7,'Cirugia','Fuera de Servicio','Gasoil Premium');
+INSERT INTO `grupo_electrogeno` VALUES (1,'Bioterio','Operativo','Gasoil Premium'),(2,'Resonador','Fuera de servicio','Gasoil Comun'),(3,'Ultrafreezers','Fuera de Servicio','Gasoil Premium'),(4,'Patologia','Fuera de servicio','Gasoil Comun'),(5,'Hemoterapia','Fuera de servicio','Gasoil Premium'),(6,'UTI','Fuera de servicio','Gasoil Comun'),(7,'Cirugia','Fuera de Servicio','Gasoil Premium');
 /*!40000 ALTER TABLE `grupo_electrogeno` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,7 +167,7 @@ CREATE TABLE `inventario` (
 
 LOCK TABLES `inventario` WRITE;
 /*!40000 ALTER TABLE `inventario` DISABLE KEYS */;
-INSERT INTO `inventario` VALUES (1,'Resistor 2k2','Texas Instruments',5,NULL,21),(2,'Capacitor 30uF','Intel',1,NULL,21),(3,'Transistor PNP','Analog Devices',8,NULL,21),(4,'Diodo 1N4007','Microchip',6,NULL,21),(5,'LED azul','STMicroelectronics',9,NULL,21),(6,'Inductor','NXP',5,NULL,21),(7,'Transformador 9v220v','Infineon',10,NULL,21),(8,'Circuito integrado','Toshiba',4,NULL,21),(9,'Potenciometro 330k','ON Semiconductor',4,NULL,21),(10,'Rele 6 contactos','Vishay',6,NULL,21),(11,'Fusible 3A','Maxim Integrated',3,NULL,21),(12,'Interruptor','Renesas',8,NULL,21),(13,'Conector','Fairchild',7,NULL,21),(14,'Batería','Samsung',5,NULL,21),(15,'Antena','Panasonic',6,NULL,21),(16,'Cristal oscilador 30 MHz','Sony',4,NULL,21),(17,'Microcontrolador PIC16F84','Philips',3,NULL,21),(18,'Display de 7 segmentos','Broadcom',1,NULL,21),(19,'Sensor agua','Xilinx',7,NULL,21),(20,'Memoria EEPROM','Rohm',5,NULL,21),(21,'tuerca',NULL,2,NULL,NULL),(22,'perno',NULL,1,NULL,NULL),(23,'perno2vc',NULL,2,NULL,NULL);
+INSERT INTO `inventario` VALUES (1,'Resistor 2k2','Texas Instruments',5,NULL,21),(2,'Capacitor 30uF','Intel',1,NULL,21),(3,'Transistor PNP','Analog Devices',8,NULL,21),(4,'Diodo 1N4007','Microchip',6,NULL,21),(5,'LED azul','STMicroelectronics',9,NULL,21),(6,'Inductor','NXP',5,NULL,21),(7,'Transformador 9v220v','Infineon',10,NULL,21),(8,'Circuito integrado','Toshiba',4,NULL,21),(9,'Potenciometro 330k','ON Semiconductor',4,NULL,21),(10,'Rele 6 contactos','Vishay',6,NULL,21),(11,'Fusible 3A','Maxim Integrated',3,NULL,21),(12,'Interruptor','Renesas',8,NULL,21),(13,'Conector','Fairchild',7,NULL,21),(14,'Batería','Samsung',5,NULL,21),(15,'Antena','Panasonic',5,NULL,NULL),(16,'Cristal oscilador 30 MHz','Sony',4,NULL,21),(17,'Microcontrolador PIC16F84','Philips',3,NULL,21),(18,'Display de 7 segmentos','Broadcom',1,NULL,21),(19,'Sensor agua','Xilinx',7,NULL,21),(20,'Memoria EEPROM','Rohm',5,NULL,21),(21,'tuerca',NULL,2,NULL,NULL),(22,'perno',NULL,1,NULL,NULL),(23,'perno2vc',NULL,2,NULL,NULL);
 /*!40000 ALTER TABLE `inventario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -160,7 +188,7 @@ CREATE TABLE `orden_de_trabajo` (
   PRIMARY KEY (`Id_orden`),
   KEY `fk_orden_de_trabajo_equipo1_idx` (`equipo_Id_equipo`),
   CONSTRAINT `fk_orden_de_trabajo_equipo1` FOREIGN KEY (`equipo_Id_equipo`) REFERENCES `equipo` (`Id_equipo`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -169,7 +197,7 @@ CREATE TABLE `orden_de_trabajo` (
 
 LOCK TABLES `orden_de_trabajo` WRITE;
 /*!40000 ALTER TABLE `orden_de_trabajo` DISABLE KEYS */;
-INSERT INTO `orden_de_trabajo` VALUES (1,'Evaluacion de estado en tomografo computarizado (CT)','2024-04-03 15:09:11',NULL,NULL,'Bioterio'),(2,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-05-20 17:26:23',NULL,NULL,'Imagenes'),(3,'Diagnostico y reparacion de problema en lampara quirurgica','2024-04-03 22:41:52',NULL,8,'Quirofano'),(4,'Sincronizacion y ajuste en equipo de terapia laser','2023-12-30 09:17:09',NULL,NULL,'UTI'),(5,'Instalacion de nuevo sensor Doppler vascular','2024-05-03 15:04:50',NULL,NULL,'UTI'),(6,'Sustitucion de baterias en desfibrilador externo','2024-03-12 19:38:50',NULL,NULL,'UTI'),(7,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-01-05 03:19:01',NULL,NULL,'UTI'),(8,'Revision y mantenimiento preventivo de electrocardiografo','2024-02-12 19:16:22',NULL,NULL,'UTI'),(9,'Reparacion de falla en ecografo abdominal','2023-12-22 23:25:34',NULL,NULL,'Imagenes'),(10,'Recambio de piezas en bomba de infusion','2024-04-26 08:16:15',NULL,NULL,'UTI'),(11,'Inspeccion de sistema de iluminacion en quirofano','2023-11-03 22:34:15',NULL,NULL,'Bioterio'),(12,'Ajuste de frecuencia en electroencefalografo (EEG)','2023-12-17 05:44:57','2024-06-22 16:13:08',NULL,'Imagenes'),(13,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2023-10-23 20:22:27','2024-06-22 16:13:04',NULL,'UTI'),(14,'Diagnostico y reparacion de problema en lampara quirurgica','2023-11-10 00:07:15',NULL,NULL,'Quirofano'),(15,'Inspeccion y limpieza profunda de endoscopio flexible','2024-01-21 20:55:32',NULL,NULL,'UTI'),(16,'Calibracion y prueba de funcionamiento en camara hiperbarica','2024-03-03 09:01:45',NULL,13,'Quirofano'),(17,'Inspeccion y limpieza profunda de endoscopio flexible','2023-10-24 18:49:00','2024-06-22 16:03:07',NULL,'Quirofano'),(18,'Actualizacion de firmware en maquina de anestesia','2024-01-28 21:47:54',NULL,NULL,'Quirofano'),(19,'Sincronizacion y ajuste en equipo de terapia laser','2024-01-16 22:51:26',NULL,NULL,'UTI'),(20,'Diagnostico y reparacion de problema en lampara quirurgica','2024-06-02 21:51:44',NULL,NULL,'Medicina nuclear'),(21,'Baño tapado del dr pepe','2024-06-22 16:51:37','2024-06-23 20:06:56',NULL,'Investigaciones'),(22,'Centrifuga no funciona nose','2024-06-22 16:54:09','2024-06-23 20:07:00',10,'Quirofano'),(23,'No me anda el tensiometro','2024-06-22 18:31:45','2024-06-22 18:33:51',31,'UTI'),(24,'No funcionan las calderas en 2do piso costa','2024-06-23 08:52:55','2024-06-23 08:53:09',NULL,'2do Costa'),(25,'Caldera no funciona','2024-06-23 09:03:46','2024-06-23 09:03:58',NULL,'2do Costa');
+INSERT INTO `orden_de_trabajo` VALUES (1,'Evaluacion de estado en tomografo computarizado (CT)','2024-04-03 15:09:11',NULL,NULL,'Bioterio'),(2,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-05-20 17:26:23',NULL,NULL,'Imagenes'),(3,'Diagnostico y reparacion de problema en lampara quirurgica','2024-04-03 22:41:52',NULL,8,'Quirofano'),(4,'Sincronizacion y ajuste en equipo de terapia laser','2023-12-30 09:17:09',NULL,NULL,'UTI'),(5,'Instalacion de nuevo sensor Doppler vascular','2024-05-03 15:04:50','2024-06-27 08:28:41',NULL,'UTI'),(6,'Sustitucion de baterias en desfibrilador externo','2024-03-12 19:38:50',NULL,NULL,'UTI'),(7,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-01-05 03:19:01',NULL,NULL,'UTI'),(8,'Revision y mantenimiento preventivo de electrocardiografo','2024-02-12 19:16:22',NULL,NULL,'UTI'),(9,'Reparacion de falla en ecografo abdominal','2023-12-22 23:25:34',NULL,NULL,'Imagenes'),(10,'Recambio de piezas en bomba de infusion','2024-04-26 08:16:15',NULL,NULL,'UTI'),(11,'Inspeccion de sistema de iluminacion en quirofano','2023-11-03 22:34:15',NULL,NULL,'Bioterio'),(12,'Ajuste de frecuencia en electroencefalografo (EEG)','2023-12-17 05:44:57','2024-06-22 16:13:08',NULL,'Imagenes'),(13,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2023-10-23 20:22:27','2024-06-22 16:13:04',NULL,'UTI'),(14,'Diagnostico y reparacion de problema en lampara quirurgica','2023-11-10 00:07:15',NULL,NULL,'Quirofano'),(15,'Inspeccion y limpieza profunda de endoscopio flexible','2024-01-21 20:55:32',NULL,NULL,'UTI'),(16,'Calibracion y prueba de funcionamiento en camara hiperbarica','2024-03-03 09:01:45',NULL,13,'Quirofano'),(17,'Inspeccion y limpieza profunda de endoscopio flexible','2023-10-24 18:49:00','2024-06-22 16:03:07',NULL,'Quirofano'),(18,'Actualizacion de firmware en maquina de anestesia','2024-01-28 21:47:54',NULL,NULL,'Quirofano'),(19,'Sincronizacion y ajuste en equipo de terapia laser','2024-01-16 22:51:26',NULL,NULL,'UTI'),(20,'Diagnostico y reparacion de problema en lampara quirurgica','2024-06-02 21:51:44',NULL,NULL,'Medicina nuclear'),(21,'Baño tapado del dr pepe','2024-06-22 16:51:37','2024-06-23 20:06:56',NULL,'Investigaciones'),(22,'Centrifuga no funciona nose','2024-06-22 16:54:09','2024-06-23 20:07:00',10,'Quirofano'),(23,'No me anda el tensiometro','2024-06-22 18:31:45','2024-06-22 18:33:51',31,'UTI'),(24,'No funcionan las calderas en 2do piso costa','2024-06-23 08:52:55','2024-06-23 08:53:09',NULL,'2do Costa'),(25,'Caldera no funciona','2024-06-23 09:03:46','2024-06-23 09:03:58',NULL,'2do Costa'),(26,'hola','2024-06-26 08:05:46','2024-06-26 08:06:11',29,'Quirofano');
 /*!40000 ALTER TABLE `orden_de_trabajo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -198,7 +226,7 @@ CREATE TABLE `proveedor` (
 
 LOCK TABLES `proveedor` WRITE;
 /*!40000 ALTER TABLE `proveedor` DISABLE KEYS */;
-INSERT INTO `proveedor` VALUES (1,'Biotrust',7363,'Avenida Corrientes','CABA','biotrust@mail.com',1112345678),(2,'Massini',3799,'Avenida de Mayo','CABA','massini@mail.com',1123456789),(3,'Nucleolab',7739,'Avenida 9 de Julio','CABA','nucleolab@mail.com',1134567890),(4,'Compania cientifica',6850,'Calle Florida','CABA','companiacientifica@mail.com',1145678901),(5,'Siemmens',9418,'Avenida Santa Fe','CABA','siemmens@mail.com',1156789012),(6,'GE',6374,'Avenida Belgrano','CABA','ge@mail.com',1167890123),(7,'Mindray',1166,'Calle Defensa','CABA','mindray@mail.com',1178901234),(8,'Taussem',6853,'Avenida Cordoba','CABA','taussem@mail.com',1189012345),(9,'Veolia',8526,'Calle Lavalle','CABA','veolia@mail.com',1190123456),(10,'Meditec SRL',2936,'Avenida Rivadavia','CABA','meditec@mail.com',1111223344),(11,'Bioingenieria del Plata',4156,'Calle Suipacha','CABA','bioingenieriadelplata@mail.com',1122334455),(12,'Tecno Hospitalaria',2024,'Calle Tucuman','CABA','tecnohospitalaria@mail.com',1133445566),(13,'Biomedica Argentina',6850,'Calle Esmeralda','CABA','biomedicaargentina@mail.com',1144556677),(14,'Servimed',2954,'Calle Reconquista','CABA','servimed@mail.com',1155667788),(15,'Techno Medical',5530,'Avenida Callao','CABA','technomedical@mail.com',1166778899),(16,'Electromedical Solutions',8893,'Calle San Martin','CABA','electromedicalsolutions@mail.com',1177889900),(17,'Argus Med',9736,'Calle Moreno','CABA','argusmed@mail.com',1188990011),(18,'Equipos Medicos Argenmed',3506,'Avenida Pueyrredon','CABA','equiposmedicosargenmed@mail.com',1199001122),(19,'Biomedic',4899,'Calle Bolivar','CABA','biomedic@mail.com',1110102020),(20,'Hospitalar',9201,'Calle Sarmiento','CABA','hospitalar@mail.com',1112345678),(21,'Microelectronica',1455,'Tte. Gral. J. D. Peron','CABA','ventas@microelectronicash.com',1143710123);
+INSERT INTO `proveedor` VALUES (1,'Biotrust',7363,'Avenida Corrientes','CABA','biotrust@mail.com',1112345678),(2,'Massini',3799,'Avenida de Mayo','CABA','massini@mail.com',1123456789),(3,'Nucleolab',7739,'Avenida 9 de Julio','CABA','nucleolab@mail.com',1134567890),(4,'Compania cientifica',6850,'Calle Florida','CABA','companiacientifica@mail.com',1145678901),(5,'Siemmens',9418,'Avenida Santa Fe','CABA','siemmens@mail.com',1156789012),(6,'GE',6374,'Avenida Belgrano','CABA','ge@mail.com',1167890123),(7,'Mindray',1166,'Calle Defensa','CABA','mindray@mail.com',1178901234),(8,'Taussem',6853,'Avenida Cordoba','CABA','taussem@mail.com',1189012345),(9,'Veolia',8526,'Calle Lavalle','CABA','veolia@mail.com',1190123456),(10,'Meditec SRL',2936,'Avenida Rivadavia','CABA','meditec@mail.com',1111223344),(11,'Bioingenieria del Plata',4156,'Calle Suipacha','CABA','bioingenieriadelplata@mail.com',1122334455),(12,'Tecno Hospitalaria',2024,'Calle Tucuman','CABA','tecnohospitalaria@mail.com',1133445566),(13,'Biomedica Argentina',6850,'Calle Esmeralda','CABA','biomedicaargentina@mail.com',1144556677),(14,'Servimed',2954,'Calle Reconquista','CABA','servimed@mail.com',1155667788),(15,'Techno Medical',5530,'Avenida Callao','CABA','technomedical@mail.com',1166778899),(16,'Electromedical Solutions',8893,'Calle San Martin','CABA','electromedicalsolutions@mail.com',1177889900),(18,'Equipos Medicos Argenmed',3506,'Avenida Pueyrredon','CABA','equiposmedicosargenmed@mail.com',1199001122),(19,'Biomedic',4899,'Calle Bolivar','CABA','biomedic@mail.com',1110102020),(20,'Hospitalar',9201,'Calle Sarmiento','CABA','hospitalar@mail.com',1112345678),(21,'Microelectronica',1455,'Tte. Gral. J. D. Peron','CABA','ventas@microelectronicash.com',1143710123);
 /*!40000 ALTER TABLE `proveedor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -344,33 +372,37 @@ CREATE TABLE `reporte_grupo_electrogeno` (
   `Id_reporte_grupo` int NOT NULL AUTO_INCREMENT,
   `Fecha` datetime NOT NULL,
   `Observaciones_grupo` varchar(2000) DEFAULT NULL,
-  `Refrigerante` tinyint NOT NULL,
-  `Nivel Aceite` tinyint NOT NULL,
-  `Nivel Agua Bateria` tinyint DEFAULT NULL,
-  `Nivel Combustible` int NOT NULL,
-  `Voltaje Bateria Reposo` decimal(2,0) NOT NULL,
-  `Voltaje Bateria Carga` decimal(2,0) DEFAULT NULL,
-  `Frecuencia` decimal(2,0) NOT NULL,
-  `RPM` int DEFAULT NULL,
-  `Temperatura` decimal(2,0) DEFAULT NULL,
-  `Presion Aceite` decimal(2,0) DEFAULT NULL,
-  `HorasUso` time DEFAULT NULL,
-  `Numero Arranques` int unsigned DEFAULT NULL,
-  `V_Generador_R` int unsigned NOT NULL,
-  `V_Generador_S` int unsigned NOT NULL,
-  `V_Generador_T` int unsigned NOT NULL,
-  `V_Linea_R` int unsigned NOT NULL,
-  `V_Linea_S` int unsigned NOT NULL,
-  `V_Linea_T` int unsigned NOT NULL,
+  `Refrigerante` varchar(45) NOT NULL,
+  `Nivel_Aceite` varchar(45) NOT NULL,
+  `Nivel_Agua_Bateria` varchar(45) DEFAULT NULL,
+  `Nivel_Combustible` int unsigned NOT NULL,
+  `Voltaje_Bateria_Reposo` decimal(2,0) unsigned NOT NULL,
+  `Voltaje_Bateria_Carga` decimal(2,0) unsigned DEFAULT NULL,
+  `Frecuencia` decimal(2,0) unsigned DEFAULT NULL,
+  `RPM` int unsigned DEFAULT NULL,
+  `Temperatura` decimal(2,0) unsigned DEFAULT NULL,
+  `Presion_Aceite` decimal(2,0) unsigned DEFAULT NULL,
+  `HorasUso` int unsigned DEFAULT NULL,
+  `Minutos_uso` int unsigned DEFAULT NULL,
+  `Numero_Arranques` int unsigned DEFAULT NULL,
+  `V_Generador_R` int unsigned DEFAULT NULL,
+  `V_Generador_S` int unsigned DEFAULT NULL,
+  `V_Generador_T` int unsigned DEFAULT NULL,
+  `V_Linea_R` int unsigned DEFAULT NULL,
+  `V_Linea_S` int unsigned DEFAULT NULL,
+  `V_Linea_T` int unsigned DEFAULT NULL,
   `A_Generador_R` int unsigned DEFAULT NULL,
-  `A_Generador` int unsigned DEFAULT NULL,
+  `A_Generador_S` int unsigned DEFAULT NULL,
   `A_Generador_T` int unsigned DEFAULT NULL,
   `Estado` varchar(45) NOT NULL,
   `grupo_electrogeno_Id_grupo` int NOT NULL,
+  `A_Linea_R` int unsigned DEFAULT NULL,
+  `A_Linea_S` int unsigned DEFAULT NULL,
+  `A_Linea_T` int unsigned DEFAULT NULL,
   PRIMARY KEY (`Id_reporte_grupo`),
   KEY `fk_Report_grupo_electrogeno_grupo_electrogeno1_idx` (`grupo_electrogeno_Id_grupo`),
   CONSTRAINT `fk_Report_grupo_electrogeno_grupo_electrogeno1` FOREIGN KEY (`grupo_electrogeno_Id_grupo`) REFERENCES `grupo_electrogeno` (`Id_grupo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -379,50 +411,9 @@ CREATE TABLE `reporte_grupo_electrogeno` (
 
 LOCK TABLES `reporte_grupo_electrogeno` WRITE;
 /*!40000 ALTER TABLE `reporte_grupo_electrogeno` DISABLE KEYS */;
+INSERT INTO `reporte_grupo_electrogeno` VALUES (18,'2024-06-29 19:07:49',NULL,'OK','OK',NULL,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',2,0,0,0),(19,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',3,0,0,0),(20,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,'Operativo',4,0,0,0),(21,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO','BAJO',0,0,0,0,NULL,0,0,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,0,'Operativo',5,0,0,0),(22,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,'Operativo',7,0,0,0),(23,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO','BAJO',0,0,0,0,NULL,0,0,4,3,0,0,0,0,0,0,0,0,0,0,'Operativo',6,0,0,0),(24,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,'Operativo',1,0,0,0);
 /*!40000 ALTER TABLE `reporte_grupo_electrogeno` ENABLE KEYS */;
 UNLOCK TABLES;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
-/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
-/*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = utf8mb4 */ ;
-/*!50003 SET character_set_results = utf8mb4 */ ;
-/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
-/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
-/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
-DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `reporte_grupo_electrogeno_AFTER_INSERT` AFTER INSERT ON `reporte_grupo_electrogeno` FOR EACH ROW BEGIN
-    IF NEW.Estado = 'Fuera de servicio' THEN
-        UPDATE grupo_electrogeno
-        SET Status_grupo = 'Fuera de servicio'
-        WHERE Id_grupo = NEW.grupo_electrogeno_Id_grupo AND Status_grupo = 'Operativo';
-    END IF;
-END */;;
-DELIMITER ;
-/*!50003 SET sql_mode              = @saved_sql_mode */ ;
-/*!50003 SET character_set_client  = @saved_cs_client */ ;
-/*!50003 SET character_set_results = @saved_cs_results */ ;
-/*!50003 SET collation_connection  = @saved_col_connection */ ;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
-/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
-/*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = utf8mb4 */ ;
-/*!50003 SET character_set_results = utf8mb4 */ ;
-/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
-/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
-/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
-DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `reporte_grupo_electrogeno_AFTER_UPDATE` AFTER UPDATE ON `reporte_grupo_electrogeno` FOR EACH ROW BEGIN
-    IF NEW.Estado = 'Fuera de servicio' THEN
-        UPDATE grupo_electrogeno
-        SET Status_grupo = 'Fuera de servicio'
-        WHERE Id_grupo = NEW.grupo_electrogeno_Id_grupo;
-    END IF;
-END */;;
-DELIMITER ;
-/*!50003 SET sql_mode              = @saved_sql_mode */ ;
-/*!50003 SET character_set_client  = @saved_cs_client */ ;
-/*!50003 SET character_set_results = @saved_cs_results */ ;
-/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Dumping events for database 'db_roffo'
@@ -441,4 +432,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-23 22:40:54
+-- Dump completed on 2024-06-30  2:07:20
