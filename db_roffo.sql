@@ -32,7 +32,7 @@ CREATE TABLE `actualizacion_ordenes_de_trabajo` (
   PRIMARY KEY (`id_actualizacion`),
   KEY `Id_orden_de_trabajo_idx` (`Id_orden_de_trabajo`),
   CONSTRAINT `Id_orden_de_trabajo` FOREIGN KEY (`Id_orden_de_trabajo`) REFERENCES `orden_de_trabajo` (`Id_orden`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `actualizacion_ordenes_de_trabajo` (
 
 LOCK TABLES `actualizacion_ordenes_de_trabajo` WRITE;
 /*!40000 ALTER TABLE `actualizacion_ordenes_de_trabajo` DISABLE KEYS */;
-INSERT INTO `actualizacion_ordenes_de_trabajo` VALUES (1,'Faltan lamparas de repuesto, se comenzo la compra y se esta esperando que salga.','2024-06-30 00:30:16',20),(2,'Rechazaron la compra, se devuelve al servicio.','2024-06-30 00:30:54',20),(3,'Derivado a Herreria','2024-06-30 01:46:34',20);
+INSERT INTO `actualizacion_ordenes_de_trabajo` VALUES (1,'Faltan lamparas de repuesto, se comenzo la compra y se esta esperando que salga.','2024-06-30 00:30:16',20),(2,'Rechazaron la compra, se devuelve al servicio.','2024-06-30 00:30:54',20),(3,'Derivado a Herreria','2024-06-30 01:46:34',20),(4,'Se comunico a los electricistas que vayan a revisar','2024-06-30 19:11:43',27);
 /*!40000 ALTER TABLE `actualizacion_ordenes_de_trabajo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -72,7 +72,7 @@ CREATE TABLE `equipo` (
 
 LOCK TABLES `equipo` WRITE;
 /*!40000 ALTER TABLE `equipo` DISABLE KEYS */;
-INSERT INTO `equipo` VALUES (1,'Electrocardiografo','Modelo GH','Elekta','7542','2024-02-03 09:42:30','2024-01-23 18:09:24','En oficina','Operativo'),(3,'Ecografo','Modelo C','Philips','1861','2023-11-01 21:33:22','2024-01-16 18:24:28','En oficina','Fuera de servicio'),(4,'Respirador','Modelo D','Toshiba Medical Systems','7994','2024-05-16 23:08:39','2024-01-16 21:45:16','Investigaciones','Operativo'),(5,'Monitor multiparametrico','Modelo E','Hitachi Medical Systems','3480','2024-01-13 14:47:25','2024-01-20 05:26:52','En oficina','Fuera de servicio'),(6,'Bomba de infusion','Modelo F','Fujifilm Medical Systems','1262','2024-03-05 23:46:49','2024-01-07 14:36:08','Imagenes','Operativo'),(7,'Analizador de gases en sangre','Modelo G','Shimadzu Medical Systems','4852','2024-03-24 20:23:12','2024-01-04 07:27:48','En oficina','Operativo'),(8,'Electroencefalografo','Modelo H','Canon Medical Systems','8202','2024-03-17 14:18:12','2024-01-20 00:39:48','Investigaciones','Fuera de servicio'),(9,'Tubo rayos x','Modelo I','Mindray','4901','2023-09-14 02:56:05','2024-01-01 06:09:40','Quirofano','Fuera de servicio'),(10,'Bobina magnetica','Modelo J','Hologic','3509','2023-11-23 12:08:26','2024-01-15 18:36:07','En oficina','Fuera de servicio'),(11,'Endoscopio','Modelo K','Karl Storz','8704','2023-11-12 21:57:48','2024-01-07 05:52:05','Imagenes','Fuera de servicio'),(12,'Lampara quirurgica','Modelo L','Stryker','7086','2024-01-26 13:27:22','2024-01-19 02:02:59','En oficina','Fuera de servicio'),(13,'Camara hiperbarica','Modelo M','Olympus Medical','9250','2024-06-05 00:51:24','2024-01-25 14:29:12','Imagenes','Fuera de servicio'),(14,'Maquina de anestesia','Modelo N','Varian Medical Systems','9177','2023-10-05 21:51:44','2024-01-16 17:29:11','En oficina','Fuera de servicio'),(15,'Doppler vascular','Modelo O','Elekta','9178','2023-06-28 09:52:56','2024-01-23 00:56:03','En oficina','Operativo'),(16,'Oftalmoscopio','Modelo P','Zimmer Biomet','9751','2024-03-19 15:21:26','2024-01-29 04:53:00','Quirofano','Fuera de servicio'),(17,'Audiometro','Modelo Q','Boston Scientific','7992','2023-12-26 23:17:59','2024-01-16 02:24:05','Quirofano','Fuera de servicio'),(18,'Holter','Modelo R','Medtronic','7335','2024-04-16 10:41:35','2024-01-03 10:27:14','Quirofano','Fuera de servicio'),(19,'Laser quirurgico','Modelo S','Abbott Laboratories','5536','2023-11-07 22:51:02','2024-01-14 18:03:33','En oficina','Fuera de servicio'),(20,'Estimulador neuromuscular','Modelo T','Roche Diagnostics','7081','2023-07-02 10:45:32','2024-01-19 19:12:47','En oficina','Fuera de servicio'),(29,'Camara hiperbarica','DCF','Toshiba Medical Systems','569','2024-06-22 18:14:17','2024-06-22 18:14:17','Imagenes','Operativo'),(31,'Tensiometro','20','Coronet','3568','2024-06-22 18:32:20','2024-06-22 18:32:20','En oficina','Fuera de servicio');
+INSERT INTO `equipo` VALUES (1,'Electrocardiografo','Modelo GH','Elekta','7542','2024-02-03 09:42:30','2024-01-23 18:09:24','En oficina','Operativo'),(3,'Ecografo','Modelo C','Philips','1861','2023-11-01 21:33:22','2024-01-16 18:24:28','En oficina','Fuera de servicio'),(4,'Respirador','Modelo D','Toshiba Medical Systems','7994','2024-05-16 23:08:39','2024-01-16 21:45:16','Investigaciones','Operativo'),(5,'Monitor multiparametrico','Modelo E','Hitachi Medical Systems','3480','2024-01-13 14:47:25','2024-01-20 05:26:52','En oficina','Fuera de servicio'),(6,'Bomba de infusion','Modelo F','Fujifilm Medical Systems','1262','2024-03-05 23:46:49','2024-01-07 14:36:08','Imagenes','Operativo'),(7,'Analizador de gases en sangre','Modelo G','Shimadzu Medical Systems','4852','2024-03-24 20:23:12','2024-01-04 07:27:48','En oficina','Operativo'),(8,'Electroencefalografo','Modelo H','Canon Medical Systems','8202','2024-03-17 14:18:12','2024-01-20 00:39:48','Investigaciones','Fuera de servicio'),(9,'Tubo rayos x','Modelo I','Mindray','4901','2023-09-14 02:56:05','2024-01-01 06:09:40','Quirofano','Fuera de servicio'),(10,'Bobina magnetica','Modelo J','Hologic','3509','2023-11-23 12:08:26','2024-01-15 18:36:07','En oficina','Fuera de servicio'),(11,'Endoscopio','Modelo K','Karl Storz','8704','2023-11-12 21:57:48','2024-01-07 05:52:05','Imagenes','Fuera de servicio'),(12,'Lampara quirurgica','Modelo L','Stryker','7086','2024-01-26 13:27:22','2024-01-19 02:02:59','En oficina','Fuera de servicio'),(13,'Camara hiperbarica','Modelo M','Olympus Medical','9250','2024-06-05 00:51:24','2024-01-25 14:29:12','Imagenes','Fuera de servicio'),(14,'Maquina de anestesia','Modelo N','Varian Medical Systems','9177','2023-10-05 21:51:44','2024-01-16 17:29:11','En oficina','Fuera de servicio'),(15,'Doppler vascular','Modelo O','Elekta','9178','2023-06-28 09:52:56','2024-01-23 00:56:03','En oficina','Operativo'),(16,'Oftalmoscopio','Modelo P','Zimmer Biomet','9751','2024-03-19 15:21:26','2024-01-29 04:53:00','Quirofano','Fuera de servicio'),(17,'Audiometro','Modelo Q','Boston Scientific','7992','2023-12-26 23:17:59','2024-01-16 02:24:05','En oficina','Fuera de servicio'),(18,'Holter','Modelo R','Medtronic','7335','2024-04-16 10:41:35','2024-01-03 10:27:14','Quirofano','Fuera de servicio'),(19,'Laser quirurgico','Modelo S','Abbott Laboratories','5536','2023-11-07 22:51:02','2024-01-14 18:03:33','En oficina','Fuera de servicio'),(20,'Estimulador neuromuscular','Modelo T','Roche Diagnostics','7081','2023-07-02 10:45:32','2024-01-19 19:12:47','En oficina','Fuera de servicio'),(29,'Camara hiperbarica','DCF','Toshiba Medical Systems','569','2024-06-22 18:14:17','2024-06-22 18:14:17','Imagenes','Operativo'),(31,'Tensiometro','20','Coronet','3568','2024-06-22 18:32:20','2024-06-22 18:32:20','En oficina','Fuera de servicio');
 /*!40000 ALTER TABLE `equipo` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -137,7 +137,7 @@ CREATE TABLE `grupo_electrogeno` (
 
 LOCK TABLES `grupo_electrogeno` WRITE;
 /*!40000 ALTER TABLE `grupo_electrogeno` DISABLE KEYS */;
-INSERT INTO `grupo_electrogeno` VALUES (1,'Bioterio','Operativo','Gasoil Premium'),(2,'Resonador','Fuera de servicio','Gasoil Comun'),(3,'Ultrafreezers','Fuera de Servicio','Gasoil Premium'),(4,'Patologia','Fuera de servicio','Gasoil Comun'),(5,'Hemoterapia','Fuera de servicio','Gasoil Premium'),(6,'UTI','Fuera de servicio','Gasoil Comun'),(7,'Cirugia','Fuera de Servicio','Gasoil Premium');
+INSERT INTO `grupo_electrogeno` VALUES (1,'Bioterio','Operativo','Gasoil Premium'),(2,'Resonador','Operativo','Gasoil Comun'),(3,'Ultrafreezers','Fuera de Servicio','Gasoil Premium'),(4,'Patologia','Fuera de servicio','Gasoil Comun'),(5,'Hemoterapia','Operativo','Gasoil Premium'),(6,'UTI','Operativo','Gasoil Comun'),(7,'Cirugia','Operativo','Gasoil Premium');
 /*!40000 ALTER TABLE `grupo_electrogeno` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -188,7 +188,7 @@ CREATE TABLE `orden_de_trabajo` (
   PRIMARY KEY (`Id_orden`),
   KEY `fk_orden_de_trabajo_equipo1_idx` (`equipo_Id_equipo`),
   CONSTRAINT `fk_orden_de_trabajo_equipo1` FOREIGN KEY (`equipo_Id_equipo`) REFERENCES `equipo` (`Id_equipo`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -197,7 +197,7 @@ CREATE TABLE `orden_de_trabajo` (
 
 LOCK TABLES `orden_de_trabajo` WRITE;
 /*!40000 ALTER TABLE `orden_de_trabajo` DISABLE KEYS */;
-INSERT INTO `orden_de_trabajo` VALUES (1,'Evaluacion de estado en tomografo computarizado (CT)','2024-04-03 15:09:11',NULL,NULL,'Bioterio'),(2,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-05-20 17:26:23',NULL,NULL,'Imagenes'),(3,'Diagnostico y reparacion de problema en lampara quirurgica','2024-04-03 22:41:52',NULL,8,'Quirofano'),(4,'Sincronizacion y ajuste en equipo de terapia laser','2023-12-30 09:17:09',NULL,NULL,'UTI'),(5,'Instalacion de nuevo sensor Doppler vascular','2024-05-03 15:04:50','2024-06-27 08:28:41',NULL,'UTI'),(6,'Sustitucion de baterias en desfibrilador externo','2024-03-12 19:38:50',NULL,NULL,'UTI'),(7,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-01-05 03:19:01',NULL,NULL,'UTI'),(8,'Revision y mantenimiento preventivo de electrocardiografo','2024-02-12 19:16:22',NULL,NULL,'UTI'),(9,'Reparacion de falla en ecografo abdominal','2023-12-22 23:25:34',NULL,NULL,'Imagenes'),(10,'Recambio de piezas en bomba de infusion','2024-04-26 08:16:15',NULL,NULL,'UTI'),(11,'Inspeccion de sistema de iluminacion en quirofano','2023-11-03 22:34:15',NULL,NULL,'Bioterio'),(12,'Ajuste de frecuencia en electroencefalografo (EEG)','2023-12-17 05:44:57','2024-06-22 16:13:08',NULL,'Imagenes'),(13,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2023-10-23 20:22:27','2024-06-22 16:13:04',NULL,'UTI'),(14,'Diagnostico y reparacion de problema en lampara quirurgica','2023-11-10 00:07:15',NULL,NULL,'Quirofano'),(15,'Inspeccion y limpieza profunda de endoscopio flexible','2024-01-21 20:55:32',NULL,NULL,'UTI'),(16,'Calibracion y prueba de funcionamiento en camara hiperbarica','2024-03-03 09:01:45',NULL,13,'Quirofano'),(17,'Inspeccion y limpieza profunda de endoscopio flexible','2023-10-24 18:49:00','2024-06-22 16:03:07',NULL,'Quirofano'),(18,'Actualizacion de firmware en maquina de anestesia','2024-01-28 21:47:54',NULL,NULL,'Quirofano'),(19,'Sincronizacion y ajuste en equipo de terapia laser','2024-01-16 22:51:26',NULL,NULL,'UTI'),(20,'Diagnostico y reparacion de problema en lampara quirurgica','2024-06-02 21:51:44',NULL,NULL,'Medicina nuclear'),(21,'Baño tapado del dr pepe','2024-06-22 16:51:37','2024-06-23 20:06:56',NULL,'Investigaciones'),(22,'Centrifuga no funciona nose','2024-06-22 16:54:09','2024-06-23 20:07:00',10,'Quirofano'),(23,'No me anda el tensiometro','2024-06-22 18:31:45','2024-06-22 18:33:51',31,'UTI'),(24,'No funcionan las calderas en 2do piso costa','2024-06-23 08:52:55','2024-06-23 08:53:09',NULL,'2do Costa'),(25,'Caldera no funciona','2024-06-23 09:03:46','2024-06-23 09:03:58',NULL,'2do Costa'),(26,'hola','2024-06-26 08:05:46','2024-06-26 08:06:11',29,'Quirofano');
+INSERT INTO `orden_de_trabajo` VALUES (1,'Evaluacion de estado en tomografo computarizado (CT)','2024-04-03 15:09:11',NULL,NULL,'Bioterio'),(2,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-05-20 17:26:23',NULL,NULL,'Imagenes'),(3,'Diagnostico y reparacion de problema en lampara quirurgica','2024-04-03 22:41:52',NULL,8,'Quirofano'),(4,'Sincronizacion y ajuste en equipo de terapia laser','2023-12-30 09:17:09',NULL,NULL,'UTI'),(5,'Instalacion de nuevo sensor Doppler vascular','2024-05-03 15:04:50','2024-06-27 08:28:41',NULL,'UTI'),(6,'Sustitucion de baterias en desfibrilador externo','2024-03-12 19:38:50',NULL,NULL,'UTI'),(7,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2024-01-05 03:19:01',NULL,NULL,'UTI'),(8,'Revision y mantenimiento preventivo de electrocardiografo','2024-02-12 19:16:22',NULL,NULL,'UTI'),(9,'Reparacion de falla en ecografo abdominal','2023-12-22 23:25:34',NULL,NULL,'Imagenes'),(10,'Recambio de piezas en bomba de infusion','2024-04-26 08:16:15',NULL,NULL,'UTI'),(11,'Inspeccion de sistema de iluminacion en quirofano','2023-11-03 22:34:15',NULL,NULL,'Bioterio'),(12,'Ajuste de frecuencia en electroencefalografo (EEG)','2023-12-17 05:44:57','2024-06-22 16:13:08',NULL,'Imagenes'),(13,'Verificacion y ajuste de presion en sistema de vacio para liposuccion','2023-10-23 20:22:27','2024-06-22 16:13:04',NULL,'UTI'),(14,'Diagnostico y reparacion de problema en lampara quirurgica','2023-11-10 00:07:15',NULL,NULL,'Quirofano'),(15,'Inspeccion y limpieza profunda de endoscopio flexible','2024-01-21 20:55:32',NULL,NULL,'UTI'),(16,'Calibracion y prueba de funcionamiento en camara hiperbarica','2024-03-03 09:01:45',NULL,13,'Quirofano'),(17,'Inspeccion y limpieza profunda de endoscopio flexible','2023-10-24 18:49:00','2024-06-22 16:03:07',NULL,'Quirofano'),(18,'Actualizacion de firmware en maquina de anestesia','2024-01-28 21:47:54',NULL,NULL,'Quirofano'),(19,'Sincronizacion y ajuste en equipo de terapia laser','2024-01-16 22:51:26',NULL,NULL,'UTI'),(20,'Diagnostico y reparacion de problema en lampara quirurgica','2024-06-02 21:51:44',NULL,NULL,'Medicina nuclear'),(21,'Baño tapado del dr pepe','2024-06-22 16:51:37','2024-06-23 20:06:56',NULL,'Investigaciones'),(22,'Centrifuga no funciona nose','2024-06-22 16:54:09','2024-06-23 20:07:00',10,'Quirofano'),(23,'No me anda el tensiometro','2024-06-22 18:31:45','2024-06-22 18:33:51',31,'UTI'),(24,'No funcionan las calderas en 2do piso costa','2024-06-23 08:52:55','2024-06-23 08:53:09',NULL,'2do Costa'),(25,'Caldera no funciona','2024-06-23 09:03:46','2024-06-23 09:03:58',NULL,'2do Costa'),(26,'hola','2024-06-26 08:05:46','2024-06-26 08:06:11',29,'Quirofano'),(27,'Hay olor a quemado en laboratorio','2024-06-30 19:10:53',NULL,NULL,'Laboratorio Central');
 /*!40000 ALTER TABLE `orden_de_trabajo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -249,7 +249,7 @@ CREATE TABLE `reparacion_externa` (
   KEY `fk_Reparacion_externa_proveedor1_idx` (`proveedor_Id_proveedor`),
   CONSTRAINT `fk_Reparacion_externa_equipo1` FOREIGN KEY (`equipo_Id_equipo`) REFERENCES `equipo` (`Id_equipo`),
   CONSTRAINT `fk_Reparacion_externa_proveedor1` FOREIGN KEY (`proveedor_Id_proveedor`) REFERENCES `proveedor` (`Id_proveedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -258,7 +258,7 @@ CREATE TABLE `reparacion_externa` (
 
 LOCK TABLES `reparacion_externa` WRITE;
 /*!40000 ALTER TABLE `reparacion_externa` DISABLE KEYS */;
-INSERT INTO `reparacion_externa` VALUES (1,'2024-06-21 13:25:16','2024-06-21 13:29:21',3,1,'Se cambio la placa del equipo');
+INSERT INTO `reparacion_externa` VALUES (1,'2024-06-21 13:25:16','2024-06-21 13:29:21',3,1,'Se cambio la placa del equipo'),(2,'2024-06-30 16:14:20','2024-06-30 17:55:30',17,11,'Se cambio electronica');
 /*!40000 ALTER TABLE `reparacion_externa` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -349,7 +349,7 @@ CREATE TABLE `reporte_equipo` (
   PRIMARY KEY (`Id_reporte_equipo`),
   KEY `fk_Reporte_equipo_equipo1_idx` (`equipo_Id_equipo`),
   CONSTRAINT `fk_Reporte_equipo_equipo1` FOREIGN KEY (`equipo_Id_equipo`) REFERENCES `equipo` (`Id_equipo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -358,6 +358,7 @@ CREATE TABLE `reporte_equipo` (
 
 LOCK TABLES `reporte_equipo` WRITE;
 /*!40000 ALTER TABLE `reporte_equipo` DISABLE KEYS */;
+INSERT INTO `reporte_equipo` VALUES (1,'Se hizo seguridad electrica','2024-06-30 21:14:05',7),(2,'Se midio temperatura','2024-06-30 21:15:33',7);
 /*!40000 ALTER TABLE `reporte_equipo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -402,7 +403,7 @@ CREATE TABLE `reporte_grupo_electrogeno` (
   PRIMARY KEY (`Id_reporte_grupo`),
   KEY `fk_Report_grupo_electrogeno_grupo_electrogeno1_idx` (`grupo_electrogeno_Id_grupo`),
   CONSTRAINT `fk_Report_grupo_electrogeno_grupo_electrogeno1` FOREIGN KEY (`grupo_electrogeno_Id_grupo`) REFERENCES `grupo_electrogeno` (`Id_grupo`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -411,7 +412,7 @@ CREATE TABLE `reporte_grupo_electrogeno` (
 
 LOCK TABLES `reporte_grupo_electrogeno` WRITE;
 /*!40000 ALTER TABLE `reporte_grupo_electrogeno` DISABLE KEYS */;
-INSERT INTO `reporte_grupo_electrogeno` VALUES (18,'2024-06-29 19:07:49',NULL,'OK','OK',NULL,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',2,0,0,0),(19,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',3,0,0,0),(20,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,'Operativo',4,0,0,0),(21,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO','BAJO',0,0,0,0,NULL,0,0,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,0,'Operativo',5,0,0,0),(22,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,'Operativo',7,0,0,0),(23,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO','BAJO',0,0,0,0,NULL,0,0,4,3,0,0,0,0,0,0,0,0,0,0,'Operativo',6,0,0,0),(24,'2024-06-29 19:07:50',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,'Operativo',1,0,0,0);
+INSERT INTO `reporte_grupo_electrogeno` VALUES (53,'2024-06-24 22:28:47',NULL,'OK','OK',NULL,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',2,0,0,0),(54,'2024-06-30 22:28:47',NULL,'OK','OK',NULL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',3,0,0,0),(55,'2024-06-30 22:28:47',NULL,'OK','OK',NULL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',4,0,0,0),(56,'2024-06-30 22:28:48',NULL,'OK','OK OSCURO','OK',23,0,0,0,NULL,0,0,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,0,'Operativo',5,0,0,0),(57,'2024-06-30 22:28:48',NULL,'OK','OK',NULL,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',7,0,0,0),(58,'2024-06-30 22:28:48',NULL,'OK','OK OSCURO','OK',22,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',6,0,0,0),(59,'2024-06-30 22:28:48',NULL,'OK','OK OSCURO',NULL,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',1,0,0,0),(60,'2024-06-30 22:29:40',NULL,'OK','OK',NULL,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',2,0,0,0),(61,'2024-06-30 22:29:41',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',3,0,0,0),(62,'2024-06-30 22:29:41',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',4,0,0,0),(63,'2024-06-30 22:29:41',NULL,'OK','OK OSCURO','OK',14,0,0,0,NULL,0,0,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,0,'Operativo',5,0,0,0),(64,'2024-06-30 22:29:41',NULL,'OK','OK OSCURO',NULL,52,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',7,0,0,0),(65,'2024-06-30 22:29:41',NULL,'OK','OK OSCURO','OK',17,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',6,0,0,0),(66,'2024-06-30 22:29:41',NULL,'OK','OK OSCURO',NULL,45,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',1,0,0,0),(67,'2024-07-02 22:30:30',NULL,'OK','OK',NULL,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',2,0,0,0),(68,'2024-06-30 22:30:30',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',3,0,0,0),(69,'2024-06-30 22:30:31',NULL,'OK','OK OSCURO',NULL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Fuera de servicio',4,0,0,0),(70,'2024-06-30 22:30:33',NULL,'OK','OK OSCURO','OK',25,0,0,0,NULL,0,0,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,0,0,0,'Operativo',5,0,0,0),(71,'2024-06-30 22:30:34',NULL,'OK','OK OSCURO',NULL,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',7,0,0,0),(72,'2024-06-30 22:30:34',NULL,'OK','OK OSCURO','OK',14,0,0,0,NULL,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',6,0,0,0),(73,'2024-06-30 22:30:35',NULL,'OK','OK',NULL,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Operativo',1,0,0,0);
 /*!40000 ALTER TABLE `reporte_grupo_electrogeno` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -432,4 +433,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-30  2:07:20
+-- Dump completed on 2024-06-30 22:47:25
