@@ -42,7 +42,6 @@
             this.button_proveedores = new System.Windows.Forms.Button();
             this.button_reporte_grupo = new System.Windows.Forms.Button();
             this.button_reparacion_externa = new System.Windows.Forms.Button();
-            this.button_reporte_equipo = new System.Windows.Forms.Button();
             this.button_actualizar_orden = new System.Windows.Forms.Button();
             this.button_historial_completo_orden = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -113,7 +112,7 @@
             // 
             this.button_cerrar_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_cerrar_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cerrar_orden.Location = new System.Drawing.Point(841, 351);
+            this.button_cerrar_orden.Location = new System.Drawing.Point(836, 345);
             this.button_cerrar_orden.Name = "button_cerrar_orden";
             this.button_cerrar_orden.Size = new System.Drawing.Size(124, 71);
             this.button_cerrar_orden.TabIndex = 4;
@@ -125,7 +124,7 @@
             // 
             this.button_nueva_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_nueva_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_nueva_orden.Location = new System.Drawing.Point(191, 351);
+            this.button_nueva_orden.Location = new System.Drawing.Point(184, 346);
             this.button_nueva_orden.Name = "button_nueva_orden";
             this.button_nueva_orden.Size = new System.Drawing.Size(124, 71);
             this.button_nueva_orden.TabIndex = 5;
@@ -137,7 +136,7 @@
             // 
             this.button_modificar_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_modificar_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_modificar_orden.Location = new System.Drawing.Point(451, 351);
+            this.button_modificar_orden.Location = new System.Drawing.Point(347, 345);
             this.button_modificar_orden.Name = "button_modificar_orden";
             this.button_modificar_orden.Size = new System.Drawing.Size(124, 71);
             this.button_modificar_orden.TabIndex = 6;
@@ -147,13 +146,13 @@
             // 
             // button_asociar_equipo
             // 
-            this.button_asociar_equipo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button_asociar_equipo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button_asociar_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_asociar_equipo.Location = new System.Drawing.Point(711, 351);
+            this.button_asociar_equipo.Location = new System.Drawing.Point(23, 192);
             this.button_asociar_equipo.Name = "button_asociar_equipo";
             this.button_asociar_equipo.Size = new System.Drawing.Size(124, 71);
             this.button_asociar_equipo.TabIndex = 7;
-            this.button_asociar_equipo.Text = "Asociar equipo";
+            this.button_asociar_equipo.Text = "Asociar equipo a orden";
             this.button_asociar_equipo.UseVisualStyleBackColor = true;
             this.button_asociar_equipo.Click += new System.EventHandler(this.button_asociar_equipo_Click);
             // 
@@ -217,23 +216,11 @@
             this.button_reparacion_externa.UseVisualStyleBackColor = true;
             this.button_reparacion_externa.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button_reporte_equipo
-            // 
-            this.button_reporte_equipo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button_reporte_equipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_reporte_equipo.Location = new System.Drawing.Point(23, 192);
-            this.button_reporte_equipo.Name = "button_reporte_equipo";
-            this.button_reporte_equipo.Size = new System.Drawing.Size(124, 71);
-            this.button_reporte_equipo.TabIndex = 13;
-            this.button_reporte_equipo.Text = "Reportes equipos";
-            this.button_reporte_equipo.UseVisualStyleBackColor = true;
-            this.button_reporte_equipo.Click += new System.EventHandler(this.button_reporte_equipo_Click);
-            // 
             // button_actualizar_orden
             // 
             this.button_actualizar_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_actualizar_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_actualizar_orden.Location = new System.Drawing.Point(321, 351);
+            this.button_actualizar_orden.Location = new System.Drawing.Point(510, 345);
             this.button_actualizar_orden.Name = "button_actualizar_orden";
             this.button_actualizar_orden.Size = new System.Drawing.Size(124, 71);
             this.button_actualizar_orden.TabIndex = 14;
@@ -245,7 +232,7 @@
             // 
             this.button_historial_completo_orden.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_historial_completo_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_historial_completo_orden.Location = new System.Drawing.Point(581, 351);
+            this.button_historial_completo_orden.Location = new System.Drawing.Point(673, 346);
             this.button_historial_completo_orden.Name = "button_historial_completo_orden";
             this.button_historial_completo_orden.Size = new System.Drawing.Size(124, 71);
             this.button_historial_completo_orden.TabIndex = 15;
@@ -260,7 +247,6 @@
             this.ClientSize = new System.Drawing.Size(1133, 428);
             this.Controls.Add(this.button_historial_completo_orden);
             this.Controls.Add(this.button_actualizar_orden);
-            this.Controls.Add(this.button_reporte_equipo);
             this.Controls.Add(this.button_reparacion_externa);
             this.Controls.Add(this.button_reporte_grupo);
             this.Controls.Add(this.button_proveedores);
@@ -299,7 +285,6 @@
         private System.Windows.Forms.Button button_proveedores;
         private System.Windows.Forms.Button button_reporte_grupo;
         private System.Windows.Forms.Button button_reparacion_externa;
-        private System.Windows.Forms.Button button_reporte_equipo;
         private System.Windows.Forms.Button button_actualizar_orden;
         private System.Windows.Forms.Button button_historial_completo_orden;
     }

@@ -38,7 +38,7 @@
             // 
             this.label_reporte_proveedor.AutoSize = true;
             this.label_reporte_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_reporte_proveedor.Location = new System.Drawing.Point(18, 51);
+            this.label_reporte_proveedor.Location = new System.Drawing.Point(12, 51);
             this.label_reporte_proveedor.Name = "label_reporte_proveedor";
             this.label_reporte_proveedor.Size = new System.Drawing.Size(125, 16);
             this.label_reporte_proveedor.TabIndex = 0;

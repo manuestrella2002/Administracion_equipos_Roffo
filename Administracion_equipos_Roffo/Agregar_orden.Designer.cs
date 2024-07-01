@@ -66,7 +66,7 @@
             this.textBox_descripcion_orden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_descripcion_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_descripcion_orden.Location = new System.Drawing.Point(94, 75);
+            this.textBox_descripcion_orden.Location = new System.Drawing.Point(105, 75);
             this.textBox_descripcion_orden.Multiline = true;
             this.textBox_descripcion_orden.Name = "textBox_descripcion_orden";
             this.textBox_descripcion_orden.Size = new System.Drawing.Size(372, 80);
@@ -86,9 +86,9 @@
             // 
             this.comboBox_lugar_orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_lugar_orden.FormattingEnabled = true;
-            this.comboBox_lugar_orden.Location = new System.Drawing.Point(94, 178);
+            this.comboBox_lugar_orden.Location = new System.Drawing.Point(105, 178);
             this.comboBox_lugar_orden.Name = "comboBox_lugar_orden";
-            this.comboBox_lugar_orden.Size = new System.Drawing.Size(113, 24);
+            this.comboBox_lugar_orden.Size = new System.Drawing.Size(184, 24);
             this.comboBox_lugar_orden.TabIndex = 4;
             // 
             // button_crear_orden

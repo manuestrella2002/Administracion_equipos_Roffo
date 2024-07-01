@@ -84,6 +84,7 @@
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -133,6 +134,12 @@
     </Compile>
     <Compile Include="Agregar_reparacion_externa.Designer.cs">
       <DependentUpon>Agregar_reparacion_externa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_reporte_equipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_reporte_equipo.Designer.cs">
+      <DependentUpon>Agregar_reporte_equipo.cs</DependentUpon>
     </Compile>
     <Compile Include="Agregar_reporte_grupo.cs">
       <SubType>Form</SubType>
@@ -189,6 +196,12 @@
       <DependentUpon>Modificar_proveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Tendencias_grupos_electrogenos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tendencias_grupos_electrogenos.Designer.cs">
+      <DependentUpon>Tendencias_grupos_electrogenos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver_actualizaciones_ordenes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +244,12 @@
     <Compile Include="Ver_reparacion_externa.Designer.cs">
       <DependentUpon>Ver_reparacion_externa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ver_reportes_equipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver_reportes_equipo.Designer.cs">
+      <DependentUpon>Ver_reportes_equipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ver_reportes_grupos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Agregar_reparacion_externa.resx">
       <DependentUpon>Agregar_reparacion_externa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_reporte_equipo.resx">
+      <DependentUpon>Agregar_reporte_equipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Agregar_reporte_grupo.resx">
       <DependentUpon>Agregar_reporte_grupo.cs</DependentUpon>
@@ -282,6 +304,9 @@
     <EmbeddedResource Include="Modificar_proveedor.resx">
       <DependentUpon>Modificar_proveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tendencias_grupos_electrogenos.resx">
+      <DependentUpon>Tendencias_grupos_electrogenos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ver_actualizaciones_ordenes.resx">
       <DependentUpon>Ver_actualizaciones_ordenes.cs</DependentUpon>
     </EmbeddedResource>
@@ -302,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_reparacion_externa.resx">
       <DependentUpon>Ver_reparacion_externa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver_reportes_equipo.resx">
+      <DependentUpon>Ver_reportes_equipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ver_reportes_grupos.resx">
       <DependentUpon>Ver_reportes_grupos.cs</DependentUpon>

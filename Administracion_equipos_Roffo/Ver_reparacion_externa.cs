@@ -17,23 +17,25 @@ namespace Administracion_equipos_Roffo
         public Ver_reparacion_externa()
         {
             InitializeComponent();
-            LoadDataGridView();
+            LoadDataGridView_abiertas();
+            LoadDataGridView_cerrada();
         }
 
-        private void LoadDataGridView()
+        private void LoadDataGridView_abiertas()
         {
 
             // Define la cadena de conexión a tu base de datos MySQL
             string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
 
             // Define tu consulta SQL
-            string query = "SELECT re.Id_reparacion_externa, e.Nombre_equipo, re.Fecha_salida, re.Fecha_reentrada," +
-                "p.Nombre_proveedor, re.reporte_proovedor AS reporte FROM reparacion_externa  AS re " +
+            string query1 = "SELECT re.Id_reparacion_externa, e.Nombre_equipo, re.Fecha_salida," +
+                "p.Nombre_proveedor FROM reparacion_externa  AS re " +
                 "LEFT OUTER JOIN equipo AS e ON e.Id_equipo = re.equipo_Id_equipo " +
-                "LEFT OUTER JOIN proveedor as p ON p.Id_proveedor = re.proveedor_Id_proveedor";
+                "LEFT OUTER JOIN proveedor as p ON p.Id_proveedor = re.proveedor_Id_proveedor " +
+                "WHERE re.Fecha_reentrada IS NULL";
 
             // Crea un DataTable para contener los datos
-            DataTable tabla_ordenes = new DataTable();
+            DataTable tabla_ordenes_abiertas = new DataTable();
 
             // Conéctate a la base de datos y ejecuta la consulta
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -41,11 +43,11 @@ namespace Administracion_equipos_Roffo
                 try
                 {
                     connection.Open();
-                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    using (MySqlCommand command = new MySqlCommand(query1, connection))
                     {
                         using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                         {
-                            adapter.Fill(tabla_ordenes);
+                            adapter.Fill(tabla_ordenes_abiertas);
                         }
                     }
                 }
@@ -58,7 +60,7 @@ namespace Administracion_equipos_Roffo
 
 
             // Asignar el DataTable como origen de datos del DataGridView
-            dataGridView1.DataSource = tabla_ordenes;
+            dataGridView1.DataSource = tabla_ordenes_abiertas;
 
             // Configurar la selección de filas completas
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -68,6 +70,58 @@ namespace Administracion_equipos_Roffo
             dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+        }
+
+        private void LoadDataGridView_cerrada()
+        {
+
+            // Define la cadena de conexión a tu base de datos MySQL
+            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+
+            // Define tu consulta SQL
+            string query2 = "SELECT re.Id_reparacion_externa, e.Nombre_equipo, re.Fecha_salida, re.Fecha_reentrada," +
+                "p.Nombre_proveedor, re.reporte_proovedor AS reporte FROM reparacion_externa  AS re " +
+                "LEFT OUTER JOIN equipo AS e ON e.Id_equipo = re.equipo_Id_equipo " +
+                "LEFT OUTER JOIN proveedor as p ON p.Id_proveedor = re.proveedor_Id_proveedor " +
+                "WHERE re.Fecha_reentrada IS NOT NULL";
+
+            // Crea un DataTable para contener los datos
+            DataTable tabla_ordenes_cerradas = new DataTable();
+
+            // Conéctate a la base de datos y ejecuta la consulta
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (MySqlCommand command = new MySqlCommand(query2, connection))
+                    {
+                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                        {
+                            adapter.Fill(tabla_ordenes_cerradas);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+                    return;
+                }
+            }
+
+
+            // Asignar el DataTable como origen de datos del DataGridView
+            dataGridView2.DataSource = tabla_ordenes_cerradas;
+
+            // Configurar la selección de filas completas
+            dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView2.MultiSelect = false; // Permitir solo la selección de una fila a la vez
+
+
+            dataGridView2.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView2.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
 
@@ -81,7 +135,9 @@ namespace Administracion_equipos_Roffo
             Agregar_reparacion_externa agregar_Reparacion_Externa = new Agregar_reparacion_externa();
             this.Hide();
             agregar_Reparacion_Externa.ShowDialog();
-            LoadDataGridView();
+            LoadDataGridView_abiertas();
+            LoadDataGridView_cerrada();
+
             this.Show();
             
 
@@ -95,9 +151,13 @@ namespace Administracion_equipos_Roffo
                 DataGridViewRow selectedRow_reparacion = dataGridView1.SelectedRows[0];
 
                 int Id_reparacion_externa = int.Parse(selectedRow_reparacion.Cells["Id_reparacion_externa"].Value.ToString());
-                
-                
 
+                Cerrar_reparacion_externa cerrar_Reparacion_Externa = new Cerrar_reparacion_externa(Id_reparacion_externa);
+                this.Hide();
+                cerrar_Reparacion_Externa.ShowDialog();
+                this.Show();
+                LoadDataGridView_abiertas();
+                LoadDataGridView_cerrada();
             }
             else
             {

@@ -352,13 +352,13 @@ namespace Administracion_equipos_Roffo
                 string nivel_refri_UTI = "";
                 string nivel_refri_bioterio = "";
 
-                int nivel_comb_resonador = Convert.ToInt32(numeric_comb_resonador.Value);
-                int nivel_comb_ultrafrezeers = Convert.ToInt32(numeric_comb_ultrafrezeers.Value);
-                int nivel_comb_patologia = Convert.ToInt32(numeric_comb_patologia.Value);
-                int nivel_comb_hemoterapia = Convert.ToInt32(numeric_comb_hemoterapia.Value);
-                int nivel_comb_cirugia = Convert.ToInt32(numeric_comb_cirugia.Value);
-                int nivel_comb_UTI = Convert.ToInt32(numeric_comb_UTI.Value);
-                int nivel_comb_bioterio = Convert.ToInt32(numeric_comb_bioterio.Value);
+                int nivel_comb_resonador = Convert.ToInt32(num_comb_resonador.Value);
+                int nivel_comb_ultrafrezeers = Convert.ToInt32(num_comb_ultrafrezeers.Value);
+                int nivel_comb_patologia = Convert.ToInt32(num_comb_patologia.Value);
+                int nivel_comb_hemoterapia = Convert.ToInt32(num_comb_hemoterapia.Value);
+                int nivel_comb_cirugia = Convert.ToInt32(num_comb_cirugia.Value);
+                int nivel_comb_UTI = Convert.ToInt32(num_comb_UTI.Value);
+                int nivel_comb_bioterio = Convert.ToInt32(num_comb_bioterio.Value);
 
 
                 string nivel_agua_hemoterapia = "";

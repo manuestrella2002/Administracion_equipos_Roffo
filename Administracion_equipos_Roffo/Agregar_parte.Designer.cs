@@ -116,7 +116,7 @@
             this.textBox_descripcion.Location = new System.Drawing.Point(116, 137);
             this.textBox_descripcion.Multiline = true;
             this.textBox_descripcion.Name = "textBox_descripcion";
-            this.textBox_descripcion.Size = new System.Drawing.Size(292, 36);
+            this.textBox_descripcion.Size = new System.Drawing.Size(292, 53);
             this.textBox_descripcion.TabIndex = 8;
             // 
             // button_guardar_parte

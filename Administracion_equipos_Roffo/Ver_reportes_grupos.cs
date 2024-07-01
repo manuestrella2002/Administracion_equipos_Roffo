@@ -26,7 +26,8 @@ namespace Administracion_equipos_Roffo
             string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
 
             // Define tu consulta SQL
-            string query = "SELECT Id_reporte_grupo as Id_reporte,Fecha,Observaciones_grupo as Observaciones FROM reporte_grupo_electrogeno ORDER BY Fecha DESC";
+            string query = "SELECT Id_reporte_grupo as Id_reporte,ge.Nombre_grupo ,Fecha,Observaciones_grupo as Observaciones FROM reporte_grupo_electrogeno AS rge " +
+                " JOIN grupo_electrogeno AS ge ON rge.grupo_electrogeno_Id_grupo = ge.Id_grupo  ORDER BY Fecha DESC";
 
             // Crea un DataTable para contener los datos
             DataTable tabla_equipos = new DataTable();
@@ -92,7 +93,11 @@ namespace Administracion_equipos_Roffo
 
         private void button_tendencias_Click(object sender, EventArgs e)
         {
-
+            Tendencias_grupos_electrogenos tendencias_Grupos_Electrogenos = new Tendencias_grupos_electrogenos();
+            this.Hide();
+            tendencias_Grupos_Electrogenos.ShowDialog();
+            this.Show();
+            LoadDataGridView();
         }
 
         private void button1_Click(object sender, EventArgs e)

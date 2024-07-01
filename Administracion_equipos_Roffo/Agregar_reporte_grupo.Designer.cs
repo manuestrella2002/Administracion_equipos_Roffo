@@ -268,13 +268,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.num_comb_resonador = new System.Windows.Forms.NumericUpDown();
+            this.num_comb_ultrafrezeers = new System.Windows.Forms.NumericUpDown();
+            this.num_comb_patologia = new System.Windows.Forms.NumericUpDown();
+            this.num_comb_cirugia = new System.Windows.Forms.NumericUpDown();
+            this.num_comb_hemoterapia = new System.Windows.Forms.NumericUpDown();
+            this.num_comb_UTI = new System.Windows.Forms.NumericUpDown();
+            this.num_comb_bioterio = new System.Windows.Forms.NumericUpDown();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -283,20 +283,20 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.numeric_hora_bioterio = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_UTI = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_UTI = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_cirugia = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_cirugia = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_patologia = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_patologia = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_ultrafrezeers = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_ultrafrezeers = new System.Windows.Forms.NumericUpDown();
+            this.numeric_min_resonador = new System.Windows.Forms.NumericUpDown();
+            this.numeric_hora_resonador = new System.Windows.Forms.NumericUpDown();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.numeric_hora_resonador = new System.Windows.Forms.NumericUpDown();
-            this.numeric_min_resonador = new System.Windows.Forms.NumericUpDown();
-            this.numeric_min_ultrafrezeers = new System.Windows.Forms.NumericUpDown();
-            this.numeric_hora_ultrafrezeers = new System.Windows.Forms.NumericUpDown();
-            this.numeric_min_patologia = new System.Windows.Forms.NumericUpDown();
-            this.numeric_hora_patologia = new System.Windows.Forms.NumericUpDown();
-            this.numeric_min_cirugia = new System.Windows.Forms.NumericUpDown();
-            this.numeric_hora_cirugia = new System.Windows.Forms.NumericUpDown();
-            this.numeric_min_UTI = new System.Windows.Forms.NumericUpDown();
-            this.numeric_hora_UTI = new System.Windows.Forms.NumericUpDown();
-            this.numeric_hora_bioterio = new System.Windows.Forms.NumericUpDown();
             this.panel_aceite_resonador.SuspendLayout();
             this.panel_aceite_ultrafrezeers.SuspendLayout();
             this.panel_aceite_patologia.SuspendLayout();
@@ -448,27 +448,27 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_resonador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_ultrafrezeers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_patologia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_cirugia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_hemoterapia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_UTI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_bioterio)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_resonador)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_resonador)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_ultrafrezeers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_ultrafrezeers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_patologia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_patologia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_cirugia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_cirugia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_bioterio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_min_UTI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_UTI)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_bioterio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_cirugia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_cirugia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_patologia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_patologia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_ultrafrezeers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_ultrafrezeers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_resonador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_resonador)).BeginInit();
             this.SuspendLayout();
             // 
             // label_cirugia
@@ -3024,13 +3024,13 @@
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label18);
-            this.panel4.Controls.Add(this.numericUpDown1);
-            this.panel4.Controls.Add(this.numericUpDown2);
-            this.panel4.Controls.Add(this.numericUpDown3);
-            this.panel4.Controls.Add(this.numericUpDown4);
-            this.panel4.Controls.Add(this.numericUpDown5);
-            this.panel4.Controls.Add(this.numericUpDown6);
-            this.panel4.Controls.Add(this.numericUpDown7);
+            this.panel4.Controls.Add(this.num_comb_resonador);
+            this.panel4.Controls.Add(this.num_comb_ultrafrezeers);
+            this.panel4.Controls.Add(this.num_comb_patologia);
+            this.panel4.Controls.Add(this.num_comb_cirugia);
+            this.panel4.Controls.Add(this.num_comb_hemoterapia);
+            this.panel4.Controls.Add(this.num_comb_UTI);
+            this.panel4.Controls.Add(this.num_comb_bioterio);
             this.panel4.Location = new System.Drawing.Point(-1, -1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1067, 52);
@@ -3046,54 +3046,54 @@
             this.label18.TabIndex = 9;
             this.label18.Text = "NIVEL \r\nCOMBUSTIBLE:";
             // 
-            // numericUpDown1
+            // num_comb_resonador
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(135, 15);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(51, 20);
-            this.numericUpDown1.TabIndex = 35;
+            this.num_comb_resonador.Location = new System.Drawing.Point(135, 15);
+            this.num_comb_resonador.Name = "num_comb_resonador";
+            this.num_comb_resonador.Size = new System.Drawing.Size(51, 20);
+            this.num_comb_resonador.TabIndex = 35;
             // 
-            // numericUpDown2
+            // num_comb_ultrafrezeers
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(276, 15);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(51, 20);
-            this.numericUpDown2.TabIndex = 36;
+            this.num_comb_ultrafrezeers.Location = new System.Drawing.Point(276, 15);
+            this.num_comb_ultrafrezeers.Name = "num_comb_ultrafrezeers";
+            this.num_comb_ultrafrezeers.Size = new System.Drawing.Size(51, 20);
+            this.num_comb_ultrafrezeers.TabIndex = 36;
             // 
-            // numericUpDown3
+            // num_comb_patologia
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(420, 15);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(51, 20);
-            this.numericUpDown3.TabIndex = 37;
+            this.num_comb_patologia.Location = new System.Drawing.Point(420, 15);
+            this.num_comb_patologia.Name = "num_comb_patologia";
+            this.num_comb_patologia.Size = new System.Drawing.Size(51, 20);
+            this.num_comb_patologia.TabIndex = 37;
             // 
-            // numericUpDown4
+            // num_comb_cirugia
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(552, 15);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(51, 20);
-            this.numericUpDown4.TabIndex = 38;
+            this.num_comb_cirugia.Location = new System.Drawing.Point(552, 15);
+            this.num_comb_cirugia.Name = "num_comb_cirugia";
+            this.num_comb_cirugia.Size = new System.Drawing.Size(51, 20);
+            this.num_comb_cirugia.TabIndex = 38;
             // 
-            // numericUpDown5
+            // num_comb_hemoterapia
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(707, 15);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(51, 20);
-            this.numericUpDown5.TabIndex = 39;
+            this.num_comb_hemoterapia.Location = new System.Drawing.Point(707, 15);
+            this.num_comb_hemoterapia.Name = "num_comb_hemoterapia";
+            this.num_comb_hemoterapia.Size = new System.Drawing.Size(51, 20);
+            this.num_comb_hemoterapia.TabIndex = 39;
             // 
-            // numericUpDown6
+            // num_comb_UTI
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(838, 15);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(51, 20);
-            this.numericUpDown6.TabIndex = 40;
+            this.num_comb_UTI.Location = new System.Drawing.Point(838, 15);
+            this.num_comb_UTI.Name = "num_comb_UTI";
+            this.num_comb_UTI.Size = new System.Drawing.Size(51, 20);
+            this.num_comb_UTI.TabIndex = 40;
             // 
-            // numericUpDown7
+            // num_comb_bioterio
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(981, 15);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(51, 20);
-            this.numericUpDown7.TabIndex = 41;
+            this.num_comb_bioterio.Location = new System.Drawing.Point(981, 15);
+            this.num_comb_bioterio.Name = "num_comb_bioterio";
+            this.num_comb_bioterio.Size = new System.Drawing.Size(51, 20);
+            this.num_comb_bioterio.TabIndex = 41;
             // 
             // panel5
             // 
@@ -3186,125 +3186,23 @@
             this.panel13.Size = new System.Drawing.Size(1067, 27);
             this.panel13.TabIndex = 224;
             // 
-            // panel14
+            // numeric_hora_bioterio
             // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Location = new System.Drawing.Point(12, 583);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1067, 31);
-            this.panel14.TabIndex = 225;
-            // 
-            // panel15
-            // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Location = new System.Drawing.Point(12, 614);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1067, 29);
-            this.panel15.TabIndex = 226;
-            // 
-            // panel16
-            // 
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Location = new System.Drawing.Point(12, 643);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1067, 42);
-            this.panel16.TabIndex = 227;
-            // 
-            // numeric_hora_resonador
-            // 
-            this.numeric_hora_resonador.Location = new System.Drawing.Point(108, 4);
-            this.numeric_hora_resonador.Maximum = new decimal(new int[] {
+            this.numeric_hora_bioterio.DecimalPlaces = 2;
+            this.numeric_hora_bioterio.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numeric_hora_bioterio.Location = new System.Drawing.Point(976, 4);
+            this.numeric_hora_bioterio.Maximum = new decimal(new int[] {
             20000,
             0,
             0,
             0});
-            this.numeric_hora_resonador.Name = "numeric_hora_resonador";
-            this.numeric_hora_resonador.Size = new System.Drawing.Size(42, 20);
-            this.numeric_hora_resonador.TabIndex = 0;
-            // 
-            // numeric_min_resonador
-            // 
-            this.numeric_min_resonador.Location = new System.Drawing.Point(162, 3);
-            this.numeric_min_resonador.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.numeric_min_resonador.Name = "numeric_min_resonador";
-            this.numeric_min_resonador.Size = new System.Drawing.Size(45, 20);
-            this.numeric_min_resonador.TabIndex = 213;
-            // 
-            // numeric_min_ultrafrezeers
-            // 
-            this.numeric_min_ultrafrezeers.Location = new System.Drawing.Point(295, 4);
-            this.numeric_min_ultrafrezeers.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.numeric_min_ultrafrezeers.Name = "numeric_min_ultrafrezeers";
-            this.numeric_min_ultrafrezeers.Size = new System.Drawing.Size(45, 20);
-            this.numeric_min_ultrafrezeers.TabIndex = 215;
-            // 
-            // numeric_hora_ultrafrezeers
-            // 
-            this.numeric_hora_ultrafrezeers.Location = new System.Drawing.Point(242, 4);
-            this.numeric_hora_ultrafrezeers.Maximum = new decimal(new int[] {
-            20000,
-            0,
-            0,
-            0});
-            this.numeric_hora_ultrafrezeers.Name = "numeric_hora_ultrafrezeers";
-            this.numeric_hora_ultrafrezeers.Size = new System.Drawing.Size(42, 20);
-            this.numeric_hora_ultrafrezeers.TabIndex = 214;
-            // 
-            // numeric_min_patologia
-            // 
-            this.numeric_min_patologia.Location = new System.Drawing.Point(437, 3);
-            this.numeric_min_patologia.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.numeric_min_patologia.Name = "numeric_min_patologia";
-            this.numeric_min_patologia.Size = new System.Drawing.Size(45, 20);
-            this.numeric_min_patologia.TabIndex = 217;
-            // 
-            // numeric_hora_patologia
-            // 
-            this.numeric_hora_patologia.Location = new System.Drawing.Point(383, 2);
-            this.numeric_hora_patologia.Maximum = new decimal(new int[] {
-            20000,
-            0,
-            0,
-            0});
-            this.numeric_hora_patologia.Name = "numeric_hora_patologia";
-            this.numeric_hora_patologia.Size = new System.Drawing.Size(42, 20);
-            this.numeric_hora_patologia.TabIndex = 216;
-            // 
-            // numeric_min_cirugia
-            // 
-            this.numeric_min_cirugia.Location = new System.Drawing.Point(575, 2);
-            this.numeric_min_cirugia.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.numeric_min_cirugia.Name = "numeric_min_cirugia";
-            this.numeric_min_cirugia.Size = new System.Drawing.Size(45, 20);
-            this.numeric_min_cirugia.TabIndex = 219;
-            // 
-            // numeric_hora_cirugia
-            // 
-            this.numeric_hora_cirugia.Location = new System.Drawing.Point(521, 3);
-            this.numeric_hora_cirugia.Maximum = new decimal(new int[] {
-            20000,
-            0,
-            0,
-            0});
-            this.numeric_hora_cirugia.Name = "numeric_hora_cirugia";
-            this.numeric_hora_cirugia.Size = new System.Drawing.Size(42, 20);
-            this.numeric_hora_cirugia.TabIndex = 218;
+            this.numeric_hora_bioterio.Name = "numeric_hora_bioterio";
+            this.numeric_hora_bioterio.Size = new System.Drawing.Size(48, 20);
+            this.numeric_hora_bioterio.TabIndex = 222;
             // 
             // numeric_min_UTI
             // 
@@ -3330,23 +3228,125 @@
             this.numeric_hora_UTI.Size = new System.Drawing.Size(42, 20);
             this.numeric_hora_UTI.TabIndex = 220;
             // 
-            // numeric_hora_bioterio
+            // numeric_min_cirugia
             // 
-            this.numeric_hora_bioterio.DecimalPlaces = 2;
-            this.numeric_hora_bioterio.Increment = new decimal(new int[] {
-            1,
+            this.numeric_min_cirugia.Location = new System.Drawing.Point(575, 2);
+            this.numeric_min_cirugia.Maximum = new decimal(new int[] {
+            59,
             0,
             0,
-            65536});
-            this.numeric_hora_bioterio.Location = new System.Drawing.Point(976, 4);
-            this.numeric_hora_bioterio.Maximum = new decimal(new int[] {
+            0});
+            this.numeric_min_cirugia.Name = "numeric_min_cirugia";
+            this.numeric_min_cirugia.Size = new System.Drawing.Size(45, 20);
+            this.numeric_min_cirugia.TabIndex = 219;
+            // 
+            // numeric_hora_cirugia
+            // 
+            this.numeric_hora_cirugia.Location = new System.Drawing.Point(521, 3);
+            this.numeric_hora_cirugia.Maximum = new decimal(new int[] {
             20000,
             0,
             0,
             0});
-            this.numeric_hora_bioterio.Name = "numeric_hora_bioterio";
-            this.numeric_hora_bioterio.Size = new System.Drawing.Size(48, 20);
-            this.numeric_hora_bioterio.TabIndex = 222;
+            this.numeric_hora_cirugia.Name = "numeric_hora_cirugia";
+            this.numeric_hora_cirugia.Size = new System.Drawing.Size(42, 20);
+            this.numeric_hora_cirugia.TabIndex = 218;
+            // 
+            // numeric_min_patologia
+            // 
+            this.numeric_min_patologia.Location = new System.Drawing.Point(437, 3);
+            this.numeric_min_patologia.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numeric_min_patologia.Name = "numeric_min_patologia";
+            this.numeric_min_patologia.Size = new System.Drawing.Size(45, 20);
+            this.numeric_min_patologia.TabIndex = 217;
+            // 
+            // numeric_hora_patologia
+            // 
+            this.numeric_hora_patologia.Location = new System.Drawing.Point(383, 2);
+            this.numeric_hora_patologia.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numeric_hora_patologia.Name = "numeric_hora_patologia";
+            this.numeric_hora_patologia.Size = new System.Drawing.Size(42, 20);
+            this.numeric_hora_patologia.TabIndex = 216;
+            // 
+            // numeric_min_ultrafrezeers
+            // 
+            this.numeric_min_ultrafrezeers.Location = new System.Drawing.Point(295, 4);
+            this.numeric_min_ultrafrezeers.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numeric_min_ultrafrezeers.Name = "numeric_min_ultrafrezeers";
+            this.numeric_min_ultrafrezeers.Size = new System.Drawing.Size(45, 20);
+            this.numeric_min_ultrafrezeers.TabIndex = 215;
+            // 
+            // numeric_hora_ultrafrezeers
+            // 
+            this.numeric_hora_ultrafrezeers.Location = new System.Drawing.Point(242, 4);
+            this.numeric_hora_ultrafrezeers.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numeric_hora_ultrafrezeers.Name = "numeric_hora_ultrafrezeers";
+            this.numeric_hora_ultrafrezeers.Size = new System.Drawing.Size(42, 20);
+            this.numeric_hora_ultrafrezeers.TabIndex = 214;
+            // 
+            // numeric_min_resonador
+            // 
+            this.numeric_min_resonador.Location = new System.Drawing.Point(162, 3);
+            this.numeric_min_resonador.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numeric_min_resonador.Name = "numeric_min_resonador";
+            this.numeric_min_resonador.Size = new System.Drawing.Size(45, 20);
+            this.numeric_min_resonador.TabIndex = 213;
+            // 
+            // numeric_hora_resonador
+            // 
+            this.numeric_hora_resonador.Location = new System.Drawing.Point(108, 4);
+            this.numeric_hora_resonador.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numeric_hora_resonador.Name = "numeric_hora_resonador";
+            this.numeric_hora_resonador.Size = new System.Drawing.Size(42, 20);
+            this.numeric_hora_resonador.TabIndex = 0;
+            // 
+            // panel14
+            // 
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Location = new System.Drawing.Point(12, 583);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1067, 31);
+            this.panel14.TabIndex = 225;
+            // 
+            // panel15
+            // 
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Location = new System.Drawing.Point(12, 614);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1067, 29);
+            this.panel15.TabIndex = 226;
+            // 
+            // panel16
+            // 
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Location = new System.Drawing.Point(12, 643);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(1067, 42);
+            this.panel16.TabIndex = 227;
             // 
             // Agregar_reporte_grupo
             // 
@@ -3712,30 +3712,30 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_resonador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_ultrafrezeers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_patologia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_cirugia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_hemoterapia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_UTI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_comb_bioterio)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_resonador)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_resonador)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_ultrafrezeers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_ultrafrezeers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_patologia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_patologia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_cirugia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_cirugia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_bioterio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_min_UTI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_UTI)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_bioterio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_cirugia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_cirugia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_patologia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_patologia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_ultrafrezeers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_ultrafrezeers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_min_resonador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_hora_resonador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3983,13 +3983,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown num_comb_resonador;
+        private System.Windows.Forms.NumericUpDown num_comb_ultrafrezeers;
+        private System.Windows.Forms.NumericUpDown num_comb_patologia;
+        private System.Windows.Forms.NumericUpDown num_comb_cirugia;
+        private System.Windows.Forms.NumericUpDown num_comb_hemoterapia;
+        private System.Windows.Forms.NumericUpDown num_comb_UTI;
+        private System.Windows.Forms.NumericUpDown num_comb_bioterio;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;

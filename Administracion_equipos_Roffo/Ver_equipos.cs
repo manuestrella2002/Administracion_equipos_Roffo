@@ -150,5 +150,22 @@ namespace Administracion_equipos_Roffo
         {
             this.Close();
         }
+
+        private void button_ver_reporte_equipo_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                
+                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+                int Id_Equipo = int.Parse(selectedRow.Cells["Id_equipo"].Value.ToString());
+                this.Hide();
+                Ver_reportes_equipo ver_Reportes_Equipo = new Ver_reportes_equipo(Id_Equipo);
+                ver_Reportes_Equipo.ShowDialog();
+                this.Show();
+                LoadDataGridView();
+            }
+
+                    
+        }
     }
 }

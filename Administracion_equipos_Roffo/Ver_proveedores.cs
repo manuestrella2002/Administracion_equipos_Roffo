@@ -29,7 +29,7 @@ namespace Administracion_equipos_Roffo
             string query = "SELECT * FROM proveedor ORDER BY Nombre_proveedor";
 
             // Crea un DataTable para contener los datos
-            DataTable tabla_inventario = new DataTable();
+            DataTable tabla_proveedor = new DataTable();
 
             // Conéctate a la base de datos y ejecuta la consulta
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -41,7 +41,7 @@ namespace Administracion_equipos_Roffo
                     {
                         using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                         {
-                            adapter.Fill(tabla_inventario);
+                            adapter.Fill(tabla_proveedor);
                         }
                     }
                 }
@@ -54,7 +54,7 @@ namespace Administracion_equipos_Roffo
 
 
             // Asignar el DataTable como origen de datos del DataGridView
-            dataGridView1.DataSource = tabla_inventario;
+            dataGridView1.DataSource = tabla_proveedor;
 
             // Configurar la selección de filas completas
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
