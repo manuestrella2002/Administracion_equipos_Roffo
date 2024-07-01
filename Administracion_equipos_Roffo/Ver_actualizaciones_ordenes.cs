@@ -25,7 +25,7 @@ namespace Administracion_equipos_Roffo
 
         private void Cargar_orden()
         {
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             // Define tu consulta SQL
             string query = "SELECT Descripcion FROM orden_de_trabajo WHERE Id_orden = " + ID.ToString();
@@ -64,7 +64,7 @@ namespace Administracion_equipos_Roffo
         private void LoadDataGridView()
         {
             // Define la cadena de conexión a tu base de datos MySQL
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             // Define tu consulta SQL
             string query = "SELECT id_actualizacion, Descripcion, Fecha_actualizacion FROM actualizacion_ordenes_de_trabajo WHERE Id_orden_de_trabajo = " + ID.ToString();

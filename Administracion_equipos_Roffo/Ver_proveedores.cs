@@ -23,7 +23,7 @@ namespace Administracion_equipos_Roffo
         {
 
             // Define la cadena de conexión a tu base de datos MySQL
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             // Define tu consulta SQL
             string query = "SELECT * FROM proveedor ORDER BY Nombre_proveedor";
@@ -105,7 +105,7 @@ namespace Administracion_equipos_Roffo
                     int Id_proveedor = int.Parse(selectedRow.Cells["Id_proveedor"].Value.ToString());
 
                     string query = "DELETE FROM proveedor WHERE Id_proveedor = " + Id_proveedor.ToString();
-                    string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+                    string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {

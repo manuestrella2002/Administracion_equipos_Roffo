@@ -24,7 +24,7 @@ namespace Administracion_equipos_Roffo
         private void LoadCharts()
         {
             // Define la cadena de conexión a tu base de datos MySQL
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             // Define tu consulta SQL
             string query_resonador = "SELECT Fecha, Nivel_Combustible FROM reporte_grupo_electrogeno WHERE grupo_electrogeno_Id_grupo = 2";

@@ -21,7 +21,7 @@ namespace Administracion_equipos_Roffo
 
         private void LoadComboBoxData()
         {
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
             string query1 = "SELECT DISTINCT Marca_parte FROM inventario";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -81,7 +81,7 @@ namespace Administracion_equipos_Roffo
                 string marca_parte = comboBox_marca.Text;
                 int cantidad = Convert.ToInt32(contador_cantidad.Value);
                 string descripcion = textBox_descripcion.Text;
-                string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+                string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {

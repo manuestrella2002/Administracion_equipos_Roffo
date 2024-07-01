@@ -25,7 +25,7 @@ namespace Administracion_equipos_Roffo
         {
 
             // Define la cadena de conexión a tu base de datos MySQL
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             // Define tu consulta SQL
             string query = "SELECT * FROM equipo ORDER BY Nombre_equipo";
@@ -73,7 +73,7 @@ namespace Administracion_equipos_Roffo
                 
                     DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
                     int Id_equipo = int.Parse(selectedRow.Cells["Id_equipo"].Value.ToString());
-                    string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+                    string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {

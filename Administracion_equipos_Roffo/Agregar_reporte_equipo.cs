@@ -31,7 +31,7 @@ namespace Administracion_equipos_Roffo
             {
                 string descripcion = textBox_descripcion.Text;
 
-                string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+                string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {

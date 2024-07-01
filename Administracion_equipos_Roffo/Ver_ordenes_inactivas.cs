@@ -23,7 +23,7 @@ namespace Administracion_equipos_Roffo
         {
 
             // Define la cadena de conexión a tu base de datos MySQL
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             // Define tu consulta SQL
             string query = "SELECT ot.Id_orden, ot.Descripcion,ot.Fecha_creacion_orden,ot.Fecha_fin_orden,ot.Lugar_orden,e.Nombre_equipo as Equipo_asociado FROM orden_de_trabajo as ot LEFT OUTER JOIN equipo as e on ot.equipo_Id_equipo=e.Id_equipo WHERE ot.Fecha_fin_orden IS NOT NULL  ORDER BY ot.Fecha_creacion_orden DESC";
@@ -81,7 +81,7 @@ namespace Administracion_equipos_Roffo
 
 
                     // Define la cadena de conexión a tu base de datos MySQL
-                    string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+                    string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
                     // Define tu consulta SQL
                     string query = "UPDATE orden_de_trabajo SET Fecha_fin_orden = @fecha_fin_orden WHERE Id_orden=" + Id_orden.ToString();

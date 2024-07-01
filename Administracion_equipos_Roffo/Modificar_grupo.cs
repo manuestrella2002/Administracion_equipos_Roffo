@@ -23,7 +23,7 @@ namespace Administracion_equipos_Roffo
 
         private void Mostrar_detalles(int Id_grupo)
         {
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             // Define tu consulta SQL
             string id_grupo_string = Id_grupo.ToString();
@@ -66,7 +66,7 @@ namespace Administracion_equipos_Roffo
             string combustible = comboBox_combustible.Text;
             string estado = comboBox_estado.Text;
 
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {

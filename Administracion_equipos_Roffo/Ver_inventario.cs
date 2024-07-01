@@ -24,7 +24,7 @@ namespace Administracion_equipos_Roffo
         {
 
             // Define la cadena de conexión a tu base de datos MySQL
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             // Define tu consulta SQL
             string query = "SELECT inv.Id_parte, inv.Nombre_parte, inv.Marca_parte,inv.Cantidad_disponible,inv.Descripcion FROM inventario as inv  ORDER BY inv.Nombre_parte";
@@ -110,7 +110,7 @@ namespace Administracion_equipos_Roffo
                         DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
                     int Id_parte = int.Parse(selectedRow.Cells["Id_parte"].Value.ToString());
                     string query = "DELETE FROM inventario WHERE Id_parte = " + Id_parte.ToString();
-                    string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+                    string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
                     using (MySqlConnection connection = new MySqlConnection(connectionString))
                     {

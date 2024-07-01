@@ -23,7 +23,7 @@ namespace Administracion_equipos_Roffo
         {
 
             // Define la cadena de conexión a tu base de datos MySQL
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
             // Define tu consulta SQL
             string query = "SELECT Id_reporte_grupo as Id_reporte,ge.Nombre_grupo ,Fecha,Observaciones_grupo as Observaciones FROM reporte_grupo_electrogeno AS rge " +

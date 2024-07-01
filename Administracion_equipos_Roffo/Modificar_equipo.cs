@@ -25,7 +25,7 @@ namespace Administracion_equipos_Roffo
         
         private void LoadComboBoxData()
         {
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
             string query1 = "SELECT DISTINCT Marca_equipo FROM equipo";
             string query2 = "SELECT DISTINCT Ubicacion_equipo FROM equipo";
 
@@ -92,7 +92,7 @@ namespace Administracion_equipos_Roffo
         }
         private void Mostrar_detalles(int Id_equipo)
         {
-            string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+            string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
             
             // Define tu consulta SQL
             string id_equipo_string =Id_equipo.ToString();
@@ -163,7 +163,7 @@ namespace Administracion_equipos_Roffo
                 string ubicacion = comboBox_ubicacion.Text;
                 string estado = comboBox_estado.Text;
 
-                string connectionString = "server=localhost;database=db_roffo;uid=root;pwd=1204;";
+                string connectionString = "server=10.0.0.176;database=db_roffo;uid=remote_user;pwd=1204;";
 
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
